@@ -43,15 +43,12 @@ const Dashboard = () => {
           {/* Video Section */}
           <div className="w-full max-w-4xl mx-auto mb-8">
             <div className="relative rounded-lg overflow-hidden shadow-2xl bg-gradient-to-br from-primary/5 to-primary-glow/5 border border-primary/20">
-              <video 
-                className="w-full h-auto max-h-96 object-cover"
-                controls
-                poster="/placeholder.svg"
-                preload="metadata"
-              >
-                <source src="/path-to-your-video.mp4" type="video/mp4" />
-                Seu navegador não suporta o elemento de vídeo.
-              </video>
+              <iframe 
+                className="w-full aspect-video"
+                src="https://www.canva.com/design/DAGszQZEbhs/view?embed"
+                allowFullScreen
+                title="Personas Sintéticas - Vídeo Explicativo"
+              />
             </div>
           </div>
         </div>
