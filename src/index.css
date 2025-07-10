@@ -94,6 +94,11 @@ All colors MUST be HSL.
     --color-medium-contrast: #4a5568;
     --color-bg-contrast: #ffffff;
 
+    /* Status Colors */
+    --text-success: #10b981;
+    --text-error: #ef4444;
+    --text-warning: #f59e0b;
+
     --radius: 0.5rem;
 
     --sidebar-background: 0 0% 98%;
@@ -233,4 +238,36 @@ All colors MUST be HSL.
   margin-bottom: 16px; /* 1rem */
   padding: 24px; /* 1.5rem */
   gap: 8px; /* 0.5rem */
+}
+
+/* Component Styles */
+.notification {
+  font-size: var(--text-sm);
+  
+  &.success { 
+    color: var(--text-success); 
+  }
+  
+  &.error { 
+    color: var(--text-error); 
+  }
+  
+  &.warning { 
+    color: var(--text-warning); 
+  }
+}
+
+.data-table {
+  font-size: var(--text-sm);
+  
+  th {
+    font-weight: var(--font-semibold);
+    text-transform: uppercase;
+    letter-spacing: var(--tracking-wider);
+  }
+  
+  td {
+    font-weight: var(--font-normal);
+    font-variant-numeric: tabular-nums;
+  }
 }
