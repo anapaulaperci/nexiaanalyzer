@@ -397,3 +397,165 @@ All colors MUST be HSL.
 .shadow-nexia-glow {
   box-shadow: var(--shadow-glow);
 }
+
+/* Button System - NexIA Brand */
+
+/* Botão Primário - Roxo Sólido */
+.btn-primary {
+  background: var(--nexia-purple-dark);
+  color: white;
+  border: 1px solid var(--nexia-purple);
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background: var(--nexia-purple);
+  border-color: var(--nexia-purple-light);
+  box-shadow: 0 4px 20px rgba(45, 27, 105, 0.4);
+  transform: translateY(-2px);
+}
+
+.btn-primary:active {
+  background: var(--nexia-purple-darker);
+  transform: translateY(0);
+}
+
+/* Botão com Gradiente */
+.btn-gradient {
+  background: var(--gradient-purple);
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-gradient::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--gradient-purple-reverse);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.btn-gradient:hover::before {
+  opacity: 1;
+}
+
+.btn-gradient span {
+  position: relative;
+  z-index: 1;
+}
+
+.btn-gradient:hover {
+  box-shadow: 0 6px 30px rgba(45, 27, 105, 0.5);
+  transform: translateY(-2px);
+}
+
+/* Botão Outline */
+.btn-outline {
+  background: transparent;
+  color: white;
+  border: 2px solid var(--nexia-purple);
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.btn-outline:hover {
+  background: var(--nexia-purple-dark);
+  border-color: var(--nexia-purple-light);
+  box-shadow: 0 4px 20px rgba(45, 27, 105, 0.3);
+}
+
+/* Botão Ghost */
+.btn-ghost {
+  background: rgba(45, 27, 105, 0.1);
+  color: white;
+  border: 1px solid rgba(45, 27, 105, 0.3);
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.btn-ghost:hover {
+  background: rgba(45, 27, 105, 0.2);
+  border-color: var(--nexia-purple);
+}
+
+/* Tamanhos de Botão */
+.btn-sm {
+  padding: 8px 16px;
+  font-size: 14px;
+}
+
+.btn-lg {
+  padding: 16px 32px;
+  font-size: 18px;
+}
+
+/* Botão Icon */
+.btn-icon {
+  background: var(--nexia-purple-dark);
+  color: white;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--nexia-purple);
+  transition: all 0.3s ease;
+}
+
+.btn-icon:hover {
+  background: var(--gradient-purple);
+  transform: scale(1.1);
+  box-shadow: 0 4px 20px rgba(45, 27, 105, 0.4);
+}
+
+/* Estados de Loading e Disabled */
+.btn-loading {
+  opacity: 0.7;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.btn-disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+/* Button Group */
+.btn-group {
+  display: flex;
+  gap: 8px;
+}
+
+.btn-group .btn-primary:not(:last-child) {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.btn-group .btn-primary:not(:first-child) {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  margin-left: -1px;
+}
