@@ -306,3 +306,40 @@ All colors MUST be HSL.
     font-variant-numeric: tabular-nums;
   }
 }
+
+/* NexIA Utility Classes */
+.bg-nexia {
+  background-color: var(--nexia-purple-dark);
+}
+
+.text-nexia {
+  color: var(--nexia-purple-dark);
+}
+
+.border-nexia {
+  border-color: var(--nexia-purple-dark);
+}
+
+.bg-nexia-light {
+  background-color: var(--color-primary-light);
+}
+
+.bg-nexia-dark {
+  background-color: var(--color-primary-dark);
+}
+
+.bg-nexia-accent {
+  background-color: var(--color-accent);
+}
+
+.text-nexia-accent {
+  color: var(--color-accent);
+}
+
+.shadow-nexia {
+  box-shadow: var(--shadow-primary);
+}
+
+.shadow-nexia-glow {
+  box-shadow: var(--shadow-glow);
+}
