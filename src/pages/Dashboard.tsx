@@ -2,7 +2,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { FileText, Upload, Brain, ArrowRight, Users, Target, TrendingUp, Building2, CheckCircle2 } from "lucide-react";
 import { useNavigate } from "react-router-dom";
-import aiPromptAnalysis from "@/assets/ai-prompt-analysis.png";
+import aiAnalysisRealistic from "@/assets/ai-analysis-realistic.png";
 
 const Dashboard = () => {
   const navigate = useNavigate();
@@ -39,6 +39,11 @@ const Dashboard = () => {
           <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-hero bg-clip-text text-transparent">
             Personas Sintéticas
           </h2>
+        </div>
+        <div className="max-w-4xl mx-auto">
+          <p className="text-xl md:text-2xl text-muted-foreground leading-relaxed mb-8">
+            <strong className="text-foreground">Personas sintéticas</strong> são perfis de usuários/clientes gerados automaticamente por Inteligência Artificial através da análise massiva de dados reais do seu negócio, em vez de serem criadas manualmente através de pesquisas tradicionais.
+          </p>
           
           {/* Video Section */}
           <div className="w-full max-w-4xl mx-auto mb-8">
@@ -49,28 +54,6 @@ const Dashboard = () => {
                 allowFullScreen
                 title="Personas Sintéticas - Vídeo Explicativo"
               />
-            </div>
-          </div>
-        </div>
-        <div className="max-w-4xl mx-auto">
-          <p className="text-xl md:text-2xl text-muted-foreground leading-relaxed mb-8">
-            <strong className="text-foreground">Personas sintéticas</strong> são perfis de usuários/clientes gerados automaticamente por Inteligência Artificial através da análise massiva de dados reais do seu negócio, em vez de serem criadas manualmente através de pesquisas tradicionais.
-          </p>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
-            <div className="bg-gradient-to-br from-primary/10 to-primary-glow/5 p-6 rounded-lg border border-primary/20">
-              <TrendingUp className="w-8 h-8 text-primary mb-3 mx-auto" />
-              <h4 className="font-semibold text-foreground mb-2">Mais Precisão</h4>
-              <p className="text-sm text-muted-foreground">Dados comportamentais reais em vez de suposições</p>
-            </div>
-            <div className="bg-gradient-to-br from-primary/10 to-primary-glow/5 p-6 rounded-lg border border-primary/20">
-              <Target className="w-8 h-8 text-primary mb-3 mx-auto" />
-              <h4 className="font-semibold text-foreground mb-2">Segmentação Avançada</h4>
-              <p className="text-sm text-muted-foreground">Identifica padrões invisíveis ao olho humano</p>
-            </div>
-            <div className="bg-gradient-to-br from-primary/10 to-primary-glow/5 p-6 rounded-lg border border-primary/20">
-              <CheckCircle2 className="w-8 h-8 text-primary mb-3 mx-auto" />
-              <h4 className="font-semibold text-foreground mb-2">Rápido & Escalável</h4>
-              <p className="text-sm text-muted-foreground">Resultados em minutos, não semanas</p>
             </div>
           </div>
         </div>
@@ -111,6 +94,25 @@ const Dashboard = () => {
           </div>
         </CardContent>
       </Card>
+
+      {/* Benefits Cards */}
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="bg-gradient-to-br from-primary/10 to-primary-glow/5 p-6 rounded-lg border border-primary/20 animate-fade-in">
+          <TrendingUp className="w-8 h-8 text-primary mb-3 mx-auto" />
+          <h4 className="font-semibold text-foreground mb-2">Mais Precisão</h4>
+          <p className="text-sm text-muted-foreground">Dados comportamentais reais em vez de suposições</p>
+        </div>
+        <div className="bg-gradient-to-br from-primary/10 to-primary-glow/5 p-6 rounded-lg border border-primary/20 animate-fade-in" style={{ animationDelay: "0.1s" }}>
+          <Target className="w-8 h-8 text-primary mb-3 mx-auto" />
+          <h4 className="font-semibold text-foreground mb-2">Segmentação Avançada</h4>
+          <p className="text-sm text-muted-foreground">Identifica padrões invisíveis ao olho humano</p>
+        </div>
+        <div className="bg-gradient-to-br from-primary/10 to-primary-glow/5 p-6 rounded-lg border border-primary/20 animate-fade-in" style={{ animationDelay: "0.2s" }}>
+          <CheckCircle2 className="w-8 h-8 text-primary mb-3 mx-auto" />
+          <h4 className="font-semibold text-foreground mb-2">Rápido & Escalável</h4>
+          <p className="text-sm text-muted-foreground">Resultados em minutos, não semanas</p>
+        </div>
+      </div>
 
       {/* How to Create Section */}
       <div className="space-y-8">
@@ -327,7 +329,7 @@ const Dashboard = () => {
               
               <div className="flex justify-center">
                 <img 
-                  src={aiPromptAnalysis} 
+                  src={aiAnalysisRealistic} 
                   alt="Análise de IA com prompts especializados" 
                   className="w-full max-w-sm rounded-lg shadow-lg hover:scale-105 transition-transform duration-300"
                 />
