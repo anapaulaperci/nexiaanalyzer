@@ -1,6 +1,6 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { FileText, Upload, Brain, ArrowRight, Users, Target, TrendingUp, Building2, CheckCircle2, Globe, CreditCard, MessageSquare, Smartphone, UserCheck, BarChart } from "lucide-react";
+import { FileText, Upload, Brain, ArrowRight, Users, Target, TrendingUp, Building2, CheckCircle2, Globe, CreditCard, MessageSquare, Smartphone, UserCheck, BarChart, Clock, DollarSign, Zap, X } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 
 const Dashboard = () => {
@@ -238,41 +238,153 @@ const Dashboard = () => {
         </div>
       </div>
 
-      {/* Concept Explanation */}
-      <Card className="bg-gradient-to-r from-primary/5 to-primary-glow/5 border border-primary/20">
-        <CardContent className="p-8">
-          <div className="flex items-start gap-6">
-            <div className="w-16 h-16 rounded-full bg-gradient-primary flex items-center justify-center flex-shrink-0">
-              <Users className="w-8 h-8 text-white" />
+      {/* Enhanced Concept Explanation */}
+      <div className="relative py-16">
+        {/* Background Effects */}
+        <div className="absolute inset-0 bg-gradient-to-br from-red-500/5 via-orange-500/5 to-amber-500/5 rounded-3xl"></div>
+        <div className="absolute top-0 right-1/4 w-48 h-48 bg-red-500/10 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-0 left-1/4 w-48 h-48 bg-amber-500/10 rounded-full blur-3xl"></div>
+        
+        <div className="relative z-10 max-w-7xl mx-auto">
+          <div className="text-center mb-12">
+            <div className="w-20 h-20 mx-auto mb-6 bg-gradient-to-br from-orange-500 to-red-600 rounded-full flex items-center justify-center shadow-xl">
+              <Users className="w-10 h-10 text-white" />
             </div>
-            <div>
-              <h3 className="text-2xl font-semibold mb-4 text-foreground">
-                Por que Personas Sintéticas?
-              </h3>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-muted-foreground">
-                <div>
-                  <h4 className="font-semibold text-foreground mb-2">Tradicional</h4>
-                  <ul className="space-y-1 text-sm">
-                    <li>• Pesquisas manuais demoradas</li>
-                    <li>• Dados limitados e subjetivos</li>
-                    <li>• Alto custo de implementação</li>
-                    <li>• Personas baseadas em suposições</li>
-                  </ul>
-                </div>
-                <div>
-                  <h4 className="font-semibold text-foreground mb-2">Com IA</h4>
-                  <ul className="space-y-1 text-sm">
-                    <li>• Análise massiva de dados reais</li>
-                    <li>• Insights precisos e objetivos</li>
-                    <li>• Processo rápido e escalável</li>
-                    <li>• Personas baseadas em comportamentos</li>
-                  </ul>
-                </div>
-              </div>
+            <h3 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-orange-600 via-red-600 to-amber-600 bg-clip-text text-transparent">
+              Por que Personas Sintéticas?
+            </h3>
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+              Compare os métodos tradicionais com a revolução da Inteligência Artificial
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-stretch">
+            
+            {/* Método Tradicional */}
+            <div className="relative group">
+              <div className="absolute -inset-1 bg-gradient-to-r from-red-600 to-red-400 rounded-2xl blur opacity-20 group-hover:opacity-30 transition duration-300"></div>
+              <Card className="relative h-full bg-gradient-to-br from-red-50 to-red-100 dark:from-red-950/50 dark:to-red-900/50 border-2 border-red-200 dark:border-red-800 hover:border-red-400 dark:hover:border-red-600 transition-all duration-500">
+                <CardHeader className="text-center pb-6">
+                  <div className="w-16 h-16 mx-auto bg-gradient-to-br from-red-500 to-red-600 rounded-full flex items-center justify-center mb-4 shadow-lg">
+                    <Clock className="w-8 h-8 text-white" />
+                  </div>
+                  <CardTitle className="text-2xl font-bold text-red-700 dark:text-red-300 flex items-center gap-2 justify-center">
+                    <X className="w-6 h-6" />
+                    Método Tradicional
+                  </CardTitle>
+                  <p className="text-red-600 dark:text-red-400">Processo manual e demorado</p>
+                </CardHeader>
+                <CardContent className="space-y-6">
+                  {[
+                    { icon: Clock, title: "Pesquisas manuais demoradas", desc: "Semanas ou meses para completar", severity: "high" },
+                    { icon: Target, title: "Dados limitados e subjetivos", desc: "Baseado em pequenas amostras", severity: "high" },
+                    { icon: DollarSign, title: "Alto custo de implementação", desc: "Recursos humanos caros", severity: "medium" },
+                    { icon: Brain, title: "Personas baseadas em suposições", desc: "Sem validação comportamental", severity: "high" }
+                  ].map((item, index) => (
+                    <div key={index} className="bg-white/80 dark:bg-red-950/30 p-4 rounded-xl border border-red-200 dark:border-red-700 hover:bg-white dark:hover:bg-red-900/40 transition-all duration-300 transform hover:scale-102">
+                      <div className="flex items-start gap-4">
+                        <div className={`w-10 h-10 rounded-lg flex items-center justify-center shadow-lg ${
+                          item.severity === 'high' 
+                            ? 'bg-gradient-to-br from-red-500 to-red-600' 
+                            : 'bg-gradient-to-br from-orange-500 to-red-500'
+                        }`}>
+                          <item.icon className="w-5 h-5 text-white" />
+                        </div>
+                        <div className="flex-1">
+                          <h4 className="font-semibold text-red-800 dark:text-red-200 mb-1">
+                            {item.title}
+                          </h4>
+                          <p className="text-sm text-red-600 dark:text-red-400">{item.desc}</p>
+                        </div>
+                        <div className={`w-2 h-2 rounded-full ${
+                          item.severity === 'high' ? 'bg-red-500' : 'bg-orange-500'
+                        }`}></div>
+                      </div>
+                    </div>
+                  ))}
+                  
+                  {/* Stats tradicional */}
+                  <div className="bg-gradient-to-r from-red-100 to-orange-100 dark:from-red-900/30 dark:to-orange-900/30 p-6 rounded-xl border border-red-200 dark:border-red-700">
+                    <h5 className="font-bold text-red-800 dark:text-red-200 mb-3 text-center">📊 Estatísticas Típicas</h5>
+                    <div className="grid grid-cols-2 gap-4 text-center">
+                      <div>
+                        <div className="text-2xl font-bold text-red-600">2-6 meses</div>
+                        <div className="text-xs text-red-500">Tempo médio</div>
+                      </div>
+                      <div>
+                        <div className="text-2xl font-bold text-red-600">30-70%</div>
+                        <div className="text-xs text-red-500">Taxa de erro</div>
+                      </div>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
+
+            {/* Método com IA */}
+            <div className="relative group">
+              <div className="absolute -inset-1 bg-gradient-to-r from-green-600 to-emerald-400 rounded-2xl blur opacity-20 group-hover:opacity-30 transition duration-300"></div>
+              <Card className="relative h-full bg-gradient-to-br from-green-50 to-emerald-100 dark:from-green-950/50 dark:to-emerald-900/50 border-2 border-green-200 dark:border-green-800 hover:border-green-400 dark:hover:border-green-600 transition-all duration-500">
+                <CardHeader className="text-center pb-6">
+                  <div className="w-16 h-16 mx-auto bg-gradient-to-br from-green-500 to-emerald-600 rounded-full flex items-center justify-center mb-4 shadow-lg animate-pulse">
+                    <Zap className="w-8 h-8 text-white" />
+                  </div>
+                  <CardTitle className="text-2xl font-bold text-green-700 dark:text-green-300 flex items-center gap-2 justify-center">
+                    <CheckCircle2 className="w-6 h-6" />
+                    Com Inteligência Artificial
+                  </CardTitle>
+                  <p className="text-green-600 dark:text-green-400">Processo inteligente e automatizado</p>
+                </CardHeader>
+                <CardContent className="space-y-6">
+                  {[
+                    { icon: BarChart, title: "Análise massiva de dados reais", desc: "Milhões de pontos de dados processados", highlight: true },
+                    { icon: Target, title: "Insights precisos e objetivos", desc: "Baseado em comportamentos reais", highlight: true },
+                    { icon: Zap, title: "Processo rápido e escalável", desc: "Resultados em minutos", highlight: true },
+                    { icon: Brain, title: "Personas baseadas em comportamentos", desc: "Validação científica contínua", highlight: true }
+                  ].map((item, index) => (
+                    <div key={index} className="bg-white/90 dark:bg-green-950/30 p-4 rounded-xl border border-green-200 dark:border-green-700 hover:bg-white dark:hover:bg-green-900/40 transition-all duration-300 transform hover:scale-102 hover:shadow-lg">
+                      <div className="flex items-start gap-4">
+                        <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-green-500 to-emerald-600 flex items-center justify-center shadow-lg">
+                          <item.icon className="w-5 h-5 text-white" />
+                        </div>
+                        <div className="flex-1">
+                          <h4 className="font-semibold text-green-800 dark:text-green-200 mb-1">
+                            {item.title}
+                          </h4>
+                          <p className="text-sm text-green-600 dark:text-green-400">{item.desc}</p>
+                        </div>
+                        <div className="w-2 h-2 rounded-full bg-green-500 animate-pulse"></div>
+                      </div>
+                    </div>
+                  ))}
+                  
+                  {/* Stats IA */}
+                  <div className="bg-gradient-to-r from-green-100 to-emerald-100 dark:from-green-900/30 dark:to-emerald-900/30 p-6 rounded-xl border border-green-200 dark:border-green-700">
+                    <h5 className="font-bold text-green-800 dark:text-green-200 mb-3 text-center">🚀 Performance IA</h5>
+                    <div className="grid grid-cols-2 gap-4 text-center">
+                      <div>
+                        <div className="text-2xl font-bold text-green-600">5-15 min</div>
+                        <div className="text-xs text-green-500">Tempo médio</div>
+                      </div>
+                      <div>
+                        <div className="text-2xl font-bold text-green-600">87-95%</div>
+                        <div className="text-xs text-green-500">Precisão</div>
+                      </div>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
             </div>
           </div>
-        </CardContent>
-      </Card>
+
+          {/* Comparison Arrow */}
+          <div className="flex justify-center mt-8">
+            <div className="bg-gradient-to-r from-red-500 to-green-500 p-4 rounded-full shadow-xl">
+              <ArrowRight className="w-8 h-8 text-white" />
+            </div>
+          </div>
+        </div>
+      </div>
 
       {/* Benefits Cards */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
