@@ -6,11 +6,11 @@ const HorizontalNav = () => {
   const location = useLocation();
   
   const navItems = [
-    { title: "Início", url: "/dashboard", icon: Home },
-    { title: "Tutorial", url: "/dashboard/tutorial", icon: BookOpen },
-    { title: "Prompts", url: "/dashboard/prompts", icon: MessageSquare },
-    { title: "Copy", url: "/dashboard/copy", icon: Copy },
-    { title: "Planejamento de Campanha", url: "/dashboard/campaign", icon: Sparkles },
+    { title: "Início", url: "/", icon: Home },
+    { title: "Tutorial", url: "/tutorial", icon: BookOpen },
+    { title: "Prompts", url: "/prompts", icon: MessageSquare },
+    { title: "Copy", url: "/copy", icon: Copy },
+    { title: "Planejamento de Campanha", url: "/campaign", icon: Sparkles },
   ];
 
   return (
@@ -37,15 +37,15 @@ const HorizontalNav = () => {
           {/* Navigation */}
           <div className="flex items-center space-x-1">
             {navItems.map((item) => {
-              const isActive = item.url === "/dashboard" 
-                ? location.pathname === "/dashboard" 
+              const isActive = item.url === "/" 
+                ? location.pathname === "/" 
                 : location.pathname.startsWith(item.url);
               
               return (
                 <NavLink
                   key={item.url}
                   to={item.url}
-                  end={item.url === "/dashboard"}
+                  end={item.url === "/"}
                   className={cn(
                     "flex items-center gap-2 px-4 py-2 rounded-lg transition-all duration-200 text-sm font-medium",
                     isActive
