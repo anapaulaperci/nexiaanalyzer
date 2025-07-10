@@ -289,50 +289,40 @@ const Dashboard = () => {
             </CardTitle>
           </CardHeader>
           <CardContent>
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 items-center">
-              <div>
-                <div className="bg-green-50 dark:bg-green-950/20 p-6 rounded-lg mb-6 border border-green-200 dark:border-green-800">
-                  <div className="flex items-center gap-3 mb-4">
-                    <div className="w-12 h-12 rounded-full bg-green-100 dark:bg-green-900/50 flex items-center justify-center">
-                      <Brain className="w-6 h-6 text-green-600" />
-                    </div>
-                    <div>
-                      <h4 className="font-semibold text-foreground">🎯 Prompts Inteligentes</h4>
-                      <p className="text-sm text-muted-foreground">Análise comportamental avançada</p>
-                    </div>
+            <div>
+              <div className="bg-green-50 dark:bg-green-950/20 p-6 rounded-lg mb-6 border border-green-200 dark:border-green-800">
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="w-12 h-12 rounded-full bg-green-100 dark:bg-green-900/50 flex items-center justify-center">
+                    <Brain className="w-6 h-6 text-green-600" />
                   </div>
-                </div>
-                
-                <p className="text-muted-foreground mb-4 leading-relaxed">
-                  Use nossos prompts otimizados para gerar personas sintéticas baseadas em dados reais comportamentais. Nossa biblioteca contém modelos especializados para diferentes tipos de análise.
-                </p>
-                
-                <div className="space-y-3">
-                  <div className="flex items-center gap-2 text-sm">
-                    <CheckCircle2 className="w-4 h-4 text-green-500" />
-                    <span className="text-muted-foreground">Análise de sentimentos dos clientes</span>
-                  </div>
-                  <div className="flex items-center gap-2 text-sm">
-                    <CheckCircle2 className="w-4 h-4 text-green-500" />
-                    <span className="text-muted-foreground">Segmentação de audiência comportamental</span>
-                  </div>
-                  <div className="flex items-center gap-2 text-sm">
-                    <CheckCircle2 className="w-4 h-4 text-green-500" />
-                    <span className="text-muted-foreground">Jornada do cliente detalhada</span>
-                  </div>
-                  <div className="flex items-center gap-2 text-sm">
-                    <CheckCircle2 className="w-4 h-4 text-green-500" />
-                    <span className="text-muted-foreground">Insights ocultos e padrões</span>
+                  <div>
+                    <h4 className="font-semibold text-foreground">🎯 Prompts Inteligentes</h4>
+                    <p className="text-sm text-muted-foreground">Análise comportamental avançada</p>
                   </div>
                 </div>
               </div>
               
-              <div className="flex justify-center">
-                <img 
-                  src={aiAnalysisRealistic} 
-                  alt="Análise de IA com prompts especializados" 
-                  className="w-full max-w-sm rounded-lg shadow-lg hover:scale-105 transition-transform duration-300"
-                />
+              <p className="text-muted-foreground mb-4 leading-relaxed">
+                Use nossos prompts otimizados para gerar personas sintéticas baseadas em dados reais comportamentais. Nossa biblioteca contém modelos especializados para diferentes tipos de análise.
+              </p>
+              
+              <div className="space-y-3">
+                <div className="flex items-center gap-2 text-sm">
+                  <CheckCircle2 className="w-4 h-4 text-green-500" />
+                  <span className="text-muted-foreground">Análise de sentimentos dos clientes</span>
+                </div>
+                <div className="flex items-center gap-2 text-sm">
+                  <CheckCircle2 className="w-4 h-4 text-green-500" />
+                  <span className="text-muted-foreground">Segmentação de audiência comportamental</span>
+                </div>
+                <div className="flex items-center gap-2 text-sm">
+                  <CheckCircle2 className="w-4 h-4 text-green-500" />
+                  <span className="text-muted-foreground">Jornada do cliente detalhada</span>
+                </div>
+                <div className="flex items-center gap-2 text-sm">
+                  <CheckCircle2 className="w-4 h-4 text-green-500" />
+                  <span className="text-muted-foreground">Insights ocultos e padrões</span>
+                </div>
               </div>
             </div>
           </CardContent>
