@@ -45,6 +45,17 @@ const Dashboard = () => {
             <strong className="text-foreground">Personas sintéticas</strong> são perfis de usuários/clientes gerados automaticamente por Inteligência Artificial através da análise massiva de dados reais do seu negócio, em vez de serem criadas manualmente através de pesquisas tradicionais.
           </p>
           
+          {/* Diagram Section */}
+          <div className="w-full max-w-5xl mx-auto mb-8">
+            <div className="relative rounded-lg overflow-hidden shadow-2xl bg-gradient-to-br from-primary/5 to-primary-glow/5 border border-primary/20 p-4">
+              <img 
+                src="/lovable-uploads/0a58e08c-f8c5-4632-968d-9a5a784a64ec.png"
+                alt="Transformando Big Data em Insights Acionáveis com Inteligência Artificial"
+                className="w-full h-auto rounded-lg"
+              />
+            </div>
+          </div>
+          
           {/* Video Section */}
           <div className="w-full max-w-4xl mx-auto mb-8">
             <div className="relative rounded-lg overflow-hidden shadow-2xl bg-gradient-to-br from-primary/5 to-primary-glow/5 border border-primary/20">
