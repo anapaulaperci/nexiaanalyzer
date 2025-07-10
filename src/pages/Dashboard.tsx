@@ -46,6 +46,154 @@ const Dashboard = () => {
         </div>
       </div>
 
+      {/* Enhanced Concept Explanation */}
+      <div className="relative py-16">
+        {/* Background Effects */}
+        <div className="absolute inset-0 bg-gradient-to-br from-red-500/5 via-orange-500/5 to-amber-500/5 rounded-3xl"></div>
+        <div className="absolute top-0 right-1/4 w-48 h-48 bg-red-500/10 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-0 left-1/4 w-48 h-48 bg-amber-500/10 rounded-full blur-3xl"></div>
+        
+        <div className="relative z-10 max-w-7xl mx-auto">
+          <div className="text-center mb-12">
+            <div className="w-20 h-20 mx-auto mb-6 bg-gradient-to-br from-orange-500 to-red-600 rounded-full flex items-center justify-center shadow-xl">
+              <Users className="w-10 h-10 text-white" />
+            </div>
+            <h3 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-orange-600 via-red-600 to-amber-600 bg-clip-text text-transparent">
+              Por que Personas Sintéticas?
+            </h3>
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+              Compare os métodos tradicionais com a revolução da Inteligência Artificial
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-stretch">
+            
+            {/* Método Tradicional */}
+            <div className="relative group">
+              <div className="absolute -inset-1 bg-gradient-to-r from-red-600 to-red-400 rounded-2xl blur opacity-20 group-hover:opacity-30 transition duration-300"></div>
+              <Card className="relative h-full bg-gradient-to-br from-red-50 to-red-100 dark:from-red-950/50 dark:to-red-900/50 border-2 border-red-200 dark:border-red-800 hover:border-red-400 dark:hover:border-red-600 transition-all duration-500">
+                <CardHeader className="text-center pb-6">
+                  <div className="w-16 h-16 mx-auto bg-gradient-to-br from-red-500 to-red-600 rounded-full flex items-center justify-center mb-4 shadow-lg">
+                    <Clock className="w-8 h-8 text-white" />
+                  </div>
+                  <CardTitle className="text-2xl font-bold text-red-700 dark:text-red-300 flex items-center gap-2 justify-center">
+                    <X className="w-6 h-6" />
+                    Método Tradicional
+                  </CardTitle>
+                  <p className="text-red-600 dark:text-red-400">Processo manual e demorado</p>
+                </CardHeader>
+                <CardContent className="space-y-6">
+                  {[
+                    { icon: Clock, title: "Pesquisas manuais demoradas", desc: "Semanas ou meses para completar", severity: "high" },
+                    { icon: Target, title: "Dados limitados e subjetivos", desc: "Baseado em pequenas amostras", severity: "high" },
+                    { icon: DollarSign, title: "Alto custo de implementação", desc: "Recursos humanos caros", severity: "medium" },
+                    { icon: Brain, title: "Personas baseadas em suposições", desc: "Sem validação comportamental", severity: "high" }
+                  ].map((item, index) => (
+                    <div key={index} className="bg-white/80 dark:bg-red-950/30 p-4 rounded-xl border border-red-200 dark:border-red-700 hover:bg-white dark:hover:bg-red-900/40 transition-all duration-300 transform hover:scale-102">
+                      <div className="flex items-start gap-4">
+                        <div className={`w-10 h-10 rounded-lg flex items-center justify-center shadow-lg ${
+                          item.severity === 'high' 
+                            ? 'bg-gradient-to-br from-red-500 to-red-600' 
+                            : 'bg-gradient-to-br from-orange-500 to-red-500'
+                        }`}>
+                          <item.icon className="w-5 h-5 text-white" />
+                        </div>
+                        <div className="flex-1">
+                          <h4 className="font-semibold text-red-800 dark:text-red-200 mb-1">
+                            {item.title}
+                          </h4>
+                          <p className="text-sm text-red-600 dark:text-red-400">{item.desc}</p>
+                        </div>
+                        <div className={`w-2 h-2 rounded-full ${
+                          item.severity === 'high' ? 'bg-red-500' : 'bg-orange-500'
+                        }`}></div>
+                      </div>
+                    </div>
+                  ))}
+                  
+                  {/* Stats tradicional */}
+                  <div className="bg-gradient-to-r from-red-100 to-orange-100 dark:from-red-900/30 dark:to-orange-900/30 p-6 rounded-xl border border-red-200 dark:border-red-700">
+                    <h5 className="font-bold text-red-800 dark:text-red-200 mb-3 text-center">📊 Estatísticas Típicas</h5>
+                    <div className="grid grid-cols-2 gap-4 text-center">
+                      <div>
+                        <div className="text-2xl font-bold text-red-600">2-6 meses</div>
+                        <div className="text-xs text-red-500">Tempo médio</div>
+                      </div>
+                      <div>
+                        <div className="text-2xl font-bold text-red-600">30-70%</div>
+                        <div className="text-xs text-red-500">Taxa de erro</div>
+                      </div>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
+
+            {/* Método com IA */}
+            <div className="relative group">
+              <div className="absolute -inset-1 bg-gradient-to-r from-green-600 to-emerald-400 rounded-2xl blur opacity-20 group-hover:opacity-30 transition duration-300"></div>
+              <Card className="relative h-full bg-gradient-to-br from-green-50 to-emerald-100 dark:from-green-950/50 dark:to-emerald-900/50 border-2 border-green-200 dark:border-green-800 hover:border-green-400 dark:hover:border-green-600 transition-all duration-500">
+                <CardHeader className="text-center pb-6">
+                  <div className="w-16 h-16 mx-auto bg-gradient-to-br from-green-500 to-emerald-600 rounded-full flex items-center justify-center mb-4 shadow-lg animate-pulse">
+                    <Zap className="w-8 h-8 text-white" />
+                  </div>
+                  <CardTitle className="text-2xl font-bold text-green-700 dark:text-green-300 flex items-center gap-2 justify-center">
+                    <CheckCircle2 className="w-6 h-6" />
+                    Com Inteligência Artificial
+                  </CardTitle>
+                  <p className="text-green-600 dark:text-green-400">Processo inteligente e automatizado</p>
+                </CardHeader>
+                <CardContent className="space-y-6">
+                  {[
+                    { icon: BarChart, title: "Análise massiva de dados reais", desc: "Milhões de pontos de dados processados", highlight: true },
+                    { icon: Target, title: "Insights precisos e objetivos", desc: "Baseado em comportamentos reais", highlight: true },
+                    { icon: Zap, title: "Processo rápido e escalável", desc: "Resultados em minutos", highlight: true },
+                    { icon: Brain, title: "Personas baseadas em comportamentos", desc: "Validação científica contínua", highlight: true }
+                  ].map((item, index) => (
+                    <div key={index} className="bg-white/90 dark:bg-green-950/30 p-4 rounded-xl border border-green-200 dark:border-green-700 hover:bg-white dark:hover:bg-green-900/40 transition-all duration-300 transform hover:scale-102 hover:shadow-lg">
+                      <div className="flex items-start gap-4">
+                        <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-green-500 to-emerald-600 flex items-center justify-center shadow-lg">
+                          <item.icon className="w-5 h-5 text-white" />
+                        </div>
+                        <div className="flex-1">
+                          <h4 className="font-semibold text-green-800 dark:text-green-200 mb-1">
+                            {item.title}
+                          </h4>
+                          <p className="text-sm text-green-600 dark:text-green-400">{item.desc}</p>
+                        </div>
+                        <div className="w-2 h-2 rounded-full bg-green-500 animate-pulse"></div>
+                      </div>
+                    </div>
+                  ))}
+                  
+                  {/* Stats IA */}
+                  <div className="bg-gradient-to-r from-green-100 to-emerald-100 dark:from-green-900/30 dark:to-emerald-900/30 p-6 rounded-xl border border-green-200 dark:border-green-700">
+                    <h5 className="font-bold text-green-800 dark:text-green-200 mb-3 text-center">🚀 Performance IA</h5>
+                    <div className="grid grid-cols-2 gap-4 text-center">
+                      <div>
+                        <div className="text-2xl font-bold text-green-600">5-15 min</div>
+                        <div className="text-xs text-green-500">Tempo médio</div>
+                      </div>
+                      <div>
+                        <div className="text-2xl font-bold text-green-600">87-95%</div>
+                        <div className="text-xs text-green-500">Precisão</div>
+                      </div>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
+          </div>
+
+          {/* Comparison Arrow */}
+          <div className="flex justify-center mt-8">
+            <div className="bg-gradient-to-r from-red-500 to-green-500 p-4 rounded-full shadow-xl">
+              <ArrowRight className="w-8 h-8 text-white" />
+            </div>
+          </div>
+        </div>
+      </div>
+
       {/* Big Data to Insights Flow - Enhanced Visual */}
       <div className="relative space-y-12 py-16">
         {/* Background Effects */}
@@ -238,404 +386,298 @@ const Dashboard = () => {
         </div>
       </div>
 
-      {/* Enhanced Concept Explanation */}
+      {/* How to Create Section - Enhanced */}
       <div className="relative py-16">
         {/* Background Effects */}
-        <div className="absolute inset-0 bg-gradient-to-br from-red-500/5 via-orange-500/5 to-amber-500/5 rounded-3xl"></div>
-        <div className="absolute top-0 right-1/4 w-48 h-48 bg-red-500/10 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-0 left-1/4 w-48 h-48 bg-amber-500/10 rounded-full blur-3xl"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-indigo-500/5 via-purple-500/5 to-pink-500/5 rounded-3xl"></div>
+        <div className="absolute top-0 left-1/4 w-48 h-48 bg-indigo-500/10 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-0 right-1/4 w-48 h-48 bg-pink-500/10 rounded-full blur-3xl"></div>
         
         <div className="relative z-10 max-w-7xl mx-auto">
-          <div className="text-center mb-12">
-            <div className="w-20 h-20 mx-auto mb-6 bg-gradient-to-br from-orange-500 to-red-600 rounded-full flex items-center justify-center shadow-xl">
-              <Users className="w-10 h-10 text-white" />
+          <div className="text-center mb-16">
+            <div className="w-20 h-20 mx-auto mb-6 bg-gradient-to-br from-indigo-500 to-purple-600 rounded-full flex items-center justify-center shadow-xl">
+              <FileText className="w-10 h-10 text-white" />
             </div>
-            <h3 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-orange-600 via-red-600 to-amber-600 bg-clip-text text-transparent">
-              Por que Personas Sintéticas?
+            <h3 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 bg-clip-text text-transparent">
+              Como Montar a Sua
             </h3>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Compare os métodos tradicionais com a revolução da Inteligência Artificial
+              Transforme dados brutos em personas sintéticas precisas em 3 passos simples
             </p>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-stretch">
-            
-            {/* Método Tradicional */}
-            <div className="relative group">
-              <div className="absolute -inset-1 bg-gradient-to-r from-red-600 to-red-400 rounded-2xl blur opacity-20 group-hover:opacity-30 transition duration-300"></div>
-              <Card className="relative h-full bg-gradient-to-br from-red-50 to-red-100 dark:from-red-950/50 dark:to-red-900/50 border-2 border-red-200 dark:border-red-800 hover:border-red-400 dark:hover:border-red-600 transition-all duration-500">
-                <CardHeader className="text-center pb-6">
-                  <div className="w-16 h-16 mx-auto bg-gradient-to-br from-red-500 to-red-600 rounded-full flex items-center justify-center mb-4 shadow-lg">
-                    <Clock className="w-8 h-8 text-white" />
-                  </div>
-                  <CardTitle className="text-2xl font-bold text-red-700 dark:text-red-300 flex items-center gap-2 justify-center">
-                    <X className="w-6 h-6" />
-                    Método Tradicional
-                  </CardTitle>
-                  <p className="text-red-600 dark:text-red-400">Processo manual e demorado</p>
-                </CardHeader>
-                <CardContent className="space-y-6">
-                  {[
-                    { icon: Clock, title: "Pesquisas manuais demoradas", desc: "Semanas ou meses para completar", severity: "high" },
-                    { icon: Target, title: "Dados limitados e subjetivos", desc: "Baseado em pequenas amostras", severity: "high" },
-                    { icon: DollarSign, title: "Alto custo de implementação", desc: "Recursos humanos caros", severity: "medium" },
-                    { icon: Brain, title: "Personas baseadas em suposições", desc: "Sem validação comportamental", severity: "high" }
-                  ].map((item, index) => (
-                    <div key={index} className="bg-white/80 dark:bg-red-950/30 p-4 rounded-xl border border-red-200 dark:border-red-700 hover:bg-white dark:hover:bg-red-900/40 transition-all duration-300 transform hover:scale-102">
-                      <div className="flex items-start gap-4">
-                        <div className={`w-10 h-10 rounded-lg flex items-center justify-center shadow-lg ${
-                          item.severity === 'high' 
-                            ? 'bg-gradient-to-br from-red-500 to-red-600' 
-                            : 'bg-gradient-to-br from-orange-500 to-red-500'
-                        }`}>
-                          <item.icon className="w-5 h-5 text-white" />
-                        </div>
-                        <div className="flex-1">
-                          <h4 className="font-semibold text-red-800 dark:text-red-200 mb-1">
-                            {item.title}
-                          </h4>
-                          <p className="text-sm text-red-600 dark:text-red-400">{item.desc}</p>
-                        </div>
-                        <div className={`w-2 h-2 rounded-full ${
-                          item.severity === 'high' ? 'bg-red-500' : 'bg-orange-500'
-                        }`}></div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {steps.map((step, index) => (
+              <div key={index} className="relative group">
+                <div className={`absolute -inset-1 rounded-2xl blur opacity-25 group-hover:opacity-40 transition duration-300 ${
+                  index === 0 ? 'bg-gradient-to-r from-blue-600 to-blue-400' :
+                  index === 1 ? 'bg-gradient-to-r from-purple-600 to-purple-400' :
+                  'bg-gradient-to-r from-green-600 to-green-400'
+                }`}></div>
+                <Card className={`relative bg-gradient-to-br border-2 transition-all duration-500 transform hover:scale-105 ${
+                  index === 0 ? 'from-blue-50 to-blue-100 dark:from-blue-950 dark:to-blue-900 border-blue-200 dark:border-blue-800 hover:border-blue-400 dark:hover:border-blue-600' :
+                  index === 1 ? 'from-purple-50 to-purple-100 dark:from-purple-950 dark:to-purple-900 border-purple-200 dark:border-purple-800 hover:border-purple-400 dark:hover:border-purple-600' :
+                  'from-green-50 to-green-100 dark:from-green-950 dark:to-green-900 border-green-200 dark:border-green-800 hover:border-green-400 dark:hover:border-green-600'
+                }`}>
+                  <CardContent className="p-8 text-center">
+                    <div className="mb-6 relative">
+                      <div className={`w-20 h-20 mx-auto rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-xl ${
+                        index === 0 ? 'bg-gradient-to-br from-blue-500 to-blue-600' :
+                        index === 1 ? 'bg-gradient-to-br from-purple-500 to-purple-600' :
+                        'bg-gradient-to-br from-green-500 to-green-600'
+                      }`}>
+                        <step.icon className="w-10 h-10 text-white" />
                       </div>
+                      {index < steps.length - 1 && (
+                        <div className="hidden md:block absolute top-10 left-full w-full h-0.5 bg-gradient-to-r from-indigo-400 to-purple-400 animate-pulse"></div>
+                      )}
                     </div>
-                  ))}
-                  
-                  {/* Stats tradicional */}
-                  <div className="bg-gradient-to-r from-red-100 to-orange-100 dark:from-red-900/30 dark:to-orange-900/30 p-6 rounded-xl border border-red-200 dark:border-red-700">
-                    <h5 className="font-bold text-red-800 dark:text-red-200 mb-3 text-center">📊 Estatísticas Típicas</h5>
-                    <div className="grid grid-cols-2 gap-4 text-center">
-                      <div>
-                        <div className="text-2xl font-bold text-red-600">2-6 meses</div>
-                        <div className="text-xs text-red-500">Tempo médio</div>
-                      </div>
-                      <div>
-                        <div className="text-2xl font-bold text-red-600">30-70%</div>
-                        <div className="text-xs text-red-500">Taxa de erro</div>
-                      </div>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
-            </div>
-
-            {/* Método com IA */}
-            <div className="relative group">
-              <div className="absolute -inset-1 bg-gradient-to-r from-green-600 to-emerald-400 rounded-2xl blur opacity-20 group-hover:opacity-30 transition duration-300"></div>
-              <Card className="relative h-full bg-gradient-to-br from-green-50 to-emerald-100 dark:from-green-950/50 dark:to-emerald-900/50 border-2 border-green-200 dark:border-green-800 hover:border-green-400 dark:hover:border-green-600 transition-all duration-500">
-                <CardHeader className="text-center pb-6">
-                  <div className="w-16 h-16 mx-auto bg-gradient-to-br from-green-500 to-emerald-600 rounded-full flex items-center justify-center mb-4 shadow-lg animate-pulse">
-                    <Zap className="w-8 h-8 text-white" />
-                  </div>
-                  <CardTitle className="text-2xl font-bold text-green-700 dark:text-green-300 flex items-center gap-2 justify-center">
-                    <CheckCircle2 className="w-6 h-6" />
-                    Com Inteligência Artificial
-                  </CardTitle>
-                  <p className="text-green-600 dark:text-green-400">Processo inteligente e automatizado</p>
-                </CardHeader>
-                <CardContent className="space-y-6">
-                  {[
-                    { icon: BarChart, title: "Análise massiva de dados reais", desc: "Milhões de pontos de dados processados", highlight: true },
-                    { icon: Target, title: "Insights precisos e objetivos", desc: "Baseado em comportamentos reais", highlight: true },
-                    { icon: Zap, title: "Processo rápido e escalável", desc: "Resultados em minutos", highlight: true },
-                    { icon: Brain, title: "Personas baseadas em comportamentos", desc: "Validação científica contínua", highlight: true }
-                  ].map((item, index) => (
-                    <div key={index} className="bg-white/90 dark:bg-green-950/30 p-4 rounded-xl border border-green-200 dark:border-green-700 hover:bg-white dark:hover:bg-green-900/40 transition-all duration-300 transform hover:scale-102 hover:shadow-lg">
-                      <div className="flex items-start gap-4">
-                        <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-green-500 to-emerald-600 flex items-center justify-center shadow-lg">
-                          <item.icon className="w-5 h-5 text-white" />
-                        </div>
-                        <div className="flex-1">
-                          <h4 className="font-semibold text-green-800 dark:text-green-200 mb-1">
-                            {item.title}
-                          </h4>
-                          <p className="text-sm text-green-600 dark:text-green-400">{item.desc}</p>
-                        </div>
-                        <div className="w-2 h-2 rounded-full bg-green-500 animate-pulse"></div>
-                      </div>
-                    </div>
-                  ))}
-                  
-                  {/* Stats IA */}
-                  <div className="bg-gradient-to-r from-green-100 to-emerald-100 dark:from-green-900/30 dark:to-emerald-900/30 p-6 rounded-xl border border-green-200 dark:border-green-700">
-                    <h5 className="font-bold text-green-800 dark:text-green-200 mb-3 text-center">🚀 Performance IA</h5>
-                    <div className="grid grid-cols-2 gap-4 text-center">
-                      <div>
-                        <div className="text-2xl font-bold text-green-600">5-15 min</div>
-                        <div className="text-xs text-green-500">Tempo médio</div>
-                      </div>
-                      <div>
-                        <div className="text-2xl font-bold text-green-600">87-95%</div>
-                        <div className="text-xs text-green-500">Precisão</div>
-                      </div>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
-            </div>
-          </div>
-
-          {/* Comparison Arrow */}
-          <div className="flex justify-center mt-8">
-            <div className="bg-gradient-to-r from-red-500 to-green-500 p-4 rounded-full shadow-xl">
-              <ArrowRight className="w-8 h-8 text-white" />
-            </div>
+                    
+                    <h4 className={`text-xl font-semibold mb-4 ${
+                      index === 0 ? 'text-blue-800 dark:text-blue-200' :
+                      index === 1 ? 'text-purple-800 dark:text-purple-200' :
+                      'text-green-800 dark:text-green-200'
+                    }`}>
+                      {step.title}
+                    </h4>
+                    
+                    <p className={`leading-relaxed ${
+                      index === 0 ? 'text-blue-600 dark:text-blue-400' :
+                      index === 1 ? 'text-purple-600 dark:text-purple-400' :
+                      'text-green-600 dark:text-green-400'
+                    }`}>
+                      {step.description}
+                    </p>
+                  </CardContent>
+                </Card>
+              </div>
+            ))}
           </div>
         </div>
       </div>
 
-      {/* Benefits Cards */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-        <div className="bg-gradient-to-br from-primary/10 to-primary-glow/5 p-6 rounded-lg border border-primary/20 animate-fade-in">
-          <TrendingUp className="w-8 h-8 text-primary mb-3 mx-auto" />
-          <h4 className="font-semibold text-foreground mb-2">Mais Precisão</h4>
-          <p className="text-sm text-muted-foreground">Dados comportamentais reais em vez de suposições</p>
-        </div>
-        <div className="bg-gradient-to-br from-primary/10 to-primary-glow/5 p-6 rounded-lg border border-primary/20 animate-fade-in" style={{ animationDelay: "0.1s" }}>
-          <Target className="w-8 h-8 text-primary mb-3 mx-auto" />
-          <h4 className="font-semibold text-foreground mb-2">Segmentação Avançada</h4>
-          <p className="text-sm text-muted-foreground">Identifica padrões invisíveis ao olho humano</p>
-        </div>
-        <div className="bg-gradient-to-br from-primary/10 to-primary-glow/5 p-6 rounded-lg border border-primary/20 animate-fade-in" style={{ animationDelay: "0.2s" }}>
-          <CheckCircle2 className="w-8 h-8 text-primary mb-3 mx-auto" />
-          <h4 className="font-semibold text-foreground mb-2">Rápido & Escalável</h4>
-          <p className="text-sm text-muted-foreground">Resultados em minutos, não semanas</p>
-        </div>
-      </div>
-
-      {/* How to Create Section */}
-      <div className="space-y-8">
-        <div className="text-center">
-          <h3 className="text-3xl md:text-4xl font-bold mb-4 bg-gradient-hero bg-clip-text text-transparent">
-            Como Montar a Sua
-          </h3>
-        </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {steps.map((step, index) => (
-            <Card 
-              key={index} 
-              className="bg-card/70 backdrop-blur-sm border border-border/50 hover:border-primary/30 transition-all duration-300 hover:shadow-glow group animate-fade-in"
-              style={{ animationDelay: `${index * 0.1}s` }}
-            >
-              <CardContent className="p-8 text-center">
-                <div className="mb-6 relative">
-                  <div className="w-20 h-20 mx-auto rounded-full bg-gradient-primary flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg">
-                    <step.icon className="w-10 h-10 text-white" />
+      {/* Detailed Steps - Enhanced */}
+      <div className="relative py-16">
+        {/* Background Effects */}
+        <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/5 via-teal-500/5 to-emerald-500/5 rounded-3xl"></div>
+        <div className="absolute top-0 right-1/4 w-48 h-48 bg-cyan-500/10 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-0 left-1/4 w-48 h-48 bg-teal-500/10 rounded-full blur-3xl"></div>
+        
+        <div className="relative z-10 max-w-7xl mx-auto space-y-8">
+          <div className="relative group">
+            <div className="absolute -inset-1 bg-gradient-to-r from-blue-600 to-blue-400 rounded-2xl blur opacity-20 group-hover:opacity-30 transition duration-300"></div>
+            <Card className="relative bg-gradient-to-br from-blue-50 to-blue-100 dark:from-blue-950/50 dark:to-blue-900/50 border-2 border-blue-200 dark:border-blue-800 hover:border-blue-400 dark:hover:border-blue-600 transition-all duration-500">
+              <CardHeader>
+                <CardTitle className="flex items-center gap-3">
+                  <div className="w-12 h-12 rounded-full bg-gradient-to-br from-blue-500 to-blue-600 flex items-center justify-center shadow-lg">
+                    <Building2 className="w-6 h-6 text-white" />
                   </div>
-                  {index < steps.length - 1 && (
-                    <div className="hidden md:block absolute top-10 left-full w-full h-0.5 bg-gradient-to-r from-primary/30 to-transparent"></div>
-                  )}
-                </div>
-                
-                <h4 className="text-xl font-semibold mb-4 text-foreground">
-                  {step.title}
-                </h4>
-                
-                <p className="text-muted-foreground leading-relaxed">
-                  {step.description}
-                </p>
-              </CardContent>
-            </Card>
-          ))}
-        </div>
-      </div>
-
-      {/* Detailed Steps */}
-      <div className="space-y-6">
-        <Card className="bg-gradient-to-r from-blue-500/5 to-blue-600/5 border border-blue-500/20 hover:border-blue-500/40 transition-all duration-300">
-          <CardHeader>
-            <CardTitle className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-full bg-blue-500 flex items-center justify-center">
-                <Building2 className="w-5 h-5 text-white" />
-              </div>
-              <span className="text-xl">Explicação Base do Negócio</span>
-            </CardTitle>
-          </CardHeader>
-          <CardContent>
-            <div className="bg-blue-50 dark:bg-blue-950/20 p-6 rounded-lg mb-6 border border-blue-200 dark:border-blue-800">
-              <p className="text-foreground font-medium mb-4">
-                📋 <strong>Informações Essenciais para Fornecer:</strong>
-              </p>
-              <p className="text-muted-foreground mb-4 leading-relaxed">
-                Para criar personas sintéticas precisas, detalhe completamente o seu negócio. Quanto mais específico você for, melhor será o resultado da análise de IA.
-              </p>
-            </div>
-            
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div className="space-y-4">
-                <h4 className="font-semibold text-foreground flex items-center gap-2">
-                  <Target className="w-4 h-4 text-blue-500" />
-                  Sobre o Negócio
-                </h4>
-                <ul className="space-y-3 text-sm">
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" />
-                    <span><strong>Produtos/Serviços:</strong> O que exatamente você vende, preços, categorias</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" />
-                    <span><strong>Mercado:</strong> Setor, nicho, localização geográfica</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" />
-                    <span><strong>Diferenciais:</strong> O que te destaca da concorrência</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" />
-                    <span><strong>Modelo de negócio:</strong> B2B, B2C, marketplace, SaaS, etc.</span>
-                  </li>
-                </ul>
-              </div>
-              
-              <div className="space-y-4">
-                <h4 className="font-semibold text-foreground flex items-center gap-2">
-                  <TrendingUp className="w-4 h-4 text-blue-500" />
-                  Estratégia & Clientes
-                </h4>
-                <ul className="space-y-3 text-sm">
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" />
-                    <span><strong>Objetivos:</strong> Metas de vendas, crescimento, expansão</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" />
-                    <span><strong>Público atual:</strong> Demografia, comportamento, necessidades</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" />
-                    <span><strong>Desafios:</strong> Dificuldades em vendas, marketing, retenção</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" />
-                    <span><strong>Canais:</strong> Como você vende e se comunica com clientes</span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </CardContent>
-        </Card>
-
-        <Card className="bg-gradient-to-r from-purple-500/5 to-purple-600/5 border border-purple-500/20 hover:border-purple-500/40 transition-all duration-300">
-          <CardHeader>
-            <CardTitle className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-full bg-purple-500 flex items-center justify-center">
-                <Upload className="w-5 h-5 text-white" />
-              </div>
-              <span className="text-xl">Upload da Pesquisa</span>
-            </CardTitle>
-          </CardHeader>
-          <CardContent>
-            <div className="bg-purple-50 dark:bg-purple-950/20 p-6 rounded-lg mb-6 border border-purple-200 dark:border-purple-800">
-              <div className="flex items-center gap-3 mb-4">
-                <div className="w-12 h-12 rounded-full bg-purple-100 dark:bg-purple-900/50 flex items-center justify-center">
-                  <FileText className="w-6 h-6 text-purple-600" />
-                </div>
-                <div>
-                  <h4 className="font-semibold text-foreground">📤 Instruções de Upload</h4>
-                  <p className="text-sm text-muted-foreground">Prepare seus dados para análise de IA</p>
-                </div>
-              </div>
-            </div>
-            
-            <div className="space-y-4">
-              <p className="text-muted-foreground leading-relaxed">
-                Baixe sua pesquisa de persona existente e faça o upload junto com a explicação base em uma IA como <strong className="text-foreground">Claude</strong> ou <strong className="text-foreground">ChatGPT</strong>.
-              </p>
-              
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <div className="bg-card/50 p-4 rounded-lg border border-border/50">
-                  <h5 className="font-medium text-foreground mb-2">✅ Formatos Aceitos</h5>
-                  <ul className="text-sm text-muted-foreground space-y-1">
-                    <li>• CSV (dados estruturados)</li>
-                    <li>• Excel (planilhas)</li>
-                    <li>• PDF (relatórios)</li>
-                    <li>• Texto estruturado</li>
-                  </ul>
-                </div>
-                
-                <div className="bg-card/50 p-4 rounded-lg border border-border/50">
-                  <h5 className="font-medium text-foreground mb-2">💡 Dica Importante</h5>
-                  <p className="text-sm text-muted-foreground">
-                    Combine sempre os dados da pesquisa com a explicação detalhada do seu negócio para resultados mais precisos.
+                  <span className="text-2xl text-blue-800 dark:text-blue-200">Explicação Base do Negócio</span>
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <div className="bg-blue-50 dark:bg-blue-950/20 p-6 rounded-lg mb-6 border border-blue-200 dark:border-blue-800">
+                  <p className="text-foreground font-medium mb-4">
+                    📋 <strong>Informações Essenciais para Fornecer:</strong>
+                  </p>
+                  <p className="text-muted-foreground mb-4 leading-relaxed">
+                    Para criar personas sintéticas precisas, detalhe completamente o seu negócio. Quanto mais específico você for, melhor será o resultado da análise de IA.
                   </p>
                 </div>
-              </div>
-            </div>
-          </CardContent>
-        </Card>
+                
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <div className="space-y-4">
+                    <h4 className="font-semibold text-foreground flex items-center gap-2">
+                      <Target className="w-4 h-4 text-blue-500" />
+                      Sobre o Negócio
+                    </h4>
+                    <ul className="space-y-3 text-sm">
+                      <li className="flex items-start gap-2">
+                        <CheckCircle2 className="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" />
+                        <span><strong>Produtos/Serviços:</strong> O que exatamente você vende, preços, categorias</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle2 className="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" />
+                        <span><strong>Mercado:</strong> Setor, nicho, localização geográfica</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle2 className="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" />
+                        <span><strong>Diferenciais:</strong> O que te destaca da concorrência</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle2 className="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" />
+                        <span><strong>Modelo de negócio:</strong> B2B, B2C, marketplace, SaaS, etc.</span>
+                      </li>
+                    </ul>
+                  </div>
+                  
+                  <div className="space-y-4">
+                    <h4 className="font-semibold text-foreground flex items-center gap-2">
+                      <TrendingUp className="w-4 h-4 text-blue-500" />
+                      Estratégia & Clientes
+                    </h4>
+                    <ul className="space-y-3 text-sm">
+                      <li className="flex items-start gap-2">
+                        <CheckCircle2 className="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" />
+                        <span><strong>Objetivos:</strong> Metas de vendas, crescimento, expansão</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle2 className="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" />
+                        <span><strong>Público atual:</strong> Demografia, comportamento, necessidades</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle2 className="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" />
+                        <span><strong>Desafios:</strong> Dificuldades em vendas, marketing, retenção</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle2 className="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" />
+                        <span><strong>Canais:</strong> Como você vende e se comunica com clientes</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
 
-        <Card className="bg-gradient-to-r from-green-500/5 to-emerald-500/5 border border-green-500/20 hover:border-green-500/40 transition-all duration-300">
-          <CardHeader>
-            <CardTitle className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-full bg-green-500 flex items-center justify-center">
-                <Brain className="w-5 h-5 text-white" />
-              </div>
-              <span className="text-xl">Análise com Prompts Especializados</span>
-            </CardTitle>
-          </CardHeader>
-          <CardContent>
-            <div>
-              <div className="bg-green-50 dark:bg-green-950/20 p-6 rounded-lg mb-6 border border-green-200 dark:border-green-800">
-                <div className="flex items-center gap-3 mb-4">
-                  <div className="w-12 h-12 rounded-full bg-green-100 dark:bg-green-900/50 flex items-center justify-center">
-                    <Brain className="w-6 h-6 text-green-600" />
+          <div className="relative group">
+            <div className="absolute -inset-1 bg-gradient-to-r from-purple-600 to-purple-400 rounded-2xl blur opacity-20 group-hover:opacity-30 transition duration-300"></div>
+            <Card className="relative bg-gradient-to-br from-purple-50 to-purple-100 dark:from-purple-950/50 dark:to-purple-900/50 border-2 border-purple-200 dark:border-purple-800 hover:border-purple-400 dark:hover:border-purple-600 transition-all duration-500">
+              <CardHeader>
+                <CardTitle className="flex items-center gap-3">
+                  <div className="w-12 h-12 rounded-full bg-gradient-to-br from-purple-500 to-purple-600 flex items-center justify-center shadow-lg">
+                    <Upload className="w-6 h-6 text-white" />
                   </div>
-                  <div>
-                    <h4 className="font-semibold text-foreground">🎯 Prompts Inteligentes</h4>
-                    <p className="text-sm text-muted-foreground">Análise comportamental avançada</p>
+                  <span className="text-2xl text-purple-800 dark:text-purple-200">Upload da Pesquisa</span>
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <div className="bg-purple-50 dark:bg-purple-950/20 p-6 rounded-lg mb-6 border border-purple-200 dark:border-purple-800">
+                  <div className="flex items-center gap-3 mb-4">
+                    <div className="w-12 h-12 rounded-full bg-purple-100 dark:bg-purple-900/50 flex items-center justify-center">
+                      <FileText className="w-6 h-6 text-purple-600" />
+                    </div>
+                    <div>
+                      <h4 className="font-semibold text-foreground">📤 Instruções de Upload</h4>
+                      <p className="text-sm text-muted-foreground">Prepare seus dados para análise de IA</p>
+                    </div>
                   </div>
                 </div>
-              </div>
-              
-              <p className="text-muted-foreground mb-4 leading-relaxed">
-                Use nossos prompts otimizados para gerar personas sintéticas baseadas em dados reais comportamentais. Nossa biblioteca contém modelos especializados para diferentes tipos de análise.
-              </p>
-              
-              <div className="space-y-3">
-                <div className="flex items-center gap-2 text-sm">
-                  <CheckCircle2 className="w-4 h-4 text-green-500" />
-                  <span className="text-muted-foreground">Análise de sentimentos dos clientes</span>
+                
+                <div className="space-y-4">
+                  <p className="text-muted-foreground leading-relaxed">
+                    Baixe sua pesquisa de persona existente e faça o upload junto com a explicação base em uma IA como <strong className="text-foreground">Claude</strong> ou <strong className="text-foreground">ChatGPT</strong>.
+                  </p>
+                  
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div className="bg-card/50 p-4 rounded-lg border border-border/50">
+                      <h5 className="font-medium text-foreground mb-2">✅ Formatos Aceitos</h5>
+                      <ul className="text-sm text-muted-foreground space-y-1">
+                        <li>• CSV (dados estruturados)</li>
+                        <li>• Excel (planilhas)</li>
+                        <li>• PDF (relatórios)</li>
+                        <li>• Texto estruturado</li>
+                      </ul>
+                    </div>
+                    
+                    <div className="bg-card/50 p-4 rounded-lg border border-border/50">
+                      <h5 className="font-medium text-foreground mb-2">💡 Dica Importante</h5>
+                      <p className="text-sm text-muted-foreground">
+                        Combine sempre os dados da pesquisa com a explicação detalhada do seu negócio para resultados mais precisos.
+                      </p>
+                    </div>
+                  </div>
                 </div>
-                <div className="flex items-center gap-2 text-sm">
-                  <CheckCircle2 className="w-4 h-4 text-green-500" />
-                  <span className="text-muted-foreground">Segmentação de audiência comportamental</span>
+              </CardContent>
+            </Card>
+          </div>
+
+          <div className="relative group">
+            <div className="absolute -inset-1 bg-gradient-to-r from-green-600 to-emerald-400 rounded-2xl blur opacity-20 group-hover:opacity-30 transition duration-300"></div>
+            <Card className="relative bg-gradient-to-br from-green-50 to-emerald-100 dark:from-green-950/50 dark:to-emerald-900/50 border-2 border-green-200 dark:border-green-800 hover:border-green-400 dark:hover:border-green-600 transition-all duration-500">
+              <CardHeader>
+                <CardTitle className="flex items-center gap-3">
+                  <div className="w-12 h-12 rounded-full bg-gradient-to-br from-green-500 to-emerald-600 flex items-center justify-center shadow-lg">
+                    <Brain className="w-6 h-6 text-white" />
+                  </div>
+                  <span className="text-2xl text-green-800 dark:text-green-200">Análise com Prompts Especializados</span>
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <div>
+                  <div className="bg-green-50 dark:bg-green-950/20 p-6 rounded-lg mb-6 border border-green-200 dark:border-green-800">
+                    <div className="flex items-center gap-3 mb-4">
+                      <div className="w-12 h-12 rounded-full bg-green-100 dark:bg-green-900/50 flex items-center justify-center">
+                        <Brain className="w-6 h-6 text-green-600" />
+                      </div>
+                      <div>
+                        <h4 className="font-semibold text-foreground">🎯 Prompts Inteligentes</h4>
+                        <p className="text-sm text-muted-foreground">Análise comportamental avançada</p>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <p className="text-muted-foreground mb-4 leading-relaxed">
+                    Use nossos prompts otimizados para gerar personas sintéticas baseadas em dados reais comportamentais. Nossa biblioteca contém modelos especializados para diferentes tipos de análise.
+                  </p>
+                  
+                  <div className="space-y-3">
+                    <div className="flex items-center gap-2 text-sm">
+                      <CheckCircle2 className="w-4 h-4 text-green-500" />
+                      <span className="text-muted-foreground">Análise de sentimentos dos clientes</span>
+                    </div>
+                    <div className="flex items-center gap-2 text-sm">
+                      <CheckCircle2 className="w-4 h-4 text-green-500" />
+                      <span className="text-muted-foreground">Segmentação de audiência comportamental</span>
+                    </div>
+                    <div className="flex items-center gap-2 text-sm">
+                      <CheckCircle2 className="w-4 h-4 text-green-500" />
+                      <span className="text-muted-foreground">Jornada do cliente detalhada</span>
+                    </div>
+                    <div className="flex items-center gap-2 text-sm">
+                      <CheckCircle2 className="w-4 h-4 text-green-500" />
+                      <span className="text-muted-foreground">Insights ocultos e padrões</span>
+                    </div>
+                  </div>
                 </div>
-                <div className="flex items-center gap-2 text-sm">
-                  <CheckCircle2 className="w-4 h-4 text-green-500" />
-                  <span className="text-muted-foreground">Jornada do cliente detalhada</span>
-                </div>
-                <div className="flex items-center gap-2 text-sm">
-                  <CheckCircle2 className="w-4 h-4 text-green-500" />
-                  <span className="text-muted-foreground">Insights ocultos e padrões</span>
-                </div>
-              </div>
-            </div>
-          </CardContent>
-        </Card>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
       </div>
 
-      {/* CTA Section */}
-      <div className="text-center py-8">
-        <Card className="bg-gradient-to-r from-primary/10 to-primary-glow/10 border border-primary/20 p-8 inline-block hover-scale">
-          <h3 className="text-2xl font-semibold mb-4 text-foreground">
-            Pronto para começar?
-          </h3>
-          <p className="text-muted-foreground mb-6 max-w-md">
-            Acesse nossa biblioteca de prompts especializados para análise de personas sintéticas
-          </p>
-          <Button 
-            variant="hero" 
-            size="lg" 
-            className="text-lg px-8 py-6 h-auto animate-scale-in"
-            onClick={() => navigate('/prompts')}
-          >
-            Ver Prompts de Análise
-            <ArrowRight className="w-5 h-5 ml-2" />
-          </Button>
-        </Card>
+      {/* CTA Section - Enhanced */}
+      <div className="relative py-16">
+        {/* Background Effects */}
+        <div className="absolute inset-0 bg-gradient-to-br from-violet-500/5 via-purple-500/5 to-indigo-500/5 rounded-3xl"></div>
+        <div className="absolute top-0 left-1/3 w-64 h-64 bg-violet-500/10 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-0 right-1/3 w-64 h-64 bg-indigo-500/10 rounded-full blur-3xl"></div>
+        
+        <div className="relative z-10 text-center">
+          <div className="relative group inline-block">
+            <div className="absolute -inset-1 bg-gradient-to-r from-violet-600 to-indigo-400 rounded-3xl blur opacity-25 group-hover:opacity-40 transition duration-300"></div>
+            <Card className="relative bg-gradient-to-br from-violet-50 to-indigo-100 dark:from-violet-950/50 dark:to-indigo-900/50 border-2 border-violet-200 dark:border-violet-800 hover:border-violet-400 dark:hover:border-violet-600 transition-all duration-500 p-12 inline-block transform hover:scale-105">
+              <div className="w-16 h-16 mx-auto mb-6 bg-gradient-to-br from-violet-500 to-indigo-600 rounded-full flex items-center justify-center shadow-xl">
+                <ArrowRight className="w-8 h-8 text-white" />
+              </div>
+              <h3 className="text-3xl font-bold mb-4 bg-gradient-to-r from-violet-600 via-purple-600 to-indigo-600 bg-clip-text text-transparent">
+                Pronto para começar?
+              </h3>
+              <p className="text-violet-600 dark:text-violet-400 mb-8 max-w-md mx-auto text-lg">
+                Acesse nossa biblioteca de prompts especializados para análise de personas sintéticas
+              </p>
+              <Button 
+                variant="hero" 
+                size="lg" 
+                className="text-lg px-8 py-6 h-auto bg-gradient-to-r from-violet-600 to-indigo-600 hover:from-violet-700 hover:to-indigo-700 shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-300"
+                onClick={() => navigate('/prompts')}
+              >
+                Ver Prompts de Análise
+                <ArrowRight className="w-5 h-5 ml-2" />
+              </Button>
+            </Card>
+          </div>
+        </div>
       </div>
     </div>
   );
