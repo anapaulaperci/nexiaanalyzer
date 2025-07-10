@@ -5,186 +5,200 @@ import { Badge } from "@/components/ui/badge";
 import { Copy, Search, MessageSquare, Target, Users, TrendingUp, Heart, Star, Rocket, Brain, Crown } from "lucide-react";
 import { useState } from "react";
 
+// Import das ilustrações
+import sentimentAnalysisImg from "@/assets/sentiment-analysis.png";
+import audienceSegmentationImg from "@/assets/audience-segmentation.png";
+import campaignGenerationImg from "@/assets/campaign-generation.png";
+import customerJourneyImg from "@/assets/customer-journey.png";
+import competitiveAnalysisImg from "@/assets/competitive-analysis.png";
+import hiddenInsightsImg from "@/assets/hidden-insights.png";
+import brandArchetypeImg from "@/assets/brand-archetype.png";
+
 const Prompts = () => {
   const [searchQuery, setSearchQuery] = useState("");
 
   const prompts = [
     {
       id: 1,
-      title: "Análise de Sentimento Completa",
-      description: "Identifica emoções, sentimentos e pontos de dor dos respondentes com alta precisão",
-      category: "Análise",
-      difficulty: "Iniciante",
+      title: "análise de sentimento completa",
+      description: "identifica emoções, sentimentos e pontos de dor dos respondentes com alta precisão",
+      category: "análise",
+      difficulty: "iniciante",
       rating: 4.9,
+      illustration: sentimentAnalysisImg,
       prompt: `Analise o sentimento desta pesquisa de satisfação do cliente e forneça:
 
-1. **Distribuição de Sentimentos**:
-   - Percentual de respostas positivas, neutras e negativas
-   - Principais emoções identificadas
+1. **distribuição de sentimentos**:
+   - percentual de respostas positivas, neutras e negativas
+   - principais emoções identificadas
 
-2. **Pontos de Dor Principais**:
-   - Top 3 problemas mais mencionados
-   - Impacto de cada problema na satisfação geral
+2. **pontos de dor principais**:
+   - top 3 problemas mais mencionados
+   - impacto de cada problema na satisfação geral
 
-3. **Pontos Fortes**:
-   - Aspectos mais elogiados pelos clientes
-   - Oportunidades de potencializar pontos positivos
+3. **pontos fortes**:
+   - aspectos mais elogiados pelos clientes
+   - oportunidades de potencializar pontos positivos
 
-4. **Insights Acionáveis**:
-   - Recomendações específicas para melhorias
-   - Priorização baseada no impacto
+4. **insights acionáveis**:
+   - recomendações específicas para melhorias
+   - priorização baseada no impacto
 
-Dados da pesquisa: [INSERIR DADOS AQUI]`,
+dados da pesquisa: [INSERIR DADOS AQUI]`,
       icon: Heart,
       color: "text-red-400"
     },
     {
       id: 2,
-      title: "Segmentação Avançada de Público",
-      description: "Cria personas detalhadas e segmentos de mercado baseados nos dados coletados",
-      category: "Segmentação",
-      difficulty: "Intermediário",
+      title: "segmentação avançada de público",
+      description: "cria personas detalhadas e segmentos de mercado baseados nos dados coletados",
+      category: "segmentação",
+      difficulty: "intermediário",
       rating: 4.8,
+      illustration: audienceSegmentationImg,
       prompt: `Com base nos dados desta pesquisa, crie uma segmentação completa do público:
 
-1. **Personas Principais** (3-4 personas):
-   - Demografia detalhada
-   - Comportamentos e preferências
-   - Motivações e objetivos
-   - Canais de comunicação preferidos
+1. **personas principais** (3-4 personas):
+   - demografia detalhada
+   - comportamentos e preferências
+   - motivações e objetivos
+   - canais de comunicação preferidos
 
-2. **Matriz de Segmentação**:
-   - Critérios de segmentação utilizados
-   - Tamanho estimado de cada segmento
-   - Potencial de valor de cada grupo
+2. **matriz de segmentação**:
+   - critérios de segmentação utilizados
+   - tamanho estimado de cada segmento
+   - potencial de valor de cada grupo
 
-3. **Características Comportamentais**:
-   - Padrões de compra identificados
-   - Sensibilidade a preço
-   - Fatores de decisão mais importantes
+3. **características comportamentais**:
+   - padrões de compra identificados
+   - sensibilidade a preço
+   - fatores de decisão mais importantes
 
-4. **Estratégias de Targeting**:
-   - Abordagem específica para cada segmento
-   - Mensagens-chave personalizadas
-   - Canais de comunicação recomendados
+4. **estratégias de targeting**:
+   - abordagem específica para cada segmento
+   - mensagens-chave personalizadas
+   - canais de comunicação recomendados
 
-Dados da pesquisa: [INSERIR DADOS AQUI]`,
+dados da pesquisa: [INSERIR DADOS AQUI]`,
       icon: Users,
       color: "text-purple-400"
     },
     {
       id: 3,
-      title: "Geração de Campanha de Conversão",
-      description: "Desenvolve campanhas de marketing focadas em resultados e alta performance",
-      category: "Marketing",
-      difficulty: "Avançado",
+      title: "geração de campanha de conversão",
+      description: "desenvolve campanhas de marketing focadas em resultados e alta performance",
+      category: "marketing",
+      difficulty: "avançado",
       rating: 4.9,
+      illustration: campaignGenerationImg,
       prompt: `Baseado nos insights desta pesquisa, crie uma campanha de marketing completa:
 
-1. **Estratégia da Campanha**:
-   - Objetivo principal e KPIs
-   - Público-alvo prioritário
-   - Proposta de valor única
+1. **estratégia da campanha**:
+   - objetivo principal e KPIs
+   - público-alvo prioritário
+   - proposta de valor única
 
-2. **Messaging Framework**:
-   - Headline principal
-   - Subheadlines para diferentes segmentos
-   - Call-to-actions otimizados
-   - Pontos de objeção e respostas
+2. **messaging framework**:
+   - headline principal
+   - subheadlines para diferentes segmentos
+   - call-to-actions otimizados
+   - pontos de objeção e respostas
 
-3. **Mix de Canais**:
-   - Canais digitais recomendados
-   - Distribuição de orçamento por canal
-   - Cronograma de execução
+3. **mix de canais**:
+   - canais digitais recomendados
+   - distribuição de orçamento por canal
+   - cronograma de execução
 
-4. **Criativos e Conteúdo**:
-   - Conceitos creativos principais
-   - Formatos de conteúdo por canal
-   - Elementos visuais sugeridos
+4. **criativos e conteúdo**:
+   - conceitos creativos principais
+   - formatos de conteúdo por canal
+   - elementos visuais sugeridos
 
-5. **Métricas de Sucesso**:
+5. **métricas de sucesso**:
    - KPIs por canal
-   - Metas de conversão
-   - Sistema de acompanhamento
+   - metas de conversão
+   - sistema de acompanhamento
 
-Dados da pesquisa: [INSERIR DADOS AQUI]`,
+dados da pesquisa: [INSERIR DADOS AQUI]`,
       icon: Rocket,
       color: "text-green-400"
     },
     {
       id: 4,
-      title: "Mapeamento de Jornada do Cliente",
-      description: "Mapeia toda a experiência do cliente identificando oportunidades de otimização",
-      category: "Experiência",
-      difficulty: "Intermediário",
+      title: "mapeamento de jornada do cliente",
+      description: "mapeia toda a experiência do cliente identificando oportunidades de otimização",
+      category: "experiência",
+      difficulty: "intermediário",
       rating: 4.7,
+      illustration: customerJourneyImg,
       prompt: `Mapeie a jornada completa do cliente baseada nos insights desta pesquisa:
 
-1. **Estágios da Jornada**:
-   - Conscientização: Como descobrem o problema/necessidade
-   - Consideração: Processo de avaliação de soluções
-   - Decisão: Fatores decisivos na escolha
-   - Pós-compra: Experiência de uso e fidelização
+1. **estágios da jornada**:
+   - conscientização: como descobrem o problema/necessidade
+   - consideração: processo de avaliação de soluções
+   - decisão: fatores decisivos na escolha
+   - pós-compra: experiência de uso e fidelização
 
-2. **Touchpoints Críticos**:
-   - Pontos de contato em cada estágio
-   - Canais de interação preferidos
-   - Momentos de verdade identificados
+2. **touchpoints críticos**:
+   - pontos de contato em cada estágio
+   - canais de interação preferidos
+   - momentos de verdade identificados
 
-3. **Pain Points e Friction**:
-   - Obstáculos em cada etapa
-   - Pontos de abandono mais comuns
-   - Frustrações relatadas pelos clientes
+3. **pain points e friction**:
+   - obstáculos em cada etapa
+   - pontos de abandono mais comuns
+   - frustrações relatadas pelos clientes
 
-4. **Oportunidades de Melhoria**:
-   - Quick wins para cada estágio
-   - Melhorias de médio e longo prazo
-   - Impacto esperado de cada otimização
+4. **oportunidades de melhoria**:
+   - quick wins para cada estágio
+   - melhorias de médio e longo prazo
+   - impacto esperado de cada otimização
 
-5. **Personalização**:
-   - Pontos onde personalizar a experiência
-   - Dados necessários para personalização
-   - Tecnologias recomendadas
+5. **personalização**:
+   - pontos onde personalizar a experiência
+   - dados necessários para personalização
+   - tecnologias recomendadas
 
-Dados da pesquisa: [INSERIR DADOS AQUI]`,
+dados da pesquisa: [INSERIR DADOS AQUI]`,
       icon: Target,
       color: "text-blue-400"
     },
     {
       id: 5,
-      title: "Análise Competitiva e Posicionamento",
-      description: "Identifica vantagens competitivas e oportunidades de posicionamento no mercado",
-      category: "Estratégia",
-      difficulty: "Avançado",
+      title: "análise competitiva e posicionamento",
+      description: "identifica vantagens competitivas e oportunidades de posicionamento no mercado",
+      category: "estratégia",
+      difficulty: "avançado",
       rating: 4.6,
+      illustration: competitiveAnalysisImg,
       prompt: `Analise o posicionamento competitivo baseado nesta pesquisa:
 
-1. **Análise da Concorrência**:
-   - Principais competidores mencionados
-   - Pontos fortes de cada concorrente
-   - Gaps identificados no mercado
+1. **análise da concorrência**:
+   - principais competidores mencionados
+   - pontos fortes de cada concorrente
+   - gaps identificados no mercado
 
-2. **Posicionamento Atual**:
-   - Como a marca é percebida
-   - Atributos associados à marca
-   - Diferenciação percebida pelo mercado
+2. **posicionamento atual**:
+   - como a marca é percebida
+   - atributos associados à marca
+   - diferenciação percebida pelo mercado
 
-3. **Oportunidades de Reposicionamento**:
-   - Espaços de mercado descobertos
-   - Atributos subexplorados
-   - Nichos de alto potencial
+3. **oportunidades de reposicionamento**:
+   - espaços de mercado descobertos
+   - atributos subexplorados
+   - nichos de alto potencial
 
-4. **Estratégia de Diferenciação**:
-   - Proposta de valor única
-   - Vantagens competitivas sustentáveis
-   - Mensagens de posicionamento
+4. **estratégia de diferenciação**:
+   - proposta de valor única
+   - vantagens competitivas sustentáveis
+   - mensagens de posicionamento
 
-5. **Plano de Ação**:
-   - Iniciativas de curto prazo
-   - Investimentos necessários
-   - Métricas de acompanhamento
+5. **plano de ação**:
+   - iniciativas de curto prazo
+   - investimentos necessários
+   - métricas de acompanhamento
 
-Dados da pesquisa: [INSERIR DADOS AQUI]`,
+dados da pesquisa: [INSERIR DADOS AQUI]`,
       icon: TrendingUp,
       color: "text-orange-400"
     },
@@ -557,7 +571,18 @@ dados da pesquisa: [INSERIR DADOS AQUI]`,
             className="bg-card/50 border border-border/50 backdrop-blur-sm hover:border-primary/50 transition-all duration-300 hover:shadow-glow group"
           >
             <CardHeader className="relative">
-              <div className="flex items-start justify-between">
+              {/* Illustration */}
+              <div className="absolute -top-6 right-4">
+                <div className="w-20 h-20 rounded-2xl overflow-hidden shadow-lg bg-gradient-to-br from-white to-gray-50 border border-gray-200/50">
+                  <img 
+                    src={prompt.illustration} 
+                    alt={prompt.title}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+              </div>
+              
+              <div className="flex items-start justify-between pr-24">
                 <div className="flex items-center gap-3">
                   <div className="w-10 h-10 rounded-full bg-gradient-primary flex items-center justify-center group-hover:scale-110 transition-transform">
                     <prompt.icon className={`w-5 h-5 ${prompt.color}`} />
