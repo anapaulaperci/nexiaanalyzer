@@ -39,6 +39,21 @@ const Dashboard = () => {
           <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-hero bg-clip-text text-transparent">
             Personas Sintéticas
           </h2>
+          
+          {/* Video Section */}
+          <div className="w-full max-w-4xl mx-auto mb-8">
+            <div className="relative rounded-lg overflow-hidden shadow-2xl bg-gradient-to-br from-primary/5 to-primary-glow/5 border border-primary/20">
+              <video 
+                className="w-full h-auto max-h-96 object-cover"
+                controls
+                poster="/placeholder.svg"
+                preload="metadata"
+              >
+                <source src="/path-to-your-video.mp4" type="video/mp4" />
+                Seu navegador não suporta o elemento de vídeo.
+              </video>
+            </div>
+          </div>
         </div>
         <div className="max-w-4xl mx-auto">
           <p className="text-xl md:text-2xl text-muted-foreground leading-relaxed mb-8">
