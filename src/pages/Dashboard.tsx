@@ -45,7 +45,7 @@ const Dashboard = () => {
             <div className="relative rounded-lg overflow-hidden shadow-2xl bg-gradient-to-br from-primary/5 to-primary-glow/5 border border-primary/20">
               <iframe 
                 className="w-full aspect-video"
-                src="https://www.canva.com/design/DAGszQZEbhs/view?embed"
+                src="https://www.canva.com/design/DAGszQZEbhs/G569eHDSrwNx3nxU6Bu_8A/watch?embed"
                 allowFullScreen
                 title="Personas Sintéticas - Vídeo Explicativo"
               />
