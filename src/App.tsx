@@ -10,6 +10,7 @@ import Dashboard from "./pages/Dashboard";
 import Tutorial from "./pages/Tutorial";
 import Prompts from "./pages/Prompts";
 import CampaignPlanning from "./pages/CampaignPlanning";
+import Copy from "./pages/Copy";
 
 const queryClient = new QueryClient();
 
@@ -25,6 +26,7 @@ const App = () => (
             <Route index element={<Dashboard />} />
             <Route path="tutorial" element={<Tutorial />} />
             <Route path="prompts" element={<Prompts />} />
+            <Route path="copy" element={<Copy />} />
             <Route path="campaign" element={<CampaignPlanning />} />
           </Route>
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}

@@ -1,5 +1,5 @@
 import { NavLink, useLocation } from "react-router-dom";
-import { Home, BookOpen, MessageSquare, Sparkles } from "lucide-react";
+import { Home, BookOpen, MessageSquare, Sparkles, Copy } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 const HorizontalNav = () => {
@@ -9,6 +9,7 @@ const HorizontalNav = () => {
     { title: "Overview", url: "/dashboard", icon: Home },
     { title: "Tutorial", url: "/dashboard/tutorial", icon: BookOpen },
     { title: "Prompts", url: "/dashboard/prompts", icon: MessageSquare },
+    { title: "Copy", url: "/dashboard/copy", icon: Copy },
     { title: "Campanha", url: "/dashboard/campaign", icon: Sparkles },
   ];
 
