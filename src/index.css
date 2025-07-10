@@ -8,15 +8,28 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    /* Cor Principal e Variações - NexIA Brand */
+    /* Paleta de Roxos NexIA - Do mais escuro ao mais claro */
+    --nexia-purple-darkest: #150A3A;
+    --nexia-purple-darker: #1F0F4A;
     --nexia-purple-dark: #2D1B69;
+    --nexia-purple: #3D2970;
+    --nexia-purple-medium: #4D3980;
+    --nexia-purple-light: #6B46C1;
+    --nexia-purple-lighter: #8B5CF6;
+    --nexia-purple-lightest: #A78BFA;
+    
+    /* Gradientes Roxos */
+    --gradient-purple: linear-gradient(135deg, #1F0F4A 0%, #2D1B69 50%, #4D3980 100%);
+    --gradient-purple-reverse: linear-gradient(135deg, #4D3980 0%, #2D1B69 50%, #1F0F4A 100%);
+    --gradient-purple-subtle: linear-gradient(135deg, #2D1B69 0%, #3D2970 100%);
+    --gradient-purple-vibrant: linear-gradient(135deg, #1F0F4A 0%, #6B46C1 100%);
     
     /* Sistema de cores baseado na principal */
     --color-primary: var(--nexia-purple-dark);
-    --color-primary-light: #3D2970;
-    --color-primary-lighter: #4D3980;
-    --color-primary-dark: #1F0F4A;
-    --color-primary-darker: #150A3A;
+    --color-primary-light: var(--nexia-purple);
+    --color-primary-lighter: var(--nexia-purple-medium);
+    --color-primary-dark: var(--nexia-purple-darker);
+    --color-primary-darker: var(--nexia-purple-darkest);
     
     /* Cores com transparência */
     --color-primary-10: rgba(45, 27, 105, 0.1);
@@ -80,9 +93,9 @@ All colors MUST be HSL.
     --ring: 265 85% 47%;
 
     /* Custom design tokens */
-    --gradient-primary: linear-gradient(135deg, var(--color-primary), var(--color-primary-light));
-    --gradient-secondary: linear-gradient(135deg, var(--color-primary-dark), var(--color-primary-darker));
-    --gradient-hero: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-light) 50%, var(--color-accent) 100%);
+    --gradient-primary: var(--gradient-purple);
+    --gradient-secondary: var(--gradient-purple-reverse);
+    --gradient-hero: var(--gradient-purple-vibrant);
 
     --radius: 0.5rem;
 
@@ -312,20 +325,44 @@ All colors MUST be HSL.
   background-color: var(--nexia-purple-dark);
 }
 
+.bg-nexia-darkest {
+  background-color: var(--nexia-purple-darkest);
+}
+
+.bg-nexia-darker {
+  background-color: var(--nexia-purple-darker);
+}
+
+.bg-nexia-medium {
+  background-color: var(--nexia-purple-medium);
+}
+
+.bg-nexia-light {
+  background-color: var(--nexia-purple-light);
+}
+
+.bg-nexia-lighter {
+  background-color: var(--nexia-purple-lighter);
+}
+
+.bg-nexia-lightest {
+  background-color: var(--nexia-purple-lightest);
+}
+
 .text-nexia {
   color: var(--nexia-purple-dark);
 }
 
+.text-nexia-light {
+  color: var(--nexia-purple-light);
+}
+
+.text-nexia-lighter {
+  color: var(--nexia-purple-lighter);
+}
+
 .border-nexia {
   border-color: var(--nexia-purple-dark);
-}
-
-.bg-nexia-light {
-  background-color: var(--color-primary-light);
-}
-
-.bg-nexia-dark {
-  background-color: var(--color-primary-dark);
 }
 
 .bg-nexia-accent {
@@ -334,6 +371,23 @@ All colors MUST be HSL.
 
 .text-nexia-accent {
   color: var(--color-accent);
+}
+
+/* Gradient Classes */
+.bg-gradient-purple {
+  background: var(--gradient-purple);
+}
+
+.bg-gradient-purple-reverse {
+  background: var(--gradient-purple-reverse);
+}
+
+.bg-gradient-purple-subtle {
+  background: var(--gradient-purple-subtle);
+}
+
+.bg-gradient-purple-vibrant {
+  background: var(--gradient-purple-vibrant);
 }
 
 .shadow-nexia {
