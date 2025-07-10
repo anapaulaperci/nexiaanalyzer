@@ -2,7 +2,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Badge } from "@/components/ui/badge";
-import { Copy, Search, MessageSquare, Target, Users, TrendingUp, Heart, Star, Rocket, Brain } from "lucide-react";
+import { Copy, Search, MessageSquare, Target, Users, TrendingUp, Heart, Star, Rocket, Brain, Crown } from "lucide-react";
 import { useState } from "react";
 
 const Prompts = () => {
@@ -332,6 +332,177 @@ Pense como:
 Dados da pesquisa: [INSERIR DADOS AQUI]`,
       icon: Brain,
       color: "text-indigo-400"
+    },
+    {
+      id: 7,
+      title: "como identificar o arquétipo a partir da pesquisa da persona",
+      description: "descobre o arquétipo de marca mais ressonante baseado na psicologia arquetípica e branding emocional",
+      category: "estratégia",
+      difficulty: "avançado",
+      rating: 4.8,
+      prompt: `Você é um estrategista de marca especializado em psicologia arquetípica e branding emocional. Analise profundamente os dados de persona fornecidos para identificar o arquétipo de marca mais ressonante e suas variações.
+
+## DADOS DA PERSONA:
+[Cole aqui todos os dados da pesquisa de persona]
+
+## CONTEXTO DA MARCA:
+- Setor: [Seu mercado]
+- Valores atuais: [Se existirem]
+- Concorrentes diretos: [Principais]
+- Desafio de marca: [O que precisa resolver]
+
+## ANÁLISE ARQUETÍPICA PROFUNDA:
+
+### 1. 🧠 MAPEAMENTO PSICOLÓGICO
+Extraia dos dados:
+- **motivações profundas**: O que realmente move essa persona?
+- **medos fundamentais**: O que ela teme perder ou não conseguir?
+- **desejos não-declarados**: O que ela quer mas não admite?
+- **valores centrais**: Que princípios são inegociáveis?
+- **histórias pessoais**: Que narrativas ela conta sobre si?
+
+### 2. 🎯 IDENTIFICAÇÃO DO ARQUÉTIPO PRIMÁRIO
+Com base nos 12 arquétipos de Jung/Mark & Pearson, determine:
+
+**OS 12 ARQUÉTIPOS PARA REFERÊNCIA:**
+1. **o inocente** - otimismo, pureza, confiança
+2. **o explorador** - liberdade, descoberta, autenticidade  
+3. **o sábio** - conhecimento, verdade, compreensão
+4. **o herói** - coragem, determinação, superação
+5. **o fora da lei** - revolução, quebra de regras, mudança
+6. **o mago** - transformação, visão, poder de mudança
+7. **o cara comum** - pertencimento, realismo, empatia
+8. **o amante** - paixão, compromisso, intimidade
+9. **o bobo da corte** - alegria, diversão, espontaneidade
+10. **o cuidador** - proteção, generosidade, compaixão
+11. **o criador** - inovação, imaginação, expressão
+12. **o governante** - controle, responsabilidade, liderança
+
+Para cada arquétipo candidato, avalie:
+- % de alinhamento com a persona (0-100%)
+- evidências específicas dos dados
+- pontos de ressonância emocional
+- potenciais conflitos
+
+### 3. 🔄 ARQUÉTIPO SOMBRA
+Identifique o arquétipo que a persona REJEITA ou teme:
+- qual arquétipo ela definitivamente NÃO quer ser?
+- por que essa rejeição existe?
+- como isso informa o posicionamento?
+
+### 4. 🎨 BLEND ARQUETÍPICO
+Raramente uma marca é um arquétipo puro. Identifique:
+- **arquétipo dominante** (60-70%)
+- **arquétipo de suporte** (20-30%)
+- **arquétipo aspiracional** (10-20%)
+
+Exemplo: Nike = herói (70%) + fora da lei (20%) + mago (10%)
+
+### 5. 📊 MANIFESTAÇÃO DO ARQUÉTIPO
+
+**nível superficial (o que se vê)**
+- visual: cores, formas, estética
+- verbal: tom de voz, vocabulário
+- comportamental: ações da marca
+
+**nível profundo (o que se sente)**
+- emoções evocadas
+- valores transmitidos
+- promessa implícita
+
+**nível arquetípico (o que transforma)**
+- jornada oferecida
+- transformação prometida
+- papel na vida da persona
+
+### 6. 🗣️ VOZ ARQUETÍPICA
+Desenvolva diretrizes específicas:
+
+**tom de voz**:
+- 3 adjetivos principais
+- 3 coisas que NUNCA diríamos
+- formalidade (1-10)
+- humor (1-10)
+- autoridade (1-10)
+
+**vocabulário arquetípico**:
+- 10 palavras-poder alinhadas
+- 5 frases-assinatura
+- metáforas recorrentes
+
+**storytelling framework**:
+- estrutura narrativa típica
+- conflitos abordados
+- resoluções oferecidas
+
+### 7. 🎭 EXPRESSÕES CULTURAIS
+Como o arquétipo se manifesta em:
+- **rituais**: que experiências criar?
+- **símbolos**: que elementos visuais usar?
+- **mitos**: que histórias contar?
+- **heróis**: que figuras celebrar?
+
+### 8. 🚫 ANTI-PADRÕES
+O que definitivamente NÃO fazer:
+- comportamentos que traem o arquétipo
+- mensagens conflitantes
+- estéticas dissonantes
+- parcerias perigosas
+
+## ENTREGÁVEIS ESPECÍFICOS:
+
+### 1. DECLARAÇÃO ARQUETÍPICA
+"Somos uma marca [ARQUÉTIPO PRINCIPAL] que acredita em [VALOR CENTRAL].
+Existimos para [MISSÃO ARQUETÍPICA] através de [MÉTODO ÚNICO].
+Para pessoas que [DESCRIÇÃO DA PERSONA], oferecemos [TRANSFORMAÇÃO]."
+
+### 2. MATRIZ DE DECISÃO
+Crie uma matriz 3x3:
+- sempre fazer | às vezes fazer | nunca fazer
+- para: comunicação, produto, experiência
+
+### 3. MOOD BOARD CONCEITUAL
+Descreva em palavras:
+- paleta emocional
+- texturas sensoriais
+- ritmo e movimento
+- temperatura da marca
+
+### 4. BENCHMARKS ARQUETÍPICOS
+- 3 marcas globais com mesmo arquétipo
+- 2 marcas brasileiras alinhadas
+- 1 marca de outro setor para inspiração
+
+### 5. ROTEIRO DE ATIVAÇÃO
+Como ativar o arquétipo em:
+- nome/naming
+- logo/identidade visual
+- campanhas
+- produto/serviço
+- atendimento
+- cultura interna
+
+### 6. MÉTRICAS DE ALINHAMENTO
+KPIs para medir aderência arquetípica:
+- percepção de marca
+- engajamento emocional
+- advocacia espontânea
+- fit cultural
+
+## ANÁLISE DE CENÁRIOS:
+
+**cenário otimista**: 
+Se o arquétipo ressoar perfeitamente, o que acontece em 2 anos?
+
+**cenário realista**: 
+Considerando limitações, como adaptar?
+
+**cenário de pivô**: 
+Se precisar mudar, qual o próximo arquétipo?
+
+dados da pesquisa: [INSERIR DADOS AQUI]`,
+      icon: Crown,
+      color: "text-purple-400"
     }
   ];
 
