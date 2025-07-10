@@ -1,6 +1,6 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { FileText, Upload, Brain, ArrowRight, Users, Target, TrendingUp, Building2, CheckCircle2 } from "lucide-react";
+import { FileText, Upload, Brain, ArrowRight, Users, Target, TrendingUp, Building2, CheckCircle2, Globe, CreditCard, MessageSquare, Smartphone, UserCheck, BarChart, Search, Eye, Shield } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import aiAnalysisRealistic from "@/assets/ai-analysis-realistic.png";
 
@@ -54,7 +54,175 @@ const Dashboard = () => {
                 className="w-full h-auto rounded-lg"
               />
             </div>
-          </div>
+      </div>
+
+      {/* Big Data to Insights Flow */}
+      <div className="space-y-8">
+        <div className="text-center">
+          <h3 className="text-3xl md:text-4xl font-bold mb-4 bg-gradient-hero bg-clip-text text-transparent">
+            Transformando Big Data em Insights Acionáveis
+          </h3>
+          <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+            Como a Inteligência Artificial processa seus dados para gerar personas sintéticas precisas
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+          {/* Fontes de Dados */}
+          <Card className="bg-gradient-to-br from-blue-500/10 to-blue-600/5 border border-blue-500/20 hover:border-blue-500/40 transition-all duration-300">
+            <CardHeader>
+              <CardTitle className="flex items-center gap-3 text-blue-600">
+                <BarChart className="w-6 h-6" />
+                <span>Fontes de Dados</span>
+              </CardTitle>
+            </CardHeader>
+            <CardContent className="space-y-4">
+              <div className="bg-blue-50 dark:bg-blue-950/20 p-4 rounded-lg border border-blue-200 dark:border-blue-800">
+                <div className="flex items-center gap-3 mb-2">
+                  <Globe className="w-5 h-5 text-blue-600" />
+                  <span className="font-semibold text-foreground">Comportamento Web</span>
+                </div>
+                <p className="text-sm text-muted-foreground">Cliques, páginas, tempo, scroll</p>
+              </div>
+              
+              <div className="bg-blue-50 dark:bg-blue-950/20 p-4 rounded-lg border border-blue-200 dark:border-blue-800">
+                <div className="flex items-center gap-3 mb-2">
+                  <CreditCard className="w-5 h-5 text-blue-600" />
+                  <span className="font-semibold text-foreground">Transações</span>
+                </div>
+                <p className="text-sm text-muted-foreground">Compras, valores, frequência</p>
+              </div>
+              
+              <div className="bg-blue-50 dark:bg-blue-950/20 p-4 rounded-lg border border-blue-200 dark:border-blue-800">
+                <div className="flex items-center gap-3 mb-2">
+                  <MessageSquare className="w-5 h-5 text-blue-600" />
+                  <span className="font-semibold text-foreground">Interações</span>
+                </div>
+                <p className="text-sm text-muted-foreground">Chat, email, tickets, NPS</p>
+              </div>
+              
+              <div className="bg-blue-50 dark:bg-blue-950/20 p-4 rounded-lg border border-blue-200 dark:border-blue-800">
+                <div className="flex items-center gap-3 mb-2">
+                  <Smartphone className="w-5 h-5 text-blue-600" />
+                  <span className="font-semibold text-foreground">App/Mobile</span>
+                </div>
+                <p className="text-sm text-muted-foreground">Features usadas, sessões</p>
+              </div>
+              
+              <div className="bg-blue-50 dark:bg-blue-950/20 p-4 rounded-lg border border-blue-200 dark:border-blue-800">
+                <div className="flex items-center gap-3 mb-2">
+                  <UserCheck className="w-5 h-5 text-blue-600" />
+                  <span className="font-semibold text-foreground">Social/CRM</span>
+                </div>
+                <p className="text-sm text-muted-foreground">Perfil, engajamento, leads</p>
+              </div>
+            </CardContent>
+          </Card>
+
+          {/* Processamento IA */}
+          <Card className="bg-gradient-to-br from-purple-500/10 to-purple-600/5 border border-purple-500/20 hover:border-purple-500/40 transition-all duration-300">
+            <CardHeader>
+              <CardTitle className="flex items-center gap-3 text-purple-600">
+                <Brain className="w-6 h-6" />
+                <span>Processamento IA</span>
+              </CardTitle>
+            </CardHeader>
+            <CardContent className="space-y-6">
+              <div className="relative">
+                <div className="flex items-center gap-3 mb-3">
+                  <div className="w-8 h-8 rounded-full bg-purple-500 text-white flex items-center justify-center text-sm font-bold">1</div>
+                  <div>
+                    <h4 className="font-semibold text-foreground">Limpeza e Normalização</h4>
+                    <p className="text-sm text-muted-foreground">Padronização de dados</p>
+                  </div>
+                </div>
+                <div className="w-px h-8 bg-purple-300 dark:bg-purple-700 ml-4"></div>
+              </div>
+              
+              <div className="relative">
+                <div className="flex items-center gap-3 mb-3">
+                  <div className="w-8 h-8 rounded-full bg-purple-500 text-white flex items-center justify-center text-sm font-bold">2</div>
+                  <div>
+                    <h4 className="font-semibold text-foreground">Machine Learning</h4>
+                    <div className="flex gap-2 mt-1">
+                      <span className="bg-purple-100 dark:bg-purple-900/50 text-purple-700 dark:text-purple-300 px-2 py-1 rounded text-xs">Clustering</span>
+                      <span className="bg-purple-100 dark:bg-purple-900/50 text-purple-700 dark:text-purple-300 px-2 py-1 rounded text-xs">NLP</span>
+                      <span className="bg-purple-100 dark:bg-purple-900/50 text-purple-700 dark:text-purple-300 px-2 py-1 rounded text-xs">Deep Learning</span>
+                    </div>
+                  </div>
+                </div>
+                <div className="w-px h-8 bg-purple-300 dark:bg-purple-700 ml-4"></div>
+              </div>
+              
+              <div className="relative">
+                <div className="flex items-center gap-3 mb-3">
+                  <div className="w-8 h-8 rounded-full bg-purple-500 text-white flex items-center justify-center text-sm font-bold">3</div>
+                  <div>
+                    <h4 className="font-semibold text-foreground">Identificação de Padrões</h4>
+                    <p className="text-sm text-muted-foreground">Descoberta de comportamentos ocultos</p>
+                  </div>
+                </div>
+                <div className="w-px h-8 bg-purple-300 dark:bg-purple-700 ml-4"></div>
+              </div>
+              
+              <div className="flex items-center gap-3">
+                <div className="w-8 h-8 rounded-full bg-purple-500 text-white flex items-center justify-center text-sm font-bold">4</div>
+                <div>
+                  <h4 className="font-semibold text-foreground">Validação e Scoring</h4>
+                  <p className="text-sm text-muted-foreground">Confiança: <span className="text-purple-600 font-medium">87%</span></p>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+
+          {/* Personas Geradas */}
+          <Card className="bg-gradient-to-br from-green-500/10 to-emerald-500/5 border border-green-500/20 hover:border-green-500/40 transition-all duration-300">
+            <CardHeader>
+              <CardTitle className="flex items-center gap-3 text-green-600">
+                <Users className="w-6 h-6" />
+                <span>Personas Geradas</span>
+              </CardTitle>
+            </CardHeader>
+            <CardContent className="space-y-4">
+              <div className="bg-green-50 dark:bg-green-950/20 p-4 rounded-lg border border-green-200 dark:border-green-800">
+                <div className="flex items-center gap-2 mb-3">
+                  <div className="w-8 h-8 rounded-full bg-gradient-to-r from-blue-500 to-purple-500 flex items-center justify-center">
+                    <Users className="w-4 h-4 text-white" />
+                  </div>
+                  <h4 className="font-semibold text-green-700 dark:text-green-300">Premium Explorer</h4>
+                </div>
+                <p className="text-sm text-muted-foreground mb-3">Alto valor, early adopter, mobile-first</p>
+                <div className="flex flex-wrap gap-2">
+                  <span className="bg-green-100 dark:bg-green-900/50 text-green-700 dark:text-green-300 px-2 py-1 rounded text-xs">LTV: R$ 4.200</span>
+                  <span className="bg-green-100 dark:bg-green-900/50 text-green-700 dark:text-green-300 px-2 py-1 rounded text-xs">Conversão: 34%</span>
+                  <span className="bg-green-100 dark:bg-green-900/50 text-green-700 dark:text-green-300 px-2 py-1 rounded text-xs">Churn: 6%</span>
+                </div>
+              </div>
+              
+              <div className="bg-green-50 dark:bg-green-950/20 p-4 rounded-lg border border-green-200 dark:border-green-800">
+                <div className="flex items-center gap-2 mb-3">
+                  <div className="w-8 h-8 rounded-full bg-gradient-to-r from-amber-500 to-orange-500 flex items-center justify-center">
+                    <Target className="w-4 h-4 text-white" />
+                  </div>
+                  <h4 className="font-semibold text-green-700 dark:text-green-300">Barganha Consciente</h4>
+                </div>
+                <p className="text-sm text-muted-foreground mb-3">Sensível à preço, pesquisa muito</p>
+                <div className="flex flex-wrap gap-2">
+                  <span className="bg-green-100 dark:bg-green-900/50 text-green-700 dark:text-green-300 px-2 py-1 rounded text-xs">Ticket: R$ 150</span>
+                  <span className="bg-green-100 dark:bg-green-900/50 text-green-700 dark:text-green-300 px-2 py-1 rounded text-xs">Cupons: 89%</span>
+                  <span className="bg-green-100 dark:bg-green-900/50 text-green-700 dark:text-green-300 px-2 py-1 rounded text-xs">Retenção: 45%</span>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+        </div>
+
+        {/* Flow Arrows */}
+        <div className="hidden lg:flex justify-center items-center gap-8 text-muted-foreground">
+          <ArrowRight className="w-8 h-8" />
+          <ArrowRight className="w-8 h-8" />
+        </div>
+      </div>
           
           {/* Video Section */}
           <div className="w-full max-w-4xl mx-auto mb-8">
