@@ -8,6 +8,48 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
+    /* Cor Principal e Variações - NexIA Brand */
+    --nexia-purple-dark: #2D1B69;
+    
+    /* Sistema de cores baseado na principal */
+    --color-primary: var(--nexia-purple-dark);
+    --color-primary-light: #3D2970;
+    --color-primary-lighter: #4D3980;
+    --color-primary-dark: #1F0F4A;
+    --color-primary-darker: #150A3A;
+    
+    /* Cores com transparência */
+    --color-primary-10: rgba(45, 27, 105, 0.1);
+    --color-primary-20: rgba(45, 27, 105, 0.2);
+    --color-primary-30: rgba(45, 27, 105, 0.3);
+    --color-primary-50: rgba(45, 27, 105, 0.5);
+    --color-primary-80: rgba(45, 27, 105, 0.8);
+    
+    /* Cores complementares */
+    --color-accent: #F4C430;
+    --color-accent-light: #FFD700;
+    
+    /* Backgrounds */
+    --bg-primary: var(--color-primary);
+    --bg-secondary: var(--color-primary-dark);
+    --bg-card: rgba(255, 255, 255, 0.05);
+    --bg-hover: rgba(255, 255, 255, 0.1);
+    
+    /* Texto */
+    --text-primary: #FFFFFF;
+    --text-secondary: rgba(255, 255, 255, 0.8);
+    --text-muted: rgba(255, 255, 255, 0.6);
+    
+    /* Bordas */
+    --border-primary: rgba(255, 255, 255, 0.1);
+    --border-hover: rgba(255, 255, 255, 0.2);
+    
+    /* Sombras */
+    --shadow-primary: 0 10px 25px rgba(45, 27, 105, 0.3);
+    --shadow-glow: 0 0 40px rgba(45, 27, 105, 0.4);
+    --shadow-card: 0 4px 20px rgba(45, 27, 105, 0.15);
+
+    /* Shadcn/UI Variables - Adapted to NexIA Brand */
     --background: 0 0% 100%;
     --foreground: 240 10% 3.9%;
 
@@ -38,12 +80,20 @@ All colors MUST be HSL.
     --ring: 265 85% 47%;
 
     /* Custom design tokens */
-    --gradient-primary: linear-gradient(135deg, hsl(265 85% 47%), hsl(280 80% 55%));
-    --gradient-secondary: linear-gradient(135deg, hsl(240 4.8% 95.9%), hsl(0 0% 100%));
-    --gradient-hero: linear-gradient(135deg, hsl(265 85% 47%) 0%, hsl(280 80% 55%) 50%, hsl(295 75% 65%) 100%);
-    --shadow-glow: 0 0 40px hsl(265 85% 47% / 0.2);
-    --shadow-card: 0 4px 20px hsl(240 5.9% 90% / 0.3);
-    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --gradient-primary: linear-gradient(135deg, var(--color-primary), var(--color-primary-light));
+    --gradient-secondary: linear-gradient(135deg, var(--color-primary-dark), var(--color-primary-darker));
+    --gradient-hero: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-light) 50%, var(--color-accent) 100%);
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
 
     /* Typography */
     --font-primary: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
@@ -99,23 +149,8 @@ All colors MUST be HSL.
     --text-error: #ef4444;
     --text-warning: #f59e0b;
 
-    --radius: 0.5rem;
-
-    --sidebar-background: 0 0% 98%;
-
-    --sidebar-foreground: 240 5.3% 26.1%;
-
-    --sidebar-primary: 240 5.9% 10%;
-
-    --sidebar-primary-foreground: 0 0% 98%;
-
-    --sidebar-accent: 240 4.8% 95.9%;
-
-    --sidebar-accent-foreground: 240 5.9% 10%;
-
-    --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    /* Transitions */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   .dark {
