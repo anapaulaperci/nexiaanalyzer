@@ -196,10 +196,225 @@ Apresente o plano de forma executiva, com bullets claros, números específicos 
               Planejamento de Campanha com IA
             </h1>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-              Transforme suas personas sintéticas em campanhas de vendas vencedoras
+              Aprenda os conceitos fundamentais e crie campanhas de vendas vencedoras
             </p>
           </div>
         </div>
+
+        {/* Educational Section - Campaign Basics */}
+        <Card className="bg-card/80 backdrop-blur-sm border-border/50">
+          <CardHeader>
+            <CardTitle className="text-2xl flex items-center gap-3">
+              <Target className="w-6 h-6 text-primary" />
+              Antes de Começar: O Que Você Precisa Definir
+            </CardTitle>
+            <p className="text-muted-foreground">
+              Para criar uma campanha eficaz, primeiro você deve fornecer estas informações essenciais:
+            </p>
+          </CardHeader>
+          <CardContent className="space-y-6">
+            <div className="grid md:grid-cols-3 gap-6">
+              <div className="space-y-3">
+                <div className="w-12 h-12 bg-blue-500/10 rounded-xl flex items-center justify-center">
+                  <Target className="w-6 h-6 text-blue-600" />
+                </div>
+                <h3 className="font-semibold text-lg">🎯 Objetivo da Campanha</h3>
+                <ul className="text-sm text-muted-foreground space-y-1">
+                  <li>• Gerar leads qualificados</li>
+                  <li>• Aumentar vendas</li>
+                  <li>• Reconhecimento de marca</li>
+                  <li>• Retenção de clientes</li>
+                </ul>
+              </div>
+              
+              <div className="space-y-3">
+                <div className="w-12 h-12 bg-green-500/10 rounded-xl flex items-center justify-center">
+                  <TrendingUp className="w-6 h-6 text-green-600" />
+                </div>
+                <h3 className="font-semibold text-lg">📱 Plataformas de Ads</h3>
+                <ul className="text-sm text-muted-foreground space-y-1">
+                  <li>• Facebook/Instagram Ads</li>
+                  <li>• Google Ads</li>
+                  <li>• LinkedIn Ads</li>
+                  <li>• TikTok Ads</li>
+                </ul>
+              </div>
+              
+              <div className="space-y-3">
+                <div className="w-12 h-12 bg-purple-500/10 rounded-xl flex items-center justify-center">
+                  <Brain className="w-6 h-6 text-purple-600" />
+                </div>
+                <h3 className="font-semibold text-lg">👤 Dados da Persona</h3>
+                <ul className="text-sm text-muted-foreground space-y-1">
+                  <li>• Demografia e comportamento</li>
+                  <li>• Dores e necessidades</li>
+                  <li>• Canais preferidos</li>
+                  <li>• Jornada de compra</li>
+                </ul>
+              </div>
+            </div>
+          </CardContent>
+        </Card>
+
+        {/* Chunks Concept Section */}
+        <Card className="bg-card/80 backdrop-blur-sm border-border/50">
+          <CardHeader>
+            <CardTitle className="text-2xl flex items-center gap-3">
+              <Sparkles className="w-6 h-6 text-primary" />
+              🧩 O Que São Chunks de Anúncios?
+            </CardTitle>
+            <p className="text-muted-foreground">
+              Chunks de anúncios são pequenos blocos modulares de conteúdo que podem ser combinados, reorganizados e testados para criar anúncios mais eficazes.
+            </p>
+          </CardHeader>
+          <CardContent className="space-y-8">
+            {/* Concept */}
+            <div className="bg-muted/30 rounded-lg p-6">
+              <h3 className="font-semibold text-lg mb-4">📊 Conceito Principal:</h3>
+              <p className="text-muted-foreground mb-4">
+                Em vez de criar um anúncio único e estático, você cria módulos independentes que podem ser:
+              </p>
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div className="text-center">
+                  <div className="w-12 h-12 bg-blue-500/10 rounded-xl mx-auto mb-2 flex items-center justify-center">
+                    <span className="text-blue-600">🔄</span>
+                  </div>
+                  <p className="text-sm font-medium">Recombinados</p>
+                </div>
+                <div className="text-center">
+                  <div className="w-12 h-12 bg-green-500/10 rounded-xl mx-auto mb-2 flex items-center justify-center">
+                    <span className="text-green-600">🧪</span>
+                  </div>
+                  <p className="text-sm font-medium">Testados isoladamente</p>
+                </div>
+                <div className="text-center">
+                  <div className="w-12 h-12 bg-purple-500/10 rounded-xl mx-auto mb-2 flex items-center justify-center">
+                    <span className="text-purple-600">📈</span>
+                  </div>
+                  <p className="text-sm font-medium">Otimizados por performance</p>
+                </div>
+                <div className="text-center">
+                  <div className="w-12 h-12 bg-orange-500/10 rounded-xl mx-auto mb-2 flex items-center justify-center">
+                    <span className="text-orange-600">🎯</span>
+                  </div>
+                  <p className="text-sm font-medium">Personalizados por audiência</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Types of Chunks */}
+            <div className="grid md:grid-cols-3 gap-6">
+              <div className="bg-blue-50/50 rounded-lg p-6 border border-blue-200/50">
+                <h4 className="font-semibold text-lg mb-4 text-blue-900">🎨 Chunks de Copy (Texto)</h4>
+                <div className="space-y-4">
+                  <div>
+                    <p className="font-medium text-sm text-blue-800 mb-2">Headlines:</p>
+                    <ul className="text-xs text-blue-700 space-y-1">
+                      <li>• "Economize 50% hoje"</li>
+                      <li>• "Última chance"</li>
+                      <li>• "Oferta exclusiva"</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <p className="font-medium text-sm text-blue-800 mb-2">Body:</p>
+                    <ul className="text-xs text-blue-700 space-y-1">
+                      <li>• "10.000+ clientes satisfeitos"</li>
+                      <li>• "Garantia de 30 dias"</li>
+                      <li>• "Entrega grátis"</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <p className="font-medium text-sm text-blue-800 mb-2">CTAs:</p>
+                    <ul className="text-xs text-blue-700 space-y-1">
+                      <li>• "Compre agora"</li>
+                      <li>• "Saiba mais"</li>
+                      <li>• "Teste grátis"</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div className="bg-green-50/50 rounded-lg p-6 border border-green-200/50">
+                <h4 className="font-semibold text-lg mb-4 text-green-900">🖼️ Chunks Visuais</h4>
+                <ul className="text-sm text-green-700 space-y-2">
+                  <li>🖼️ Imagens de produto</li>
+                  <li>👥 Fotos de pessoas/testemunhos</li>
+                  <li>📊 Gráficos de benefícios</li>
+                  <li>🎥 Vídeos curtos (3-5 segundos)</li>
+                </ul>
+              </div>
+
+              <div className="bg-purple-50/50 rounded-lg p-6 border border-purple-200/50">
+                <h4 className="font-semibold text-lg mb-4 text-purple-900">💰 Chunks de Oferta</h4>
+                <ul className="text-sm text-purple-700 space-y-2">
+                  <li>💰 Desconto percentual</li>
+                  <li>🎁 Brinde</li>
+                  <li>📦 Frete grátis</li>
+                  <li>⏰ Urgência temporal</li>
+                </ul>
+              </div>
+            </div>
+
+            {/* Practical Example */}
+            <div className="bg-muted/30 rounded-lg p-6">
+              <h3 className="font-semibold text-lg mb-4">💡 Exemplo Prático:</h3>
+              <div className="grid md:grid-cols-2 gap-6">
+                <div className="bg-red-50/50 rounded-lg p-4 border border-red-200/50">
+                  <h4 className="font-medium text-red-900 mb-2">❌ Anúncio Tradicional:</h4>
+                  <p className="text-sm text-red-700 italic">
+                    "Compre nosso software de gestão com 30% de desconto. 
+                    Mais de 5.000 empresas confiam em nós. Teste grátis por 14 dias."
+                  </p>
+                </div>
+                <div className="bg-green-50/50 rounded-lg p-4 border border-green-200/50">
+                  <h4 className="font-medium text-green-900 mb-2">✅ Com Chunks:</h4>
+                  <div className="text-sm text-green-700 space-y-2">
+                    <div>
+                      <strong>Headlines:</strong> "Software 30% OFF" | "Automatize sua empresa" | "Pare de usar planilhas"
+                    </div>
+                    <div>
+                      <strong>Prova Social:</strong> "5.000+ empresas" | "Nota 4.8" | "Líder há 10 anos"
+                    </div>
+                    <div>
+                      <strong>CTAs:</strong> "Teste grátis 14 dias" | "Sem cartão" | "Demo 2 min"
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Advantages */}
+            <div className="grid md:grid-cols-3 gap-6">
+              <div className="text-center">
+                <div className="w-16 h-16 bg-gradient-primary rounded-2xl mx-auto mb-4 flex items-center justify-center">
+                  <span className="text-white text-2xl">🚀</span>
+                </div>
+                <h4 className="font-semibold mb-2">Testing Escalável</h4>
+                <p className="text-sm text-muted-foreground">
+                  Teste cada elemento isoladamente e identifique o que funciona melhor
+                </p>
+              </div>
+              <div className="text-center">
+                <div className="w-16 h-16 bg-gradient-primary rounded-2xl mx-auto mb-4 flex items-center justify-center">
+                  <span className="text-white text-2xl">🎯</span>
+                </div>
+                <h4 className="font-semibold mb-2">Personalização Dinâmica</h4>
+                <p className="text-sm text-muted-foreground">
+                  Diferentes chunks para diferentes personas e contextos
+                </p>
+              </div>
+              <div className="text-center">
+                <div className="w-16 h-16 bg-gradient-primary rounded-2xl mx-auto mb-4 flex items-center justify-center">
+                  <span className="text-white text-2xl">⚡</span>
+                </div>
+                <h4 className="font-semibold mb-2">Produção Eficiente</h4>
+                <p className="text-sm text-muted-foreground">
+                  Reaproveite chunks de sucesso e crie bibliotecas de elementos
+                </p>
+              </div>
+            </div>
+          </CardContent>
+        </Card>
 
         {/* Benefits Cards */}
         <div className="grid md:grid-cols-3 gap-6">
