@@ -20,153 +20,8 @@ const Prompts = () => {
   const prompts = [
     {
       id: 1,
-      title: "análise de sentimento completa",
-      description: "identifica emoções, sentimentos e pontos de dor dos respondentes com alta precisão",
-      category: "análise",
-      difficulty: "iniciante",
-      rating: 4.9,
-      illustration: sentimentAnalysisImg,
-      prompt: `Analise o sentimento desta pesquisa de satisfação do cliente e forneça:
-
-1. **distribuição de sentimentos**:
-   - percentual de respostas positivas, neutras e negativas
-   - principais emoções identificadas
-
-2. **pontos de dor principais**:
-   - top 3 problemas mais mencionados
-   - impacto de cada problema na satisfação geral
-
-3. **pontos fortes**:
-   - aspectos mais elogiados pelos clientes
-   - oportunidades de potencializar pontos positivos
-
-4. **insights acionáveis**:
-   - recomendações específicas para melhorias
-   - priorização baseada no impacto
-
-dados da pesquisa: [INSERIR DADOS AQUI]`,
-      icon: Heart,
-      color: "text-red-400"
-    },
-    {
-      id: 2,
-      title: "segmentação avançada de público",
-      description: "cria personas detalhadas e segmentos de mercado baseados nos dados coletados",
-      category: "segmentação",
-      difficulty: "intermediário",
-      rating: 4.8,
-      illustration: audienceSegmentationImg,
-      prompt: `Com base nos dados desta pesquisa, crie uma segmentação completa do público:
-
-1. **personas principais** (3-4 personas):
-   - demografia detalhada
-   - comportamentos e preferências
-   - motivações e objetivos
-   - canais de comunicação preferidos
-
-2. **matriz de segmentação**:
-   - critérios de segmentação utilizados
-   - tamanho estimado de cada segmento
-   - potencial de valor de cada grupo
-
-3. **características comportamentais**:
-   - padrões de compra identificados
-   - sensibilidade a preço
-   - fatores de decisão mais importantes
-
-4. **estratégias de targeting**:
-   - abordagem específica para cada segmento
-   - mensagens-chave personalizadas
-   - canais de comunicação recomendados
-
-dados da pesquisa: [INSERIR DADOS AQUI]`,
-      icon: Users,
-      color: "text-purple-400"
-    },
-    {
-      id: 3,
-      title: "geração de campanha de conversão",
-      description: "desenvolve campanhas de marketing focadas em resultados e alta performance",
-      category: "marketing",
-      difficulty: "avançado",
-      rating: 4.9,
-      illustration: campaignGenerationImg,
-      prompt: `Baseado nos insights desta pesquisa, crie uma campanha de marketing completa:
-
-1. **estratégia da campanha**:
-   - objetivo principal e KPIs
-   - público-alvo prioritário
-   - proposta de valor única
-
-2. **messaging framework**:
-   - headline principal
-   - subheadlines para diferentes segmentos
-   - call-to-actions otimizados
-   - pontos de objeção e respostas
-
-3. **mix de canais**:
-   - canais digitais recomendados
-   - distribuição de orçamento por canal
-   - cronograma de execução
-
-4. **criativos e conteúdo**:
-   - conceitos creativos principais
-   - formatos de conteúdo por canal
-   - elementos visuais sugeridos
-
-5. **métricas de sucesso**:
-   - KPIs por canal
-   - metas de conversão
-   - sistema de acompanhamento
-
-dados da pesquisa: [INSERIR DADOS AQUI]`,
-      icon: Rocket,
-      color: "text-green-400"
-    },
-    {
-      id: 4,
-      title: "mapeamento de jornada do cliente",
-      description: "mapeia toda a experiência do cliente identificando oportunidades de otimização",
-      category: "experiência",
-      difficulty: "intermediário",
-      rating: 4.7,
-      illustration: customerJourneyImg,
-      prompt: `Mapeie a jornada completa do cliente baseada nos insights desta pesquisa:
-
-1. **estágios da jornada**:
-   - conscientização: como descobrem o problema/necessidade
-   - consideração: processo de avaliação de soluções
-   - decisão: fatores decisivos na escolha
-   - pós-compra: experiência de uso e fidelização
-
-2. **touchpoints críticos**:
-   - pontos de contato em cada estágio
-   - canais de interação preferidos
-   - momentos de verdade identificados
-
-3. **pain points e friction**:
-   - obstáculos em cada etapa
-   - pontos de abandono mais comuns
-   - frustrações relatadas pelos clientes
-
-4. **oportunidades de melhoria**:
-   - quick wins para cada estágio
-   - melhorias de médio e longo prazo
-   - impacto esperado de cada otimização
-
-5. **personalização**:
-   - pontos onde personalizar a experiência
-   - dados necessários para personalização
-   - tecnologias recomendadas
-
-dados da pesquisa: [INSERIR DADOS AQUI]`,
-      icon: Target,
-      color: "text-blue-400"
-    },
-    {
-      id: 5,
-      title: "análise competitiva e posicionamento",
-      description: "identifica vantagens competitivas e oportunidades de posicionamento no mercado",
+      title: "1. Análise competitiva e posicionamento",
+      description: "Identifica vantagens competitivas e oportunidades de posicionamento no mercado",
       category: "estratégia",
       difficulty: "avançado",
       rating: 4.6,
@@ -203,12 +58,43 @@ dados da pesquisa: [INSERIR DADOS AQUI]`,
       color: "text-orange-400"
     },
     {
-      id: 6,
-      title: "Como Extrair Insights Não Óbvios da Sua Pesquisa",
-      description: "Descobre padrões ocultos e contradições que revelam oportunidades de negócio inexploradas",
-      category: "Análise",
-      difficulty: "Avançado",
+      id: 2,
+      title: "2. Análise de sentimento completa",
+      description: "Identifica emoções, sentimentos e pontos de dor dos respondentes com alta precisão",
+      category: "análise",
+      difficulty: "iniciante",
       rating: 4.9,
+      illustration: sentimentAnalysisImg,
+      prompt: `Analise o sentimento desta pesquisa de satisfação do cliente e forneça:
+
+1. **distribuição de sentimentos**:
+   - percentual de respostas positivas, neutras e negativas
+   - principais emoções identificadas
+
+2. **pontos de dor principais**:
+   - top 3 problemas mais mencionados
+   - impacto de cada problema na satisfação geral
+
+3. **pontos fortes**:
+   - aspectos mais elogiados pelos clientes
+   - oportunidades de potencializar pontos positivos
+
+4. **insights acionáveis**:
+   - recomendações específicas para melhorias
+   - priorização baseada no impacto
+
+dados da pesquisa: [INSERIR DADOS AQUI]`,
+      icon: Heart,
+      color: "text-red-400"
+    },
+    {
+      id: 3,
+      title: "3. Como extrair insights não óbvios da sua pesquisa",
+      description: "Descobre padrões ocultos e contradições que revelam oportunidades de negócio inexploradas",
+      category: "análise",
+      difficulty: "avançado",
+      rating: 4.9,
+      illustration: hiddenInsightsImg,
       prompt: `Analise profundamente esta pesquisa para extrair insights não-óbvios:
 
 ### 1. 🔄 ANÁLISE DE CONTRADIÇÕES
@@ -348,12 +234,13 @@ Dados da pesquisa: [INSERIR DADOS AQUI]`,
       color: "text-indigo-400"
     },
     {
-      id: 7,
-      title: "como identificar o arquétipo a partir da pesquisa da persona",
-      description: "descobre o arquétipo de marca mais ressonante baseado na psicologia arquetípica e branding emocional",
+      id: 4,
+      title: "4. Como identificar o arquétipo a partir da pesquisa da persona",
+      description: "Descobre o arquétipo de marca mais ressonante baseado na psicologia arquetípica e branding emocional",
       category: "estratégia",
       difficulty: "avançado",
       rating: 4.8,
+      illustration: brandArchetypeImg,
       prompt: `Você é um estrategista de marca especializado em psicologia arquetípica e branding emocional. Analise profundamente os dados de persona fornecidos para identificar o arquétipo de marca mais ressonante e suas variações.
 
 ## DADOS DA PERSONA:
@@ -517,6 +404,121 @@ Se precisar mudar, qual o próximo arquétipo?
 dados da pesquisa: [INSERIR DADOS AQUI]`,
       icon: Crown,
       color: "text-purple-400"
+    },
+    {
+      id: 5,
+      title: "5. Geração de campanha de conversão",
+      description: "Desenvolve campanhas de marketing focadas em resultados e alta performance",
+      category: "marketing",
+      difficulty: "avançado",
+      rating: 4.9,
+      illustration: campaignGenerationImg,
+      prompt: `Baseado nos insights desta pesquisa, crie uma campanha de marketing completa:
+
+1. **estratégia da campanha**:
+   - objetivo principal e KPIs
+   - público-alvo prioritário
+   - proposta de valor única
+
+2. **messaging framework**:
+   - headline principal
+   - subheadlines para diferentes segmentos
+   - call-to-actions otimizados
+   - pontos de objeção e respostas
+
+3. **mix de canais**:
+   - canais digitais recomendados
+   - distribuição de orçamento por canal
+   - cronograma de execução
+
+4. **criativos e conteúdo**:
+   - conceitos creativos principais
+   - formatos de conteúdo por canal
+   - elementos visuais sugeridos
+
+5. **métricas de sucesso**:
+   - KPIs por canal
+   - metas de conversão
+   - sistema de acompanhamento
+
+dados da pesquisa: [INSERIR DADOS AQUI]`,
+      icon: Rocket,
+      color: "text-green-400"
+    },
+    {
+      id: 6,
+      title: "6. Mapeamento de jornada do cliente",
+      description: "Mapeia toda a experiência do cliente identificando oportunidades de otimização",
+      category: "experiência",
+      difficulty: "intermediário",
+      rating: 4.7,
+      illustration: customerJourneyImg,
+      prompt: `Mapeie a jornada completa do cliente baseada nos insights desta pesquisa:
+
+1. **estágios da jornada**:
+   - conscientização: como descobrem o problema/necessidade
+   - consideração: processo de avaliação de soluções
+   - decisão: fatores decisivos na escolha
+   - pós-compra: experiência de uso e fidelização
+
+2. **touchpoints críticos**:
+   - pontos de contato em cada estágio
+   - canais de interação preferidos
+   - momentos de verdade identificados
+
+3. **pain points e friction**:
+   - obstáculos em cada etapa
+   - pontos de abandono mais comuns
+   - frustrações relatadas pelos clientes
+
+4. **oportunidades de melhoria**:
+   - quick wins para cada estágio
+   - melhorias de médio e longo prazo
+   - impacto esperado de cada otimização
+
+5. **personalização**:
+   - pontos onde personalizar a experiência
+   - dados necessários para personalização
+   - tecnologias recomendadas
+
+dados da pesquisa: [INSERIR DADOS AQUI]`,
+      icon: Target,
+      color: "text-blue-400"
+    },
+    {
+      id: 7,
+      title: "7. Segmentação avançada de público",
+      description: "Cria personas detalhadas e segmentos de mercado baseados nos dados coletados",
+      category: "segmentação",
+      difficulty: "intermediário",
+      rating: 4.8,
+      illustration: audienceSegmentationImg,
+      prompt: `Com base nos dados desta pesquisa, crie uma segmentação completa do público:
+
+1. **personas principais** (3-4 personas):
+   - demografia detalhada
+   - comportamentos e preferências
+   - motivações e objetivos
+   - canais de comunicação preferidos
+
+2. **matriz de segmentação**:
+   - critérios de segmentação utilizados
+   - tamanho estimado de cada segmento
+   - potencial de valor de cada grupo
+
+3. **características comportamentais**:
+   - padrões de compra identificados
+   - sensibilidade a preço
+   - fatores de decisão mais importantes
+
+4. **estratégias de targeting**:
+   - abordagem específica para cada segmento
+   - mensagens-chave personalizadas
+   - canais de comunicação recomendados
+
+dados da pesquisa: [INSERIR DADOS AQUI]`,
+      icon: Users,
+      color: "text-purple-400"
     }
   ];
 
@@ -533,9 +535,9 @@ dados da pesquisa: [INSERIR DADOS AQUI]`,
 
   const getDifficultyColor = (difficulty: string) => {
     switch (difficulty) {
-      case "Iniciante": return "bg-green-500/20 text-green-400";
-      case "Intermediário": return "bg-yellow-500/20 text-yellow-400";
-      case "Avançado": return "bg-red-500/20 text-red-400";
+      case "iniciante": return "bg-green-500/20 text-green-400";
+      case "intermediário": return "bg-yellow-500/20 text-yellow-400";
+      case "avançado": return "bg-red-500/20 text-red-400";
       default: return "bg-gray-500/20 text-gray-400";
     }
   };

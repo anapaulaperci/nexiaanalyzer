@@ -6,11 +6,11 @@ const HorizontalNav = () => {
   const location = useLocation();
   
   const navItems = [
-    { title: "Overview", url: "/dashboard", icon: Home },
+    { title: "Início", url: "/dashboard", icon: Home },
     { title: "Tutorial", url: "/dashboard/tutorial", icon: BookOpen },
     { title: "Prompts", url: "/dashboard/prompts", icon: MessageSquare },
     { title: "Copy", url: "/dashboard/copy", icon: Copy },
-    { title: "Campanha", url: "/dashboard/campaign", icon: Sparkles },
+    { title: "Planejamento de Campanha", url: "/dashboard/campaign", icon: Sparkles },
   ];
 
   return (
