@@ -1,4 +1,4 @@
-import { BookOpen, MessageSquare, Home, Brain } from "lucide-react"
+import { BookOpen, MessageSquare, Home } from "lucide-react"
 import { NavLink, useLocation } from "react-router-dom"
 
 import {
@@ -16,7 +16,7 @@ import {
 const items = [
   { title: "Overview", url: "/dashboard", icon: Home },
   { title: "Tutorial", url: "/dashboard/tutorial", icon: BookOpen },
-  { title: "Prompts", url: "/dashboard/prompts", icon: MessageSquare },
+  { title: "Prompts para Personas", url: "/dashboard/prompts", icon: MessageSquare },
 ]
 
 export function AppSidebar() {
@@ -43,12 +43,14 @@ export function AppSidebar() {
         <SidebarGroup>
           <div className="px-4 py-6">
             <div className="flex items-center gap-2">
-              <div className="w-8 h-8 rounded-full bg-gradient-primary flex items-center justify-center">
-                <Brain className="w-5 h-5 text-primary-foreground" />
-              </div>
+              <img 
+                src="/lovable-uploads/ace31a89-bfd6-4446-8a5b-26bcd635824c.png" 
+                alt="NexIA Lab" 
+                className="h-8"
+              />
               {!isCollapsed && (
                 <span className="font-bold text-lg bg-gradient-hero bg-clip-text text-transparent">
-                  AI Research
+                  NexIA Lab
                 </span>
               )}
             </div>

@@ -4,36 +4,36 @@ import { Copy, MessageSquare, Target, Users, TrendingUp } from "lucide-react";
 
 const templates = [
   {
-    icon: MessageSquare,
-    title: "Análise de Sentimento",
-    description: "Identifique emoções e sentimentos dos respondentes",
-    prompt: "Analise o sentimento desta pesquisa e identifique os principais pontos de dor dos clientes...",
-    category: "Análise",
-    color: "text-blue-400"
+    icon: Users,
+    title: "Análise de Personas Sintéticas",
+    description: "Gere personas detalhadas baseadas em dados reais de comportamento",
+    prompt: "Com base nos dados fornecidos, crie 3-5 personas sintéticas detalhadas incluindo:\n\n1. **Demografia e Psicografia**\n2. **Padrões de Comportamento**\n3. **Necessidades e Dores**\n4. **Jornada de Compra**\n5. **Canais de Comunicação Preferidos**\n\nPara cada persona, forneça insights acionáveis sobre como abordá-las...",
+    category: "Personas",
+    color: "text-blue-500"
   },
   {
     icon: Target,
-    title: "Segmentação de Público",
-    description: "Crie personas detalhadas baseadas nos dados",
-    prompt: "Com base nesta pesquisa, crie 3 personas distintas e suas características...",
+    title: "Segmentação Comportamental",
+    description: "Identifique grupos de usuários com comportamentos similares",
+    prompt: "Analise os dados de comportamento dos usuários e identifique segmentos distintos:\n\n1. **Critérios de Segmentação**\n2. **Características de Cada Segmento**\n3. **Tamanho e Potencial de Cada Grupo**\n4. **Estratégias Específicas por Segmento**\n\nBase sua análise em padrões reais de uso e interação...",
     category: "Segmentação",
-    color: "text-purple-400"
+    color: "text-purple-500"
   },
   {
-    icon: Users,
-    title: "Jornada do Cliente",
-    description: "Mapeie a experiência completa do consumidor",
-    prompt: "Mapeie a jornada do cliente baseada nos insights desta pesquisa...",
-    category: "Experiência",
-    color: "text-pink-400"
+    icon: MessageSquare,
+    title: "Análise de Motivações",
+    description: "Descubra o que realmente motiva seus usuários",
+    prompt: "Identifique as principais motivações dos usuários baseado nos dados:\n\n1. **Motivações Primárias e Secundárias**\n2. **Triggers Comportamentais**\n3. **Barreiras e Objeções**\n4. **Gatilhos Emocionais**\n\nForneça insights sobre como usar essas motivações em estratégias...",
+    category: "Psicologia",
+    color: "text-green-500"
   },
   {
     icon: TrendingUp,
-    title: "Campanha de Conversão",
-    description: "Gere campanhas focadas em resultados",
-    prompt: "Crie uma campanha de marketing digital completa para aumentar conversões...",
-    category: "Marketing",
-    color: "text-green-400"
+    title: "Predição de Comportamento",
+    description: "Preveja comportamentos futuros baseado em padrões históricos",
+    prompt: "Com base nos padrões históricos dos dados, faça predições sobre:\n\n1. **Tendências de Comportamento**\n2. **Probabilidade de Conversão**\n3. **Momentos Ideais de Engajamento**\n4. **Riscos de Churn**\n\nBase suas predições em evidências dos dados fornecidos...",
+    category: "Predição",
+    color: "text-orange-500"
   }
 ];
 
@@ -48,10 +48,10 @@ const Templates = () => {
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-hero bg-clip-text text-transparent">
-            Templates de Prompts
+            Templates de Prompts para Personas Sintéticas
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Prompts otimizados para extrair insights valiosos e gerar campanhas de alta performance
+            Prompts especializados para gerar personas sintéticas precisas baseadas em dados reais
           </p>
         </div>
 

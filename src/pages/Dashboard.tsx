@@ -8,10 +8,10 @@ const Dashboard = () => {
       {/* Welcome Section */}
       <div className="mb-8">
         <h2 className="text-3xl font-bold mb-2 bg-gradient-hero bg-clip-text text-transparent">
-          Bem-vindo ao Dashboard
+          Dashboard de Personas Sintéticas
         </h2>
         <p className="text-lg text-muted-foreground">
-          Gerencie suas análises de pesquisa e campanhas de marketing com IA
+          Crie e gerencie personas sintéticas baseadas em dados reais com inteligência artificial
         </p>
       </div>
 
@@ -21,9 +21,9 @@ const Dashboard = () => {
           <CardContent className="p-6">
             <div className="flex items-center justify-between">
               <div>
-                <p className="text-primary-foreground/80 text-sm mb-1">Pesquisas Analisadas</p>
-                <p className="text-3xl font-bold">247</p>
-                <p className="text-sm text-primary-foreground/60 mt-1">+12% este mês</p>
+                <p className="text-primary-foreground/80 text-sm mb-1">Personas Criadas</p>
+                <p className="text-3xl font-bold">43</p>
+                <p className="text-sm text-primary-foreground/60 mt-1">+8 este mês</p>
               </div>
               <BarChart3 className="w-8 h-8 text-primary-foreground/80" />
             </div>
@@ -34,9 +34,9 @@ const Dashboard = () => {
           <CardContent className="p-6">
             <div className="flex items-center justify-between">
               <div>
-                <p className="text-muted-foreground text-sm mb-1">Campanhas Ativas</p>
-                <p className="text-3xl font-bold text-foreground">12</p>
-                <p className="text-sm text-green-400 mt-1">+3 novas</p>
+                <p className="text-muted-foreground text-sm mb-1">Análises Realizadas</p>
+                <p className="text-3xl font-bold text-foreground">127</p>
+                <p className="text-sm text-green-500 mt-1">+15 novas</p>
               </div>
               <Brain className="w-8 h-8 text-primary" />
             </div>
@@ -47,11 +47,11 @@ const Dashboard = () => {
           <CardContent className="p-6">
             <div className="flex items-center justify-between">
               <div>
-                <p className="text-muted-foreground text-sm mb-1">Taxa de Conversão</p>
-                <p className="text-3xl font-bold text-foreground">18.4%</p>
-                <p className="text-sm text-green-400 mt-1">+2.1%</p>
+                <p className="text-muted-foreground text-sm mb-1">Precisão Média</p>
+                <p className="text-3xl font-bold text-foreground">94.2%</p>
+                <p className="text-sm text-green-500 mt-1">+2.3%</p>
               </div>
-              <TrendingUp className="w-8 h-8 text-green-400" />
+              <TrendingUp className="w-8 h-8 text-green-500" />
             </div>
           </CardContent>
         </Card>
@@ -60,9 +60,9 @@ const Dashboard = () => {
           <CardContent className="p-6">
             <div className="flex items-center justify-between">
               <div>
-                <p className="text-muted-foreground text-sm mb-1">Público Alcançado</p>
-                <p className="text-3xl font-bold text-foreground">45.2K</p>
-                <p className="text-sm text-blue-400 mt-1">+5.8K</p>
+                <p className="text-muted-foreground text-sm mb-1">Dados Processados</p>
+                <p className="text-3xl font-bold text-foreground">2.4M</p>
+                <p className="text-sm text-blue-500 mt-1">+850K</p>
               </div>
               <Users className="w-8 h-8 text-blue-400" />
             </div>
@@ -77,11 +77,11 @@ const Dashboard = () => {
             <div className="w-16 h-16 mx-auto rounded-full bg-gradient-primary flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
               <Upload className="w-8 h-8 text-primary-foreground" />
             </div>
-            <CardTitle className="text-xl">Nova Análise</CardTitle>
+            <CardTitle className="text-xl">Criar Persona</CardTitle>
           </CardHeader>
           <CardContent className="text-center">
             <p className="text-muted-foreground mb-4">
-              Faça upload de uma nova pesquisa para análise com IA
+              Faça upload dos seus dados para gerar personas sintéticas
             </p>
             <Button variant="outline" className="w-full">
               Fazer Upload
@@ -94,14 +94,14 @@ const Dashboard = () => {
             <div className="w-16 h-16 mx-auto rounded-full bg-gradient-primary flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
               <FileText className="w-8 h-8 text-primary-foreground" />
             </div>
-            <CardTitle className="text-xl">Ver Relatórios</CardTitle>
+            <CardTitle className="text-xl">Ver Personas</CardTitle>
           </CardHeader>
           <CardContent className="text-center">
             <p className="text-muted-foreground mb-4">
-              Acesse relatórios detalhados das suas análises
+              Acesse e gerencie suas personas sintéticas criadas
             </p>
             <Button variant="outline" className="w-full">
-              Ver Relatórios
+              Ver Personas
             </Button>
           </CardContent>
         </Card>
@@ -136,27 +136,27 @@ const Dashboard = () => {
                 <BarChart3 className="w-5 h-5 text-primary" />
               </div>
               <div className="flex-1">
-                <p className="font-medium text-foreground">Análise de Satisfação do Cliente concluída</p>
+                <p className="font-medium text-foreground">Persona "Jovem Profissional Tech" criada</p>
                 <p className="text-sm text-muted-foreground">Há 2 horas</p>
               </div>
             </div>
             
             <div className="flex items-center gap-4 p-3 rounded-lg bg-secondary/50">
-              <div className="w-10 h-10 rounded-full bg-green-400/20 flex items-center justify-center">
-                <TrendingUp className="w-5 h-5 text-green-400" />
+              <div className="w-10 h-10 rounded-full bg-green-500/20 flex items-center justify-center">
+                <TrendingUp className="w-5 h-5 text-green-500" />
               </div>
               <div className="flex-1">
-                <p className="font-medium text-foreground">Campanha "Primavera 2024" iniciada</p>
+                <p className="font-medium text-foreground">Análise comportamental finalizada</p>
                 <p className="text-sm text-muted-foreground">Há 4 horas</p>
               </div>
             </div>
             
             <div className="flex items-center gap-4 p-3 rounded-lg bg-secondary/50">
-              <div className="w-10 h-10 rounded-full bg-blue-400/20 flex items-center justify-center">
-                <Users className="w-5 h-5 text-blue-400" />
+              <div className="w-10 h-10 rounded-full bg-blue-500/20 flex items-center justify-center">
+                <Users className="w-5 h-5 text-blue-500" />
               </div>
               <div className="flex-1">
-                <p className="font-medium text-foreground">Nova segmentação de público criada</p>
+                <p className="font-medium text-foreground">3 novas personas sintéticas geradas</p>
                 <p className="text-sm text-muted-foreground">Ontem</p>
               </div>
             </div>

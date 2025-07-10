@@ -1,63 +1,61 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { Upload, Brain, Rocket, BarChart3 } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { FileText, Upload, Brain, ArrowRight } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 const steps = [
   {
+    icon: FileText,
+    title: "1. Monte uma Explicação Base",
+    description: "Descreva detalhadamente o que é o seu negócio, seus produtos/serviços, público-alvo e objetivos",
+    color: "text-blue-500"
+  },
+  {
     icon: Upload,
-    title: "1. Faça Upload",
-    description: "Carregue seus dados de pesquisa em qualquer formato (CSV, Excel, PDF)",
-    color: "text-blue-400"
+    title: "2. Faça Upload da Pesquisa",
+    description: "Baixe a pesquisa de persona que você tem e faça o upload dela em uma inteligência artificial junto com a explicação base",
+    color: "text-purple-500"
   },
   {
     icon: Brain,
-    title: "2. IA Analisa",
-    description: "Claude/ChatGPT processa e identifica insights valiosos automaticamente",
-    color: "text-purple-400"
-  },
-  {
-    icon: Rocket,
-    title: "3. Gere Campanhas",
-    description: "Receba campanhas de marketing completas baseadas nos insights",
-    color: "text-pink-400"
-  },
-  {
-    icon: BarChart3,
-    title: "4. Monitore Resultados",
-    description: "Acompanhe performance e otimize suas campanhas em tempo real",
-    color: "text-green-400"
+    title: "3. Use os Prompts da Plataforma",
+    description: "Peça uma análise com os modelos de prompts que nós fornecemos aqui na plataforma para gerar personas sintéticas precisas",
+    color: "text-green-500"
   }
 ];
 
 const HowItWorks = () => {
+  const navigate = useNavigate();
+
   return (
     <section className="py-24 px-6 bg-gradient-secondary">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-hero bg-clip-text text-transparent">
-            Como Funciona
+            Como Montar a Sua
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Transforme dados brutos em campanhas de marketing de alta performance em 4 passos simples
+            Transforme dados brutos em personas sintéticas precisas em 3 passos simples
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
           {steps.map((step, index) => (
             <Card 
               key={index} 
-              className="relative bg-card/50 backdrop-blur-sm border border-border/50 hover:border-primary/50 transition-all duration-300 hover:shadow-glow group"
+              className="relative bg-card/70 backdrop-blur-sm border border-border/50 hover:border-primary/30 transition-all duration-300 hover:shadow-glow group"
             >
-              <CardContent className="p-6 text-center">
+              <CardContent className="p-8 text-center">
                 <div className="mb-6 relative">
-                  <div className={`w-16 h-16 mx-auto rounded-full bg-gradient-primary flex items-center justify-center group-hover:scale-110 transition-transform duration-300`}>
-                    <step.icon className={`w-8 h-8 ${step.color}`} />
+                  <div className={`w-20 h-20 mx-auto rounded-full bg-gradient-primary flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg`}>
+                    <step.icon className={`w-10 h-10 text-white`} />
                   </div>
                   {index < steps.length - 1 && (
-                    <div className="hidden lg:block absolute top-8 left-full w-full h-0.5 bg-gradient-to-r from-primary/50 to-transparent"></div>
+                    <div className="hidden md:block absolute top-10 left-full w-full h-0.5 bg-gradient-to-r from-primary/30 to-transparent"></div>
                   )}
                 </div>
                 
-                <h3 className="text-xl font-semibold mb-3 text-foreground">
+                <h3 className="text-xl font-semibold mb-4 text-foreground">
                   {step.title}
                 </h3>
                 
@@ -67,6 +65,27 @@ const HowItWorks = () => {
               </CardContent>
             </Card>
           ))}
+        </div>
+
+        {/* CTA para prompts */}
+        <div className="text-center">
+          <Card className="bg-card/70 backdrop-blur-sm border border-primary/20 p-8 inline-block">
+            <h3 className="text-2xl font-semibold mb-4 text-foreground">
+              Pronto para começar?
+            </h3>
+            <p className="text-muted-foreground mb-6 max-w-md">
+              Acesse nossa biblioteca de prompts especializados para análise de personas sintéticas
+            </p>
+            <Button 
+              variant="hero" 
+              size="lg" 
+              className="text-lg px-8 py-6 h-auto"
+              onClick={() => navigate('/dashboard/prompts')}
+            >
+              Ver Prompts de Análise
+              <ArrowRight className="w-5 h-5 ml-2" />
+            </Button>
+          </Card>
         </div>
       </div>
     </section>
