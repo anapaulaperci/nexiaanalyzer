@@ -8,7 +8,7 @@ const HorizontalNav = () => {
   const navItems = [
     { title: "Overview", url: "/dashboard", icon: Home },
     { title: "Tutorial", url: "/dashboard/tutorial", icon: BookOpen },
-    { title: "Prompts para Personas", url: "/dashboard/prompts", icon: MessageSquare },
+    { title: "Prompts", url: "/dashboard/prompts", icon: MessageSquare },
   ];
 
   return (

@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Brain, BarChart3, Sparkles, Users } from "lucide-react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, NavLink } from "react-router-dom";
 
 const Hero = () => {
   const navigate = useNavigate();
@@ -62,8 +62,11 @@ const Hero = () => {
               variant="outline" 
               size="lg" 
               className="text-lg px-8 py-6 h-auto"
+              asChild
             >
-              Ver Demo
+              <NavLink to="/dashboard/prompts">
+                Ver Prompts
+              </NavLink>
             </Button>
           </div>
         </div>
