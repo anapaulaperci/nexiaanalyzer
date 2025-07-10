@@ -25,7 +25,11 @@ const buttonVariants = cva(
         gradient: "bg-gradient-to-r from-[#1F0F4A] via-[#2D1B69] to-[#4D3980] text-white hover:shadow-[0_6px_30px_rgba(45,27,105,0.5)] hover:-translate-y-0.5 active:translate-y-0 relative overflow-hidden transition-all duration-300",
         "nexia-outline": "bg-transparent text-white border-2 border-[#3D2970] hover:bg-[#2D1B69] hover:border-[#6B46C1] hover:shadow-[0_4px_20px_rgba(45,27,105,0.3)] transition-all duration-300",
         "nexia-ghost": "bg-[#2D1B69]/10 text-white border border-[#2D1B69]/30 hover:bg-[#2D1B69]/20 hover:border-[#2D1B69] transition-all duration-300",
-        solid: "bg-[#2D1B69] text-white hover:bg-[#1F0F4A] active:bg-[#150A3A] transition-all duration-300"
+        solid: "bg-[#2D1B69] text-white hover:bg-[#1F0F4A] active:bg-[#150A3A] transition-all duration-300",
+        // Animated Variants
+        animated: "btn-animated",
+        pulse: "bg-[#2D1B69] text-white btn-pulse transition-all duration-300",
+        shimmer: "btn-shimmer text-white transition-all duration-300"
       },
       size: {
         default: "h-10 px-4 py-2",
