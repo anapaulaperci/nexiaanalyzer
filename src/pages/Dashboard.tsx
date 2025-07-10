@@ -1,8 +1,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { FileText, Upload, Brain, ArrowRight, Users, Target, TrendingUp, Building2, CheckCircle2, Globe, CreditCard, MessageSquare, Smartphone, UserCheck, BarChart, Search, Eye, Shield } from "lucide-react";
+import { FileText, Upload, Brain, ArrowRight, Users, Target, TrendingUp, Building2, CheckCircle2, Globe, CreditCard, MessageSquare, Smartphone, UserCheck, BarChart } from "lucide-react";
 import { useNavigate } from "react-router-dom";
-import aiAnalysisRealistic from "@/assets/ai-analysis-realistic.png";
 
 const Dashboard = () => {
   const navigate = useNavigate();
@@ -44,195 +43,196 @@ const Dashboard = () => {
           <p className="text-xl md:text-2xl text-muted-foreground leading-relaxed mb-8">
             <strong className="text-foreground">Personas sintéticas</strong> são perfis de usuários/clientes gerados automaticamente por Inteligência Artificial através da análise massiva de dados reais do seu negócio, em vez de serem criadas manualmente através de pesquisas tradicionais.
           </p>
-          
-          {/* Diagram Section */}
-          <div className="w-full max-w-5xl mx-auto mb-8">
-            <div className="relative rounded-lg overflow-hidden shadow-2xl bg-gradient-to-br from-primary/5 to-primary-glow/5 border border-primary/20 p-4">
-              <img 
-                src="/lovable-uploads/0a58e08c-f8c5-4632-968d-9a5a784a64ec.png"
-                alt="Transformando Big Data em Insights Acionáveis com Inteligência Artificial"
-                className="w-full h-auto rounded-lg"
-              />
-            </div>
+        </div>
       </div>
 
-      {/* Big Data to Insights Flow */}
-      <div className="space-y-8">
-        <div className="text-center">
-          <h3 className="text-3xl md:text-4xl font-bold mb-4 bg-gradient-hero bg-clip-text text-transparent">
-            Transformando Big Data em Insights Acionáveis
-          </h3>
-          <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            Como a Inteligência Artificial processa seus dados para gerar personas sintéticas precisas
-          </p>
-        </div>
+      {/* Big Data to Insights Flow - Enhanced Visual */}
+      <div className="relative space-y-12 py-16">
+        {/* Background Effects */}
+        <div className="absolute inset-0 bg-gradient-to-br from-blue-500/5 via-purple-500/5 to-green-500/5 rounded-3xl"></div>
+        <div className="absolute top-0 left-1/4 w-64 h-64 bg-blue-500/10 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-0 right-1/4 w-64 h-64 bg-purple-500/10 rounded-full blur-3xl"></div>
+        
+        <div className="relative z-10">
+          <div className="text-center mb-16">
+            <h3 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-blue-600 via-purple-600 to-green-600 bg-clip-text text-transparent">
+              Transformando Big Data em Insights Acionáveis
+            </h3>
+            <p className="text-xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
+              Veja como nossa Inteligência Artificial processa milhões de dados para criar personas sintéticas ultra-precisas que revolucionam sua estratégia de negócio
+            </p>
+          </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
-          {/* Fontes de Dados */}
-          <Card className="bg-gradient-to-br from-blue-500/10 to-blue-600/5 border border-blue-500/20 hover:border-blue-500/40 transition-all duration-300">
-            <CardHeader>
-              <CardTitle className="flex items-center gap-3 text-blue-600">
-                <BarChart className="w-6 h-6" />
-                <span>Fontes de Dados</span>
-              </CardTitle>
-            </CardHeader>
-            <CardContent className="space-y-4">
-              <div className="bg-blue-50 dark:bg-blue-950/20 p-4 rounded-lg border border-blue-200 dark:border-blue-800">
-                <div className="flex items-center gap-3 mb-2">
-                  <Globe className="w-5 h-5 text-blue-600" />
-                  <span className="font-semibold text-foreground">Comportamento Web</span>
-                </div>
-                <p className="text-sm text-muted-foreground">Cliques, páginas, tempo, scroll</p>
-              </div>
-              
-              <div className="bg-blue-50 dark:bg-blue-950/20 p-4 rounded-lg border border-blue-200 dark:border-blue-800">
-                <div className="flex items-center gap-3 mb-2">
-                  <CreditCard className="w-5 h-5 text-blue-600" />
-                  <span className="font-semibold text-foreground">Transações</span>
-                </div>
-                <p className="text-sm text-muted-foreground">Compras, valores, frequência</p>
-              </div>
-              
-              <div className="bg-blue-50 dark:bg-blue-950/20 p-4 rounded-lg border border-blue-200 dark:border-blue-800">
-                <div className="flex items-center gap-3 mb-2">
-                  <MessageSquare className="w-5 h-5 text-blue-600" />
-                  <span className="font-semibold text-foreground">Interações</span>
-                </div>
-                <p className="text-sm text-muted-foreground">Chat, email, tickets, NPS</p>
-              </div>
-              
-              <div className="bg-blue-50 dark:bg-blue-950/20 p-4 rounded-lg border border-blue-200 dark:border-blue-800">
-                <div className="flex items-center gap-3 mb-2">
-                  <Smartphone className="w-5 h-5 text-blue-600" />
-                  <span className="font-semibold text-foreground">App/Mobile</span>
-                </div>
-                <p className="text-sm text-muted-foreground">Features usadas, sessões</p>
-              </div>
-              
-              <div className="bg-blue-50 dark:bg-blue-950/20 p-4 rounded-lg border border-blue-200 dark:border-blue-800">
-                <div className="flex items-center gap-3 mb-2">
-                  <UserCheck className="w-5 h-5 text-blue-600" />
-                  <span className="font-semibold text-foreground">Social/CRM</span>
-                </div>
-                <p className="text-sm text-muted-foreground">Perfil, engajamento, leads</p>
-              </div>
-            </CardContent>
-          </Card>
-
-          {/* Processamento IA */}
-          <Card className="bg-gradient-to-br from-purple-500/10 to-purple-600/5 border border-purple-500/20 hover:border-purple-500/40 transition-all duration-300">
-            <CardHeader>
-              <CardTitle className="flex items-center gap-3 text-purple-600">
-                <Brain className="w-6 h-6" />
-                <span>Processamento IA</span>
-              </CardTitle>
-            </CardHeader>
-            <CardContent className="space-y-6">
-              <div className="relative">
-                <div className="flex items-center gap-3 mb-3">
-                  <div className="w-8 h-8 rounded-full bg-purple-500 text-white flex items-center justify-center text-sm font-bold">1</div>
-                  <div>
-                    <h4 className="font-semibold text-foreground">Limpeza e Normalização</h4>
-                    <p className="text-sm text-muted-foreground">Padronização de dados</p>
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 max-w-7xl mx-auto relative">
+            
+            {/* Connection Lines */}
+            <div className="hidden lg:block absolute top-24 left-1/3 w-1/3 h-0.5 bg-gradient-to-r from-blue-400 to-purple-400 animate-pulse"></div>
+            <div className="hidden lg:block absolute top-24 right-1/3 w-1/3 h-0.5 bg-gradient-to-r from-purple-400 to-green-400 animate-pulse"></div>
+            
+            {/* Fontes de Dados */}
+            <div className="relative group">
+              <div className="absolute -inset-1 bg-gradient-to-r from-blue-600 to-blue-400 rounded-2xl blur opacity-25 group-hover:opacity-40 transition duration-300"></div>
+              <Card className="relative bg-gradient-to-br from-blue-50 to-blue-100 dark:from-blue-950 dark:to-blue-900 border-2 border-blue-200 dark:border-blue-800 hover:border-blue-400 dark:hover:border-blue-600 transition-all duration-500 transform hover:scale-105">
+                <CardHeader className="text-center pb-6">
+                  <div className="w-20 h-20 mx-auto bg-gradient-to-br from-blue-500 to-blue-600 rounded-full flex items-center justify-center mb-4 shadow-xl">
+                    <BarChart className="w-10 h-10 text-white" />
                   </div>
-                </div>
-                <div className="w-px h-8 bg-purple-300 dark:bg-purple-700 ml-4"></div>
-              </div>
-              
-              <div className="relative">
-                <div className="flex items-center gap-3 mb-3">
-                  <div className="w-8 h-8 rounded-full bg-purple-500 text-white flex items-center justify-center text-sm font-bold">2</div>
-                  <div>
-                    <h4 className="font-semibold text-foreground">Machine Learning</h4>
-                    <div className="flex gap-2 mt-1">
-                      <span className="bg-purple-100 dark:bg-purple-900/50 text-purple-700 dark:text-purple-300 px-2 py-1 rounded text-xs">Clustering</span>
-                      <span className="bg-purple-100 dark:bg-purple-900/50 text-purple-700 dark:text-purple-300 px-2 py-1 rounded text-xs">NLP</span>
-                      <span className="bg-purple-100 dark:bg-purple-900/50 text-purple-700 dark:text-purple-300 px-2 py-1 rounded text-xs">Deep Learning</span>
+                  <CardTitle className="text-2xl font-bold text-blue-700 dark:text-blue-300">
+                    📊 Fontes de Dados
+                  </CardTitle>
+                  <p className="text-blue-600 dark:text-blue-400">Coleta massiva e inteligente</p>
+                </CardHeader>
+                <CardContent className="space-y-4">
+                  {[
+                    { icon: Globe, title: "Comportamento Web", desc: "Cliques, páginas, tempo, scroll", color: "from-blue-500 to-cyan-500" },
+                    { icon: CreditCard, title: "Transações", desc: "Compras, valores, frequência", color: "from-green-500 to-emerald-500" },
+                    { icon: MessageSquare, title: "Interações", desc: "Chat, email, tickets, NPS", color: "from-purple-500 to-violet-500" },
+                    { icon: Smartphone, title: "App/Mobile", desc: "Features usadas, sessões", color: "from-orange-500 to-red-500" },
+                    { icon: UserCheck, title: "Social/CRM", desc: "Perfil, engajamento, leads", color: "from-pink-500 to-rose-500" }
+                  ].map((item, index) => (
+                    <div key={index} className="group/item bg-white/70 dark:bg-blue-950/30 p-4 rounded-xl border border-blue-200 dark:border-blue-700 hover:bg-white dark:hover:bg-blue-900/50 transition-all duration-300 hover:shadow-lg transform hover:scale-102">
+                      <div className="flex items-center gap-3">
+                        <div className={`w-10 h-10 rounded-lg bg-gradient-to-br ${item.color} flex items-center justify-center shadow-lg`}>
+                          <item.icon className="w-5 h-5 text-white" />
+                        </div>
+                        <div className="flex-1">
+                          <h4 className="font-semibold text-blue-800 dark:text-blue-200 group-hover/item:text-blue-900 dark:group-hover/item:text-blue-100">
+                            {item.title}
+                          </h4>
+                          <p className="text-sm text-blue-600 dark:text-blue-400">{item.desc}</p>
+                        </div>
+                      </div>
                     </div>
-                  </div>
-                </div>
-                <div className="w-px h-8 bg-purple-300 dark:bg-purple-700 ml-4"></div>
-              </div>
-              
-              <div className="relative">
-                <div className="flex items-center gap-3 mb-3">
-                  <div className="w-8 h-8 rounded-full bg-purple-500 text-white flex items-center justify-center text-sm font-bold">3</div>
-                  <div>
-                    <h4 className="font-semibold text-foreground">Identificação de Padrões</h4>
-                    <p className="text-sm text-muted-foreground">Descoberta de comportamentos ocultos</p>
-                  </div>
-                </div>
-                <div className="w-px h-8 bg-purple-300 dark:bg-purple-700 ml-4"></div>
-              </div>
-              
-              <div className="flex items-center gap-3">
-                <div className="w-8 h-8 rounded-full bg-purple-500 text-white flex items-center justify-center text-sm font-bold">4</div>
-                <div>
-                  <h4 className="font-semibold text-foreground">Validação e Scoring</h4>
-                  <p className="text-sm text-muted-foreground">Confiança: <span className="text-purple-600 font-medium">87%</span></p>
-                </div>
-              </div>
-            </CardContent>
-          </Card>
+                  ))}
+                </CardContent>
+              </Card>
+            </div>
 
-          {/* Personas Geradas */}
-          <Card className="bg-gradient-to-br from-green-500/10 to-emerald-500/5 border border-green-500/20 hover:border-green-500/40 transition-all duration-300">
-            <CardHeader>
-              <CardTitle className="flex items-center gap-3 text-green-600">
-                <Users className="w-6 h-6" />
-                <span>Personas Geradas</span>
-              </CardTitle>
-            </CardHeader>
-            <CardContent className="space-y-4">
-              <div className="bg-green-50 dark:bg-green-950/20 p-4 rounded-lg border border-green-200 dark:border-green-800">
-                <div className="flex items-center gap-2 mb-3">
-                  <div className="w-8 h-8 rounded-full bg-gradient-to-r from-blue-500 to-purple-500 flex items-center justify-center">
-                    <Users className="w-4 h-4 text-white" />
+            {/* Processamento IA */}
+            <div className="relative group">
+              <div className="absolute -inset-1 bg-gradient-to-r from-purple-600 to-purple-400 rounded-2xl blur opacity-25 group-hover:opacity-40 transition duration-300"></div>
+              <Card className="relative bg-gradient-to-br from-purple-50 to-purple-100 dark:from-purple-950 dark:to-purple-900 border-2 border-purple-200 dark:border-purple-800 hover:border-purple-400 dark:hover:border-purple-600 transition-all duration-500 transform hover:scale-105">
+                <CardHeader className="text-center pb-6">
+                  <div className="w-20 h-20 mx-auto bg-gradient-to-br from-purple-500 to-purple-600 rounded-full flex items-center justify-center mb-4 shadow-xl animate-pulse">
+                    <Brain className="w-10 h-10 text-white" />
                   </div>
-                  <h4 className="font-semibold text-green-700 dark:text-green-300">Premium Explorer</h4>
-                </div>
-                <p className="text-sm text-muted-foreground mb-3">Alto valor, early adopter, mobile-first</p>
-                <div className="flex flex-wrap gap-2">
-                  <span className="bg-green-100 dark:bg-green-900/50 text-green-700 dark:text-green-300 px-2 py-1 rounded text-xs">LTV: R$ 4.200</span>
-                  <span className="bg-green-100 dark:bg-green-900/50 text-green-700 dark:text-green-300 px-2 py-1 rounded text-xs">Conversão: 34%</span>
-                  <span className="bg-green-100 dark:bg-green-900/50 text-green-700 dark:text-green-300 px-2 py-1 rounded text-xs">Churn: 6%</span>
-                </div>
-              </div>
-              
-              <div className="bg-green-50 dark:bg-green-950/20 p-4 rounded-lg border border-green-200 dark:border-green-800">
-                <div className="flex items-center gap-2 mb-3">
-                  <div className="w-8 h-8 rounded-full bg-gradient-to-r from-amber-500 to-orange-500 flex items-center justify-center">
-                    <Target className="w-4 h-4 text-white" />
+                  <CardTitle className="text-2xl font-bold text-purple-700 dark:text-purple-300">
+                    🧠 Processamento IA
+                  </CardTitle>
+                  <p className="text-purple-600 dark:text-purple-400">Machine Learning avançado</p>
+                </CardHeader>
+                <CardContent className="space-y-6">
+                  {[
+                    { step: "1", title: "Limpeza e Normalização", desc: "Padronização de dados", progress: 100 },
+                    { step: "2", title: "Machine Learning", desc: "Clustering, NLP, Deep Learning", progress: 87 },
+                    { step: "3", title: "Identificação de Padrões", desc: "Descoberta de comportamentos ocultos", progress: 92 },
+                    { step: "4", title: "Validação e Scoring", desc: "Confiança: 87%", progress: 87 }
+                  ].map((item, index) => (
+                    <div key={index} className="relative">
+                      <div className="flex items-start gap-4 mb-3">
+                        <div className="w-10 h-10 rounded-full bg-gradient-to-br from-purple-500 to-purple-600 text-white flex items-center justify-center text-sm font-bold shadow-lg">
+                          {item.step}
+                        </div>
+                        <div className="flex-1">
+                          <h4 className="font-semibold text-purple-800 dark:text-purple-200 mb-1">{item.title}</h4>
+                          <p className="text-sm text-purple-600 dark:text-purple-400 mb-2">{item.desc}</p>
+                          <div className="w-full bg-purple-200 dark:bg-purple-800 rounded-full h-2">
+                            <div 
+                              className="bg-gradient-to-r from-purple-500 to-purple-600 h-2 rounded-full transition-all duration-1000 ease-out"
+                              style={{ width: `${item.progress}%` }}
+                            ></div>
+                          </div>
+                        </div>
+                      </div>
+                      {index < 3 && <div className="w-px h-6 bg-purple-300 dark:bg-purple-700 ml-5"></div>}
+                    </div>
+                  ))}
+                  
+                  {/* ML Tags */}
+                  <div className="flex flex-wrap gap-2 justify-center pt-4">
+                    {["Clustering", "NLP", "Deep Learning", "Neural Networks"].map((tag) => (
+                      <span key={tag} className="bg-gradient-to-r from-purple-500 to-purple-600 text-white px-3 py-1 rounded-full text-xs font-medium shadow-lg hover:shadow-xl transition-shadow">
+                        {tag}
+                      </span>
+                    ))}
                   </div>
-                  <h4 className="font-semibold text-green-700 dark:text-green-300">Barganha Consciente</h4>
-                </div>
-                <p className="text-sm text-muted-foreground mb-3">Sensível à preço, pesquisa muito</p>
-                <div className="flex flex-wrap gap-2">
-                  <span className="bg-green-100 dark:bg-green-900/50 text-green-700 dark:text-green-300 px-2 py-1 rounded text-xs">Ticket: R$ 150</span>
-                  <span className="bg-green-100 dark:bg-green-900/50 text-green-700 dark:text-green-300 px-2 py-1 rounded text-xs">Cupons: 89%</span>
-                  <span className="bg-green-100 dark:bg-green-900/50 text-green-700 dark:text-green-300 px-2 py-1 rounded text-xs">Retenção: 45%</span>
-                </div>
-              </div>
-            </CardContent>
-          </Card>
-        </div>
+                </CardContent>
+              </Card>
+            </div>
 
-        {/* Flow Arrows */}
-        <div className="hidden lg:flex justify-center items-center gap-8 text-muted-foreground">
-          <ArrowRight className="w-8 h-8" />
-          <ArrowRight className="w-8 h-8" />
-        </div>
-      </div>
-          
-          {/* Video Section */}
-          <div className="w-full max-w-4xl mx-auto mb-8">
-            <div className="relative rounded-lg overflow-hidden shadow-2xl bg-gradient-to-br from-primary/5 to-primary-glow/5 border border-primary/20">
-              <iframe 
-                className="w-full aspect-video"
-                src="https://www.canva.com/design/DAGszQZEbhs/G569eHDSrwNx3nxU6Bu_8A/watch?embed&autoplay=1"
-                allowFullScreen
-                title="Personas Sintéticas - Vídeo Explicativo"
-              />
+            {/* Personas Geradas */}
+            <div className="relative group">
+              <div className="absolute -inset-1 bg-gradient-to-r from-green-600 to-green-400 rounded-2xl blur opacity-25 group-hover:opacity-40 transition duration-300"></div>
+              <Card className="relative bg-gradient-to-br from-green-50 to-green-100 dark:from-green-950 dark:to-green-900 border-2 border-green-200 dark:border-green-800 hover:border-green-400 dark:hover:border-green-600 transition-all duration-500 transform hover:scale-105">
+                <CardHeader className="text-center pb-6">
+                  <div className="w-20 h-20 mx-auto bg-gradient-to-br from-green-500 to-green-600 rounded-full flex items-center justify-center mb-4 shadow-xl">
+                    <Users className="w-10 h-10 text-white" />
+                  </div>
+                  <CardTitle className="text-2xl font-bold text-green-700 dark:text-green-300">
+                    👥 Personas Geradas
+                  </CardTitle>
+                  <p className="text-green-600 dark:text-green-400">Perfis ultra-precisos</p>
+                </CardHeader>
+                <CardContent className="space-y-4">
+                  {[
+                    {
+                      name: "Premium Explorer",
+                      desc: "Alto valor, early adopter, mobile-first",
+                      avatar: "from-blue-500 to-purple-500",
+                      icon: Users,
+                      metrics: [
+                        { label: "LTV", value: "R$ 4.200", color: "bg-blue-100 text-blue-700 dark:bg-blue-900/50 dark:text-blue-300" },
+                        { label: "Conversão", value: "34%", color: "bg-green-100 text-green-700 dark:bg-green-900/50 dark:text-green-300" },
+                        { label: "Churn", value: "6%", color: "bg-red-100 text-red-700 dark:bg-red-900/50 dark:text-red-300" }
+                      ]
+                    },
+                    {
+                      name: "Barganha Consciente",
+                      desc: "Sensível à preço, pesquisa muito",
+                      avatar: "from-amber-500 to-orange-500",
+                      icon: Target,
+                      metrics: [
+                        { label: "Ticket", value: "R$ 150", color: "bg-amber-100 text-amber-700 dark:bg-amber-900/50 dark:text-amber-300" },
+                        { label: "Cupons", value: "89%", color: "bg-green-100 text-green-700 dark:bg-green-900/50 dark:text-green-300" },
+                        { label: "Retenção", value: "45%", color: "bg-blue-100 text-blue-700 dark:bg-blue-900/50 dark:text-blue-300" }
+                      ]
+                    }
+                  ].map((persona, index) => (
+                    <div key={index} className="bg-white/80 dark:bg-green-950/30 p-5 rounded-xl border border-green-200 dark:border-green-700 hover:bg-white dark:hover:bg-green-900/50 transition-all duration-300 hover:shadow-xl transform hover:scale-102">
+                      <div className="flex items-start gap-3 mb-4">
+                        <div className={`w-12 h-12 rounded-full bg-gradient-to-br ${persona.avatar} flex items-center justify-center shadow-lg`}>
+                          <persona.icon className="w-6 h-6 text-white" />
+                        </div>
+                        <div className="flex-1">
+                          <h4 className="font-bold text-green-800 dark:text-green-200 text-lg">{persona.name}</h4>
+                          <p className="text-sm text-green-600 dark:text-green-400 mb-3">{persona.desc}</p>
+                          <div className="flex flex-wrap gap-2">
+                            {persona.metrics.map((metric, idx) => (
+                              <span key={idx} className={`px-3 py-1 rounded-full text-xs font-medium ${metric.color}`}>
+                                {metric.label}: {metric.value}
+                              </span>
+                            ))}
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  ))}
+                </CardContent>
+              </Card>
+            </div>
+          </div>
+
+          {/* Enhanced Flow Indicators */}
+          <div className="hidden lg:flex justify-center items-center gap-8 mt-12 text-muted-foreground">
+            <div className="flex items-center gap-4">
+              <div className="w-8 h-8 rounded-full bg-gradient-to-r from-blue-500 to-purple-500 flex items-center justify-center animate-pulse">
+                <ArrowRight className="w-4 h-4 text-white" />
+              </div>
+              <span className="text-sm font-medium">Processamento</span>
+              <div className="w-8 h-8 rounded-full bg-gradient-to-r from-purple-500 to-green-500 flex items-center justify-center animate-pulse">
+                <ArrowRight className="w-4 h-4 text-white" />
+              </div>
+              <span className="text-sm font-medium">Geração</span>
             </div>
           </div>
         </div>
@@ -518,7 +518,7 @@ const Dashboard = () => {
             variant="hero" 
             size="lg" 
             className="text-lg px-8 py-6 h-auto animate-scale-in"
-            onClick={() => navigate('/dashboard/prompts')}
+            onClick={() => navigate('/prompts')}
           >
             Ver Prompts de Análise
             <ArrowRight className="w-5 h-5 ml-2" />
