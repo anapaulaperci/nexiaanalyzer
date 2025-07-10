@@ -570,6 +570,165 @@ Apresente o plano de forma executiva, com bullets claros, números específicos 
           </CardContent>
         </Card>
 
+        {/* Red Flags Section */}
+        <Card className="bg-card/80 backdrop-blur-sm border-border/50">
+          <CardHeader>
+            <CardTitle className="text-2xl flex items-center gap-3">
+              <span className="text-red-500">🚫</span>
+              RED FLAGS - O Que Evitar nas Suas Campanhas
+            </CardTitle>
+            <p className="text-muted-foreground">
+              Identifique e evite elementos que criam resistência psicológica ou afastam sua persona
+            </p>
+          </CardHeader>
+          <CardContent className="space-y-8">
+            {/* Copy Red Flags */}
+            <div className="space-y-6">
+              <div className="bg-red-50/50 rounded-lg p-6 border border-red-200/50">
+                <h3 className="font-semibold text-xl mb-4 text-red-900 flex items-center gap-2">
+                  🚫 RED FLAGS - COPY (Texto)
+                </h3>
+                <p className="text-red-700 mb-4">
+                  Palavras, frases ou abordagens no texto que criam distanciamento emocional ou resistência psicológica.
+                </p>
+                
+                <div className="grid md:grid-cols-3 gap-6">
+                  <div className="space-y-4">
+                    <h4 className="font-medium text-red-800">1. Linguagem Intimidadora/Inatingível</h4>
+                    <div className="space-y-3">
+                      <div className="bg-red-100/50 p-3 rounded border border-red-200">
+                        <p className="text-xs text-red-600 mb-1">❌ ERRADO:</p>
+                        <p className="text-sm text-red-800 italic">"Busque a santidade perfeita"</p>
+                      </div>
+                      <div className="bg-green-100/50 p-3 rounded border border-green-200">
+                        <p className="text-xs text-green-600 mb-1">✅ CERTO:</p>
+                        <p className="text-sm text-green-800 italic">"Dê pequenos passos na sua jornada de fé"</p>
+                      </div>
+                      <p className="text-xs text-red-600">Por quê? A persona se sente inadequada, não à altura</p>
+                    </div>
+                  </div>
+
+                  <div className="space-y-4">
+                    <h4 className="font-medium text-red-800">2. Culpabilização e Shame</h4>
+                    <div className="space-y-3">
+                      <div className="bg-red-100/50 p-3 rounded border border-red-200">
+                        <p className="text-xs text-red-600 mb-1">❌ ERRADO:</p>
+                        <p className="text-sm text-red-800 italic">"Por que você nunca termina o que começa?"</p>
+                      </div>
+                      <div className="bg-green-100/50 p-3 rounded border border-green-200">
+                        <p className="text-xs text-green-600 mb-1">✅ CERTO:</p>
+                        <p className="text-sm text-green-800 italic">"Sabemos como é difícil manter a consistência"</p>
+                      </div>
+                      <p className="text-xs text-red-600">Por quê? Gera vergonha e afasta emocionalmente</p>
+                    </div>
+                  </div>
+
+                  <div className="space-y-4">
+                    <h4 className="font-medium text-red-800">3. Generalização Excludente</h4>
+                    <div className="space-y-3">
+                      <div className="bg-red-100/50 p-3 rounded border border-red-200">
+                        <p className="text-xs text-red-600 mb-1">❌ ERRADO:</p>
+                        <p className="text-sm text-red-800 italic">"Todo empresário de sucesso acorda às 5h"</p>
+                      </div>
+                      <div className="bg-green-100/50 p-3 rounded border border-green-200">
+                        <p className="text-xs text-green-600 mb-1">✅ CERTO:</p>
+                        <p className="text-sm text-green-800 italic">"Encontre o horário que funciona para você"</p>
+                      </div>
+                      <p className="text-xs text-red-600">Por quê? Exclui quem não se encaixa no padrão</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Visual Red Flags */}
+              <div className="bg-orange-50/50 rounded-lg p-6 border border-orange-200/50">
+                <h3 className="font-semibold text-xl mb-4 text-orange-900 flex items-center gap-2">
+                  ⚠️ RED FLAGS - VISUAL
+                </h3>
+                <p className="text-orange-700 mb-4">
+                  Elementos visuais que criam desconexão ou desconforto com a realidade da persona.
+                </p>
+
+                <div className="grid md:grid-cols-2 gap-6">
+                  <div className="space-y-4">
+                    <h4 className="font-medium text-orange-800">1. Perfeição Irreal</h4>
+                    <div className="space-y-3">
+                      <div className="bg-red-100/50 p-3 rounded border border-red-200">
+                        <p className="text-xs text-red-600 mb-1">❌ ERRADO:</p>
+                        <p className="text-sm text-red-800">Família modelo de banco de imagens sorrindo</p>
+                      </div>
+                      <div className="bg-green-100/50 p-3 rounded border border-green-200">
+                        <p className="text-xs text-green-600 mb-1">✅ CERTO:</p>
+                        <p className="text-sm text-green-800">Pessoas reais em situações autênticas</p>
+                      </div>
+                      <p className="text-xs text-orange-600">Por quê? "Isso não é minha realidade"</p>
+                    </div>
+                  </div>
+
+                  <div className="space-y-4">
+                    <h4 className="font-medium text-orange-800">🎨 Outros Red Flags Visuais:</h4>
+                    <ul className="text-sm text-orange-700 space-y-2">
+                      <li>• Cores agressivas em excesso (vermelho total)</li>
+                      <li>• Fontes ilegíveis (muito decorativas)</li>
+                      <li>• Imagens datadas (parecem de 2010)</li>
+                      <li>• Excesso de elementos (poluição visual)</li>
+                      <li>• Falta de diversidade (só um tipo de pessoa)</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              {/* Specific Categories */}
+              <div className="grid md:grid-cols-2 gap-6">
+                <div className="bg-purple-50/50 rounded-lg p-6 border border-purple-200/50">
+                  <h4 className="font-semibold text-lg mb-4 text-purple-900">🎨 5. ELEMENTOS GRÁFICOS</h4>
+                  <div className="space-y-4">
+                    <div>
+                      <p className="font-medium text-purple-800 mb-2">❌ Cores Agressivas/Gatilho</p>
+                      <p className="text-xs text-purple-600 mb-1">RED FLAG: Vermelho sangue em app de meditação</p>
+                      <p className="text-xs text-purple-600 mb-2">PROBLEMA: Contradiz a mensagem, gera ansiedade</p>
+                      <p className="text-xs text-green-600">✅ MELHOR: Cores que apoiam a mensagem</p>
+                    </div>
+
+                    <div>
+                      <p className="font-medium text-purple-800 mb-2">❌ Excesso de Urgência Visual</p>
+                      <p className="text-xs text-purple-600 mb-1">RED FLAG: 10 setas piscando, timers em todo lugar</p>
+                      <p className="text-xs text-purple-600 mb-2">PROBLEMA: Desespero visual, parece spam</p>
+                      <p className="text-xs text-green-600">✅ MELHOR: Um elemento de urgência bem colocado</p>
+                    </div>
+
+                    <div>
+                      <p className="font-medium text-purple-800 mb-2">❌ Stock Photos Óbvias</p>
+                      <p className="text-xs text-purple-600 mb-1">RED FLAG: "Empresários" apertando mãos no vazio</p>
+                      <p className="text-xs text-purple-600 mb-2">PROBLEMA: Todo mundo reconhece, perde credibilidade</p>
+                      <p className="text-xs text-green-600">✅ MELHOR: Fotos reais ou stocks premium menos óbvias</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="bg-yellow-50/50 rounded-lg p-6 border border-yellow-200/50">
+                  <h4 className="font-semibold text-lg mb-4 text-yellow-900">🍔 6. ALIMENTAÇÃO</h4>
+                  <div className="space-y-4">
+                    <div>
+                      <p className="font-medium text-yellow-800 mb-2">❌ Comida Plastificada</p>
+                      <p className="text-xs text-yellow-600 mb-1">RED FLAG: Hambúrguer perfeito que parece de plástico</p>
+                      <p className="text-xs text-yellow-600 mb-2">PROBLEMA: Não parece comestível, gera desconfiança</p>
+                      <p className="text-xs text-green-600">✅ MELHOR: Food styling natural, "perfeitamente imperfeito"</p>
+                    </div>
+
+                    <div>
+                      <p className="font-medium text-yellow-800 mb-2">❌ Porções Irreais</p>
+                      <p className="text-xs text-yellow-600 mb-1">RED FLAG: Salada gigante que ninguém come ou mini porção fancy</p>
+                      <p className="text-xs text-yellow-600 mb-2">PROBLEMA: Desconexão com hábitos reais</p>
+                      <p className="text-xs text-green-600">✅ MELHOR: Porções realistas e apetitosas</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </CardContent>
+        </Card>
+
         {/* Benefits Cards */}
         <div className="grid md:grid-cols-3 gap-6">
           {benefits.map((benefit, index) => (
