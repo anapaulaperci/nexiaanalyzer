@@ -89,6 +89,11 @@ All colors MUST be HSL.
     --font-extrabold: 800;
     --font-black: 900;
 
+    /* Accessibility - Mínimos de contraste WCAG AA */
+    --color-high-contrast: #2d3748;
+    --color-medium-contrast: #4a5568;
+    --color-bg-contrast: #ffffff;
+
     --radius: 0.5rem;
 
     --sidebar-background: 0 0% 98%;
@@ -195,4 +200,37 @@ All colors MUST be HSL.
   .responsive-title {
     font-size: var(--text-4xl);
   }
+}
+
+/* Mínimos de contraste WCAG AA */
+.high-contrast {
+  /* Normal text: 4.5:1 */
+  color: var(--color-high-contrast);
+  background: var(--color-bg-contrast);
+}
+
+.medium-contrast {
+  /* Large text (18px+): 3:1 */
+  color: var(--color-medium-contrast);
+  background: var(--color-bg-contrast);
+}
+
+/* Diferença mínima de 2 pontos entre níveis */
+.heading-scale h1 { 
+  font-size: 24px; /* +6 */
+}
+
+.heading-scale h2 { 
+  font-size: 18px; /* +4 */
+}
+
+.heading-scale h3 { 
+  font-size: 14px; /* Base */
+}
+
+/* Use múltiplos de 4px ou 8px */
+.spacing-system {
+  margin-bottom: 16px; /* 1rem */
+  padding: 24px; /* 1.5rem */
+  gap: 8px; /* 0.5rem */
 }
