@@ -2,7 +2,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Badge } from "@/components/ui/badge";
-import { Copy, Search, MessageSquare, Target, Users, TrendingUp, Heart, Star, Rocket } from "lucide-react";
+import { Copy, Search, MessageSquare, Target, Users, TrendingUp, Heart, Star, Rocket, Brain } from "lucide-react";
 import { useState } from "react";
 
 const Prompts = () => {
@@ -187,6 +187,151 @@ Dados da pesquisa: [INSERIR DADOS AQUI]`,
 Dados da pesquisa: [INSERIR DADOS AQUI]`,
       icon: TrendingUp,
       color: "text-orange-400"
+    },
+    {
+      id: 6,
+      title: "Como Extrair Insights Não Óbvios da Sua Pesquisa",
+      description: "Descobre padrões ocultos e contradições que revelam oportunidades de negócio inexploradas",
+      category: "Análise",
+      difficulty: "Avançado",
+      rating: 4.9,
+      prompt: `Analise profundamente esta pesquisa para extrair insights não-óbvios:
+
+### 1. 🔄 ANÁLISE DE CONTRADIÇÕES
+Identifique onde o que as pessoas DIZEM contradiz o que FAZEM:
+- Declarações vs Comportamentos reais
+- Intenções vs Ações efetivas
+- Valores declarados vs Escolhas práticas
+→ O que essas contradições revelam sobre motivações ocultas?
+
+### 2. 🕳️ MAPEAMENTO DE VÁCUOS
+Encontre o que NÃO foi dito, mas deveria:
+- Tópicos consistentemente evitados
+- Perguntas não respondidas completamente
+- Áreas de desconforto ou silêncio
+→ Por que esses vácuos existem? O que escondem?
+
+### 3. 🧩 CONEXÕES INESPERADAS
+Correlacione dados que aparentemente não têm relação:
+- Combine respostas de perguntas distantes
+- Cruze dados demográficos com comportamentais inesperados
+- Identifique padrões em combinações improváveis
+→ Qual a história por trás dessas conexões?
+
+### 4. 😤 ANÁLISE DE MICROFRUSTAÇÕES
+Procure por pequenos incômodos que revelam grandes oportunidades:
+- Palavras que indicam irritação sutil
+- Processos descritos como "chatos mas necessários"
+- Adaptações que pessoas fazem para contornar problemas
+→ Como transformar essas friction points em vantagem competitiva?
+
+### 5. ⏰ PADRÕES TEMPORAIS OCULTOS
+Analise QUANDO comportamentos acontecem:
+- Horários incomuns de atividade
+- Sazonalidades não-óbvias
+- Ciclos de comportamento (diário, semanal, mensal)
+→ Que gatilhos temporais estão sendo ignorados?
+
+### 6. 🎭 PERSONAS SOMBRA
+Identifique os "alter egos" não declarados:
+- Quem a pessoa quer ser vs quem ela é
+- Comportamentos "guilty pleasure"
+- Decisões tomadas quando ninguém está vendo
+→ Como atender o "eu secreto" dessa persona?
+
+### 7. 💬 ANÁLISE LINGUÍSTICA PROFUNDA
+Examine o COMO foi dito, não só O QUE:
+- Palavras emocionais recorrentes
+- Metáforas e analogias usadas
+- Tom (defensivo, entusiasmado, resignado)
+- Comprimento e complexidade das respostas
+→ O que a linguagem revela sobre estado mental e valores?
+
+### 8. 🌐 ECOSSISTEMA DE INFLUÊNCIAS
+Mapeie influências indiretas não mencionadas:
+- Quem influencia os influenciadores dessa persona
+- Pressões sociais não admitidas
+- Referências culturais subliminares
+→ Quais forças invisíveis moldam decisões?
+
+### 9. 🔀 JORNADAS ALTERNATIVAS
+Identifique caminhos não-lineares:
+- Pessoas que chegam ao mesmo resultado por rotas diferentes
+- Regressões e loops na jornada
+- Atalhos criados pelos usuários
+→ Que jornadas não-mapeadas existem?
+
+### 10. 💰 ECONOMIA COMPORTAMENTAL OCULTA
+Descubra as "moedas" não-monetárias:
+- O que as pessoas realmente "pagam" (tempo, energia, status)
+- Trocas implícitas sendo feitas
+- Custos emocionais vs benefícios percebidos
+→ Qual é a verdadeira equação de valor?
+
+### 11. 🚫 ANÁLISE DE EXTREMOS E OUTLIERS
+Foque nos casos extremos:
+- Os 5% que amam e os 5% que odeiam
+- Comportamentos estatisticamente raros mas significativos
+- Casos de sucesso e fracasso extremos
+→ O que os extremos ensinam sobre o meio?
+
+### 12. 🔮 SINAIS FRACOS DO FUTURO
+Identifique indicadores precoces de mudança:
+- Comportamentos emergentes minoritários
+- Insatisfações crescentes mas ainda pequenas
+- Adaptações criativas que podem virar tendência
+→ Que mudanças estão nascendo agora?
+
+## ENTREGÁVEIS ESPECÍFICOS:
+
+### 1. TOP 10 INSIGHTS NÃO-ÓBVIOS
+Liste em ordem de impacto potencial no negócio:
+- Formato: "Descobrimos que [insight], o que significa [implicação]"
+- Inclua % de personas afetadas
+- Indique nível de confiança (alta/média/baixa)
+
+### 2. OPORTUNIDADES OCULTAS
+5 oportunidades de negócio baseadas nos insights:
+- Tamanho potencial do mercado
+- Facilidade de implementação (1-10)
+- Vantagem competitiva esperada
+
+### 3. HIPÓTESES PARA TESTE
+7 hipóteses contra-intuitivas para validar:
+- Hipótese específica
+- Como testar
+- O que significaria se verdadeira
+
+### 4. PERSONA INVISÍVEL
+Descreva uma sub-persona que ninguém está vendo:
+- Características únicas
+- Por que está sendo ignorada
+- Como alcançá-la
+
+### 5. ALERTAS ESTRATÉGICOS
+3 riscos ou ameaças descobertos nos dados:
+- Tendências preocupantes
+- Mudanças de comportamento
+- Disruptores potenciais
+
+## FORMATO DE OUTPUT:
+- Use bullets e formatação clara
+- Destaque insights com 🎯
+- Indique nível de certeza: ⭐⭐⭐ (alto) ⭐⭐ (médio) ⭐ (baixo)
+- Priorize praticidade sobre teoria
+- Inclua exemplos específicos dos dados
+
+## MINDSET PARA ANÁLISE:
+Pense como:
+- Detetive procurando pistas
+- Antropólogo estudando uma tribo
+- Psicólogo analisando o inconsciente
+- Estrategista procurando vantagens
+- Futurista identificando tendências
+
+Dados da pesquisa: [INSERIR DADOS AQUI]`,
+      icon: Brain,
+      color: "text-indigo-400"
     }
   ];
 
