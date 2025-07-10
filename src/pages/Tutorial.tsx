@@ -1,8 +1,29 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Upload, Video, FileVideo } from "lucide-react";
+import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
+import { Upload, Video, FileVideo, Youtube } from "lucide-react";
+import { useState } from "react";
 
 const Tutorial = () => {
+  const [youtubeUrl, setYoutubeUrl] = useState("");
+  const [embedUrl, setEmbedUrl] = useState("");
+
+  const handleYoutubeUrl = (url: string) => {
+    setYoutubeUrl(url);
+    
+    // Convert YouTube URL to embed format
+    let videoId = "";
+    if (url.includes("youtube.com/watch?v=")) {
+      videoId = url.split("v=")[1]?.split("&")[0];
+    } else if (url.includes("youtu.be/")) {
+      videoId = url.split("youtu.be/")[1]?.split("?")[0];
+    }
+    
+    if (videoId) {
+      setEmbedUrl(`https://www.youtube.com/embed/${videoId}`);
+    }
+  };
   return (
     <div className="min-h-screen bg-gradient-to-br from-background via-background to-muted/30 relative overflow-hidden">
       {/* Floating Elements */}
@@ -30,54 +51,68 @@ const Tutorial = () => {
           </div>
         </div>
 
-        {/* Video Upload Area */}
-        <Card className="bg-card/80 backdrop-blur-sm border-dashed border-2 border-border/50 hover:border-primary/50 transition-all duration-300">
-          <CardContent className="p-12">
-            <div className="text-center space-y-8">
-              <div className="flex justify-center">
-                <div className="w-24 h-24 bg-muted/50 rounded-2xl flex items-center justify-center">
-                  <FileVideo className="w-12 h-12 text-muted-foreground" />
+        {/* YouTube Embed Section */}
+        <Card className="bg-card/80 backdrop-blur-sm border border-border/50">
+          <CardContent className="p-8">
+            <div className="space-y-6">
+              <div className="text-center space-y-4">
+                <div className="w-16 h-16 bg-red-500/20 rounded-2xl flex items-center justify-center mx-auto">
+                  <Youtube className="w-8 h-8 text-red-500" />
                 </div>
-              </div>
-              
-              <div className="space-y-4">
-                <h3 className="text-2xl font-semibold">Vídeo Tutorial</h3>
+                <h3 className="text-2xl font-semibold">Tutorial em Vídeo</h3>
                 <p className="text-muted-foreground max-w-md mx-auto">
-                  Em breve: Vídeo explicativo completo sobre como usar a plataforma para criar suas personas sintéticas
+                  Cole o link do YouTube abaixo para incorporar o vídeo tutorial
                 </p>
               </div>
 
-              <div className="space-y-4">
-                <Button 
-                  size="lg" 
-                  variant="outline" 
-                  className="shadow-glow hover-scale"
-                  disabled
-                >
-                  <Upload className="w-5 h-5 mr-2" />
-                  Upload do Vídeo (Em Breve)
-                </Button>
-                
-                <p className="text-sm text-muted-foreground">
-                  Formatos suportados: MP4, MOV, AVI (Máximo 100MB)
-                </p>
-              </div>
-            </div>
-          </CardContent>
-        </Card>
-
-        {/* Placeholder for future video */}
-        <Card className="bg-muted/20 border-border/30">
-          <CardContent className="p-8 text-center">
-            <div className="aspect-video bg-muted/50 rounded-lg flex items-center justify-center">
-              <div className="text-center space-y-3">
-                <div className="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mx-auto">
-                  <Video className="w-8 h-8 text-primary" />
+              <div className="space-y-4 max-w-md mx-auto">
+                <div className="space-y-2">
+                  <Label htmlFor="youtube-url">URL do YouTube</Label>
+                  <Input
+                    id="youtube-url"
+                    placeholder="https://www.youtube.com/watch?v=..."
+                    value={youtubeUrl}
+                    onChange={(e) => handleYoutubeUrl(e.target.value)}
+                  />
                 </div>
-                <p className="text-muted-foreground">
-                  Área reservada para o vídeo tutorial
-                </p>
+                
+                <Button 
+                  onClick={() => handleYoutubeUrl(youtubeUrl)}
+                  className="w-full"
+                  disabled={!youtubeUrl}
+                >
+                  <Youtube className="w-4 h-4 mr-2" />
+                  Incorporar Vídeo
+                </Button>
               </div>
+
+              {embedUrl && (
+                <div className="mt-8">
+                  <div className="aspect-video rounded-lg overflow-hidden bg-muted/50">
+                    <iframe
+                      src={embedUrl}
+                      className="w-full h-full"
+                      frameBorder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowFullScreen
+                      title="Tutorial Video"
+                    />
+                  </div>
+                </div>
+              )}
+
+              {!embedUrl && (
+                <div className="aspect-video bg-muted/50 rounded-lg flex items-center justify-center mt-8">
+                  <div className="text-center space-y-3">
+                    <div className="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mx-auto">
+                      <Video className="w-8 h-8 text-primary" />
+                    </div>
+                    <p className="text-muted-foreground">
+                      Cole uma URL do YouTube para visualizar o vídeo aqui
+                    </p>
+                  </div>
+                </div>
+              )}
             </div>
           </CardContent>
         </Card>

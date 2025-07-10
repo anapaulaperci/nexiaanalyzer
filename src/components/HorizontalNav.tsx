@@ -1,5 +1,5 @@
 import { NavLink, useLocation } from "react-router-dom";
-import { Home, BookOpen, MessageSquare } from "lucide-react";
+import { Home, BookOpen, MessageSquare, Sparkles } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 const HorizontalNav = () => {
@@ -9,6 +9,7 @@ const HorizontalNav = () => {
     { title: "Overview", url: "/dashboard", icon: Home },
     { title: "Tutorial", url: "/dashboard/tutorial", icon: BookOpen },
     { title: "Prompts", url: "/dashboard/prompts", icon: MessageSquare },
+    { title: "Campanha", url: "/dashboard/campaign", icon: Sparkles },
   ];
 
   return (
@@ -22,9 +23,14 @@ const HorizontalNav = () => {
               alt="NexIA Lab" 
               className="h-8"
             />
-            <span className="font-bold text-xl bg-gradient-hero bg-clip-text text-transparent">
-              NexIA Lab
-            </span>
+            <div className="flex flex-col">
+              <span className="font-bold text-xl bg-gradient-hero bg-clip-text text-transparent">
+                NexIA Lab
+              </span>
+              <span className="text-xs text-muted-foreground -mt-1">
+                Ana Paula Perci
+              </span>
+            </div>
           </div>
 
           {/* Navigation */}
