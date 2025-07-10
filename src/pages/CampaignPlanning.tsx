@@ -202,55 +202,209 @@ Apresente o plano de forma executiva, com bullets claros, números específicos 
         </div>
 
         {/* Educational Section - Campaign Basics */}
+        <Card className="bg-gradient-to-br from-card via-card/95 to-card/80 backdrop-blur-sm border-primary/20 shadow-elegant">
+          <CardHeader className="relative overflow-hidden">
+            <div className="absolute inset-0 bg-gradient-to-r from-primary/5 via-transparent to-accent/5" />
+            <div className="relative">
+              <CardTitle className="text-3xl flex items-center gap-3 mb-3">
+                <div className="w-12 h-12 bg-gradient-primary rounded-xl flex items-center justify-center shadow-glow">
+                  <Target className="w-7 h-7 text-white" />
+                </div>
+                <span className="bg-gradient-hero bg-clip-text text-transparent">
+                  Antes de Começar: O Que Você Precisa Definir
+                </span>
+              </CardTitle>
+              <p className="text-lg text-muted-foreground">
+                Para criar uma campanha eficaz, primeiro você deve fornecer estas informações essenciais:
+              </p>
+            </div>
+          </CardHeader>
+          <CardContent className="space-y-8">
+            <div className="grid md:grid-cols-3 gap-8">
+              <div className="group relative">
+                <div className="absolute inset-0 bg-gradient-to-br from-blue-500/10 via-blue-400/5 to-transparent rounded-2xl group-hover:from-blue-500/20 transition-all duration-500" />
+                <div className="relative p-6 space-y-4">
+                  <div className="flex items-center gap-4">
+                    <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl flex items-center justify-center shadow-lg group-hover:shadow-xl transition-all duration-300">
+                      <Target className="w-8 h-8 text-white" />
+                    </div>
+                    <div>
+                      <h3 className="font-bold text-xl text-blue-700">🎯 Objetivo da Campanha</h3>
+                      <p className="text-sm text-blue-600/80">Defina sua meta principal</p>
+                    </div>
+                  </div>
+                  <div className="bg-white/50 rounded-xl p-4">
+                    <ul className="text-sm text-muted-foreground space-y-2">
+                      <li className="flex items-center gap-2">
+                        <div className="w-2 h-2 bg-blue-500 rounded-full" />
+                        Gerar leads qualificados
+                      </li>
+                      <li className="flex items-center gap-2">
+                        <div className="w-2 h-2 bg-blue-500 rounded-full" />
+                        Aumentar vendas
+                      </li>
+                      <li className="flex items-center gap-2">
+                        <div className="w-2 h-2 bg-blue-500 rounded-full" />
+                        Reconhecimento de marca
+                      </li>
+                      <li className="flex items-center gap-2">
+                        <div className="w-2 h-2 bg-blue-500 rounded-full" />
+                        Retenção de clientes
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              
+              <div className="group relative">
+                <div className="absolute inset-0 bg-gradient-to-br from-green-500/10 via-green-400/5 to-transparent rounded-2xl group-hover:from-green-500/20 transition-all duration-500" />
+                <div className="relative p-6 space-y-4">
+                  <div className="flex items-center gap-4">
+                    <div className="w-16 h-16 bg-gradient-to-br from-green-500 to-green-600 rounded-2xl flex items-center justify-center shadow-lg group-hover:shadow-xl transition-all duration-300">
+                      <TrendingUp className="w-8 h-8 text-white" />
+                    </div>
+                    <div>
+                      <h3 className="font-bold text-xl text-green-700">📱 Plataformas de Ads</h3>
+                      <p className="text-sm text-green-600/80">Escolha seus canais</p>
+                    </div>
+                  </div>
+                  <div className="bg-white/50 rounded-xl p-4">
+                    <ul className="text-sm text-muted-foreground space-y-2">
+                      <li className="flex items-center gap-2">
+                        <div className="w-2 h-2 bg-green-500 rounded-full" />
+                        Facebook/Instagram Ads
+                      </li>
+                      <li className="flex items-center gap-2">
+                        <div className="w-2 h-2 bg-green-500 rounded-full" />
+                        Google Ads
+                      </li>
+                      <li className="flex items-center gap-2">
+                        <div className="w-2 h-2 bg-green-500 rounded-full" />
+                        LinkedIn Ads
+                      </li>
+                      <li className="flex items-center gap-2">
+                        <div className="w-2 h-2 bg-green-500 rounded-full" />
+                        TikTok Ads
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              
+              <div className="group relative">
+                <div className="absolute inset-0 bg-gradient-to-br from-purple-500/10 via-purple-400/5 to-transparent rounded-2xl group-hover:from-purple-500/20 transition-all duration-500" />
+                <div className="relative p-6 space-y-4">
+                  <div className="flex items-center gap-4">
+                    <div className="w-16 h-16 bg-gradient-to-br from-purple-500 to-purple-600 rounded-2xl flex items-center justify-center shadow-lg group-hover:shadow-xl transition-all duration-300">
+                      <Brain className="w-8 h-8 text-white" />
+                    </div>
+                    <div>
+                      <h3 className="font-bold text-xl text-purple-700">👤 Dados da Persona</h3>
+                      <p className="text-sm text-purple-600/80">Conheça seu público</p>
+                    </div>
+                  </div>
+                  <div className="bg-white/50 rounded-xl p-4">
+                    <ul className="text-sm text-muted-foreground space-y-2">
+                      <li className="flex items-center gap-2">
+                        <div className="w-2 h-2 bg-purple-500 rounded-full" />
+                        Demografia e comportamento
+                      </li>
+                      <li className="flex items-center gap-2">
+                        <div className="w-2 h-2 bg-purple-500 rounded-full" />
+                        Dores e necessidades
+                      </li>
+                      <li className="flex items-center gap-2">
+                        <div className="w-2 h-2 bg-purple-500 rounded-full" />
+                        Canais preferidos
+                      </li>
+                      <li className="flex items-center gap-2">
+                        <div className="w-2 h-2 bg-purple-500 rounded-full" />
+                        Jornada de compra
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </CardContent>
+        </Card>
+
+        {/* Copy Bank Section */}
         <Card className="bg-card/80 backdrop-blur-sm border-border/50">
           <CardHeader>
             <CardTitle className="text-2xl flex items-center gap-3">
-              <Target className="w-6 h-6 text-primary" />
-              Antes de Começar: O Que Você Precisa Definir
+              <Copy className="w-6 h-6 text-primary" />
+              🎨 Como Criar Seu Copy Bank
             </CardTitle>
             <p className="text-muted-foreground">
-              Para criar uma campanha eficaz, primeiro você deve fornecer estas informações essenciais:
+              Organize e reutilize suas melhores copies para maximizar resultados
             </p>
           </CardHeader>
-          <CardContent className="space-y-6">
-            <div className="grid md:grid-cols-3 gap-6">
-              <div className="space-y-3">
-                <div className="w-12 h-12 bg-blue-500/10 rounded-xl flex items-center justify-center">
-                  <Target className="w-6 h-6 text-blue-600" />
+          <CardContent className="space-y-8">
+            {/* Steps */}
+            <div className="grid md:grid-cols-3 gap-8">
+              <div className="space-y-4">
+                <div className="w-16 h-16 bg-gradient-to-br from-orange-500 to-orange-600 rounded-2xl flex items-center justify-center shadow-lg">
+                  <span className="text-white font-bold text-xl">1</span>
                 </div>
-                <h3 className="font-semibold text-lg">🎯 Objetivo da Campanha</h3>
-                <ul className="text-sm text-muted-foreground space-y-1">
-                  <li>• Gerar leads qualificados</li>
-                  <li>• Aumentar vendas</li>
-                  <li>• Reconhecimento de marca</li>
-                  <li>• Retenção de clientes</li>
+                <h3 className="font-bold text-xl text-orange-700">PASSO 1: Auditoria</h3>
+                <ul className="text-sm text-muted-foreground space-y-2">
+                  <li>1. Colete todas as copies já usadas</li>
+                  <li>2. Identifique as de melhor performance</li>
+                  <li>3. Analise métricas (CTR, conversão, etc.)</li>
+                  <li>4. Marque as "vencedoras"</li>
                 </ul>
               </div>
-              
-              <div className="space-y-3">
-                <div className="w-12 h-12 bg-green-500/10 rounded-xl flex items-center justify-center">
-                  <TrendingUp className="w-6 h-6 text-green-600" />
+
+              <div className="space-y-4">
+                <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl flex items-center justify-center shadow-lg">
+                  <span className="text-white font-bold text-xl">2</span>
                 </div>
-                <h3 className="font-semibold text-lg">📱 Plataformas de Ads</h3>
-                <ul className="text-sm text-muted-foreground space-y-1">
-                  <li>• Facebook/Instagram Ads</li>
-                  <li>• Google Ads</li>
-                  <li>• LinkedIn Ads</li>
-                  <li>• TikTok Ads</li>
-                </ul>
+                <h3 className="font-bold text-xl text-blue-700">PASSO 2: Categorização</h3>
+                <div className="space-y-3">
+                  <div>
+                    <p className="font-medium text-sm mb-1">Por Persona:</p>
+                    <ul className="text-xs text-muted-foreground">
+                      <li>• Decisor Técnico</li>
+                      <li>• Comprador Econômico</li>
+                      <li>• Usuário Final</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <p className="font-medium text-sm mb-1">Por Estágio do Funil:</p>
+                    <ul className="text-xs text-muted-foreground">
+                      <li>• Topo (Awareness)</li>
+                      <li>• Meio (Consideração)</li>
+                      <li>• Fundo (Decisão)</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <p className="font-medium text-sm mb-1">Por Emoção:</p>
+                    <ul className="text-xs text-muted-foreground">
+                      <li>• Medo (FOMO) • Desejo</li>
+                      <li>• Urgência • Confiança</li>
+                    </ul>
+                  </div>
+                </div>
               </div>
-              
-              <div className="space-y-3">
-                <div className="w-12 h-12 bg-purple-500/10 rounded-xl flex items-center justify-center">
-                  <Brain className="w-6 h-6 text-purple-600" />
+
+              <div className="space-y-4">
+                <div className="w-16 h-16 bg-gradient-to-br from-green-500 to-green-600 rounded-2xl flex items-center justify-center shadow-lg">
+                  <span className="text-white font-bold text-xl">3</span>
                 </div>
-                <h3 className="font-semibold text-lg">👤 Dados da Persona</h3>
-                <ul className="text-sm text-muted-foreground space-y-1">
-                  <li>• Demografia e comportamento</li>
-                  <li>• Dores e necessidades</li>
-                  <li>• Canais preferidos</li>
-                  <li>• Jornada de compra</li>
-                </ul>
+                <h3 className="font-bold text-xl text-green-700">PASSO 3: Documentação</h3>
+                <div className="bg-muted/50 rounded-lg p-4 border">
+                  <div className="font-mono text-xs space-y-1">
+                    <div className="text-green-600">## COPY ID: HL-001</div>
+                    <div><strong>Texto:</strong> "Pare de perder vendas por follow-up mal feito"</div>
+                    <div><strong>Categoria:</strong> Headline / Pain Point</div>
+                    <div><strong>Persona:</strong> Gestor de Vendas</div>
+                    <div><strong>Performance:</strong> CTR 7.3% | Conv 3.2%</div>
+                    <div><strong>Usado em:</strong> Facebook Ads Q3/2024</div>
+                    <div><strong>Variações testadas:</strong> 5</div>
+                    <div><strong>Status:</strong> ✅ Ativa</div>
+                  </div>
+                </div>
               </div>
             </div>
           </CardContent>
