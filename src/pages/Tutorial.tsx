@@ -59,7 +59,7 @@ const Tutorial = () => {
                 <Video className="w-8 h-8 text-primary" />
               </div>
               <h3 className="text-2xl font-semibold text-primary">Reunião de Treinamento</h3>
-              <div className="space-y-2 max-w-2xl mx-auto">
+              <div className="space-y-4 max-w-2xl mx-auto">
                 <p className="text-lg font-medium">
                   📅 Próxima Terça-feira às 15:00
                 </p>
@@ -67,6 +67,20 @@ const Tutorial = () => {
                   Vou me reunir com os copys dos participantes e ensinar como usar a plataforma de personas sintéticas. 
                   Esta será uma sessão prática onde aprenderemos juntos como maximizar o potencial da ferramenta.
                 </p>
+                <Button 
+                  asChild 
+                  className="bg-blue-600 hover:bg-blue-700 text-white"
+                >
+                  <a 
+                    href="https://us02web.zoom.us/j/89655100918" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2"
+                  >
+                    <Video className="w-4 h-4" />
+                    Entrar na Reunião Zoom
+                  </a>
+                </Button>
               </div>
             </div>
           </CardContent>
