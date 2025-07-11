@@ -422,12 +422,12 @@ Apresente o plano de forma executiva, com bullets claros, números específicos 
         </Card>
 
         {/* Use our GPT Button */}
-        <div className="text-center">
+        <div className="flex justify-center items-center py-8">
           <Button 
             size="lg" 
-            className="bg-nexia-accent-500 hover:bg-nexia-accent-600 text-black font-bold text-lg px-8 py-4 shadow-lg hover:shadow-xl transition-all duration-300 flex items-center gap-3"
+            className="bg-nexia-accent-500 hover:bg-nexia-accent-600 text-black font-bold text-xl px-12 py-6 shadow-lg hover:shadow-xl transition-all duration-300 flex items-center gap-4 rounded-2xl"
           >
-            <Bot className="w-6 h-6" />
+            <Bot className="w-8 h-8" />
             Use o nosso GPT
           </Button>
         </div>
