@@ -378,129 +378,42 @@ Apresente o plano de forma executiva, com bullets claros, números específicos 
           </CardContent>
         </Card>
 
-        {/* Instructions Card - Enhanced */}
-        <Card className="overflow-hidden bg-gradient-to-br from-background via-card to-background border-0 shadow-glow">
-          <div className="absolute inset-0 bg-gradient-to-r from-primary/5 via-transparent to-accent/5" />
-          <CardHeader className="relative pb-6">
-            <div className="flex items-center justify-center mb-4">
-              <div className="w-16 h-16 bg-gradient-primary rounded-2xl flex items-center justify-center shadow-glow">
-                <Brain className="w-8 h-8 text-white" />
-              </div>
-            </div>
-            <h3 className="text-3xl font-bold text-center bg-gradient-hero bg-clip-text text-transparent">
-              Como Usar Este Sistema
-            </h3>
-            <p className="text-center text-muted-foreground text-lg max-w-2xl mx-auto">
-              Siga este passo a passo simples para criar campanhas de vendas vencedoras
-            </p>
-          </CardHeader>
-          <CardContent className="p-8 relative">
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-              <div className="group relative">
-                <div className="absolute inset-0 bg-gradient-to-br from-blue-500/10 via-blue-400/5 to-transparent rounded-2xl group-hover:from-blue-500/20 transition-all duration-500" />
-                <div className="relative text-center space-y-4 p-6">
-                  <div className="flex justify-center">
-                    <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl flex items-center justify-center text-xl font-bold text-white shadow-lg group-hover:shadow-xl group-hover:scale-110 transition-all duration-300">
-                      1
+        {/* Instructions Card */}
+        <Card className="bg-gradient-to-r from-blue-50/50 to-indigo-50/50 border-blue-200/50">
+          <CardContent className="p-8">
+            <div className="space-y-6">
+              <h3 className="text-2xl font-semibold text-blue-900">Como Usar</h3>
+              <div className="grid md:grid-cols-2 gap-6">
+                <div className="space-y-4">
+                  <div className="flex items-start gap-3">
+                    <div className="w-8 h-8 bg-blue-500 text-white rounded-full flex items-center justify-center text-sm font-bold">1</div>
+                    <div>
+                      <h4 className="font-semibold text-blue-900">Copie o Prompt</h4>
+                      <p className="text-blue-700 text-sm">Use o botão acima para copiar o prompt completo</p>
                     </div>
                   </div>
-                  <div className="space-y-3">
-                    <h4 className="font-bold text-xl text-blue-700">📋 Copie o Prompt</h4>
-                    <p className="text-blue-600 text-sm leading-relaxed">
-                      Clique no botão "Copiar Prompt" acima para ter o template completo na sua área de transferência
-                    </p>
-                  </div>
-                  <div className="h-1 bg-gradient-to-r from-blue-500 to-blue-300 rounded-full group-hover:from-blue-400 group-hover:to-blue-600 transition-all duration-300" />
-                </div>
-              </div>
-
-              <div className="group relative">
-                <div className="absolute inset-0 bg-gradient-to-br from-green-500/10 via-green-400/5 to-transparent rounded-2xl group-hover:from-green-500/20 transition-all duration-500" />
-                <div className="relative text-center space-y-4 p-6">
-                  <div className="flex justify-center">
-                    <div className="w-16 h-16 bg-gradient-to-br from-green-500 to-green-600 rounded-2xl flex items-center justify-center text-xl font-bold text-white shadow-lg group-hover:shadow-xl group-hover:scale-110 transition-all duration-300">
-                      2
+                  <div className="flex items-start gap-3">
+                    <div className="w-8 h-8 bg-blue-500 text-white rounded-full flex items-center justify-center text-sm font-bold">2</div>
+                    <div>
+                      <h4 className="font-semibold text-blue-900">Preencha os Dados</h4>
+                      <p className="text-blue-700 text-sm">Substitua os campos entre [ ] com seus dados reais</p>
                     </div>
                   </div>
-                  <div className="space-y-3">
-                    <h4 className="font-bold text-xl text-green-700">✏️ Preencha os Dados</h4>
-                    <p className="text-green-600 text-sm leading-relaxed">
-                      Substitua todos os campos entre [ ] com as informações específicas do seu negócio e persona
-                    </p>
-                  </div>
-                  <div className="h-1 bg-gradient-to-r from-green-500 to-green-300 rounded-full group-hover:from-green-400 group-hover:to-green-600 transition-all duration-300" />
                 </div>
-              </div>
-
-              <div className="group relative">
-                <div className="absolute inset-0 bg-gradient-to-br from-purple-500/10 via-purple-400/5 to-transparent rounded-2xl group-hover:from-purple-500/20 transition-all duration-500" />
-                <div className="relative text-center space-y-4 p-6">
-                  <div className="flex justify-center">
-                    <div className="w-16 h-16 bg-gradient-to-br from-purple-500 to-purple-600 rounded-2xl flex items-center justify-center text-xl font-bold text-white shadow-lg group-hover:shadow-xl group-hover:scale-110 transition-all duration-300">
-                      3
+                <div className="space-y-4">
+                  <div className="flex items-start gap-3">
+                    <div className="w-8 h-8 bg-blue-500 text-white rounded-full flex items-center justify-center text-sm font-bold">3</div>
+                    <div>
+                      <h4 className="font-semibold text-blue-900">Cole na IA</h4>
+                      <p className="text-blue-700 text-sm">Use em ChatGPT, Claude ou sua IA preferida</p>
                     </div>
                   </div>
-                  <div className="space-y-3">
-                    <h4 className="font-bold text-xl text-purple-700">🤖 Cole na IA</h4>
-                    <p className="text-purple-600 text-sm leading-relaxed">
-                      Use o prompt preenchido no ChatGPT, Claude, Gemini ou sua ferramenta de IA preferida
-                    </p>
-                  </div>
-                  <div className="h-1 bg-gradient-to-r from-purple-500 to-purple-300 rounded-full group-hover:from-purple-400 group-hover:to-purple-600 transition-all duration-300" />
-                </div>
-              </div>
-
-              <div className="group relative">
-                <div className="absolute inset-0 bg-gradient-to-br from-orange-500/10 via-orange-400/5 to-transparent rounded-2xl group-hover:from-orange-500/20 transition-all duration-500" />
-                <div className="relative text-center space-y-4 p-6">
-                  <div className="flex justify-center">
-                    <div className="w-16 h-16 bg-gradient-to-br from-orange-500 to-orange-600 rounded-2xl flex items-center justify-center text-xl font-bold text-white shadow-lg group-hover:shadow-xl group-hover:scale-110 transition-all duration-300">
-                      4
+                  <div className="flex items-start gap-3">
+                    <div className="w-8 h-8 bg-blue-500 text-white rounded-full flex items-center justify-center text-sm font-bold">4</div>
+                    <div>
+                      <h4 className="font-semibold text-blue-900">Execute o Plano</h4>
+                      <p className="text-blue-700 text-sm">Implemente as estratégias geradas pela IA</p>
                     </div>
-                  </div>
-                  <div className="space-y-3">
-                    <h4 className="font-bold text-xl text-orange-700">🚀 Execute o Plano</h4>
-                    <p className="text-orange-600 text-sm leading-relaxed">
-                      Implemente as estratégias geradas, monitore resultados e otimize baseado nos dados
-                    </p>
-                  </div>
-                  <div className="h-1 bg-gradient-to-r from-orange-500 to-orange-300 rounded-full group-hover:from-orange-400 group-hover:to-orange-600 transition-all duration-300" />
-                </div>
-              </div>
-            </div>
-
-            {/* Pro Tips Section */}
-            <div className="mt-12 p-6 bg-gradient-to-r from-primary/5 to-accent/5 rounded-2xl border border-primary/10">
-              <h4 className="text-xl font-bold text-center mb-6 flex items-center justify-center gap-2">
-                <Sparkles className="w-6 h-6 text-primary" />
-                Dicas Profissionais
-              </h4>
-              <div className="grid md:grid-cols-3 gap-6">
-                <div className="flex items-start gap-3">
-                  <div className="w-8 h-8 bg-primary/20 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <Target className="w-4 h-4 text-primary" />
-                  </div>
-                  <div>
-                    <h5 className="font-semibold text-sm">Seja Específico</h5>
-                    <p className="text-xs text-muted-foreground">Quanto mais detalhes você fornecer, melhor será o plano gerado</p>
-                  </div>
-                </div>
-                <div className="flex items-start gap-3">
-                  <div className="w-8 h-8 bg-primary/20 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <TrendingUp className="w-4 h-4 text-primary" />
-                  </div>
-                  <div>
-                    <h5 className="font-semibold text-sm">Teste e Otimize</h5>
-                    <p className="text-xs text-muted-foreground">Use os A/B tests sugeridos para melhorar continuamente</p>
-                  </div>
-                </div>
-                <div className="flex items-start gap-3">
-                  <div className="w-8 h-8 bg-primary/20 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <Brain className="w-4 h-4 text-primary" />
-                  </div>
-                  <div>
-                    <h5 className="font-semibold text-sm">Refine o Prompt</h5>
-                    <p className="text-xs text-muted-foreground">Faça ajustes baseados nos resultados das suas campanhas</p>
                   </div>
                 </div>
               </div>
