@@ -51,6 +51,27 @@ const Tutorial = () => {
           </div>
         </div>
 
+        {/* Meeting Information */}
+        <Card className="bg-gradient-to-r from-primary/10 to-accent/10 border border-primary/20 backdrop-blur-sm">
+          <CardContent className="p-8">
+            <div className="text-center space-y-4">
+              <div className="w-16 h-16 bg-primary/20 rounded-2xl flex items-center justify-center mx-auto">
+                <Video className="w-8 h-8 text-primary" />
+              </div>
+              <h3 className="text-2xl font-semibold text-primary">Reunião de Treinamento</h3>
+              <div className="space-y-2 max-w-2xl mx-auto">
+                <p className="text-lg font-medium">
+                  📅 Próxima Terça-feira às 15:00
+                </p>
+                <p className="text-muted-foreground">
+                  Vou me reunir com os copys dos participantes e ensinar como usar a plataforma de personas sintéticas. 
+                  Esta será uma sessão prática onde aprenderemos juntos como maximizar o potencial da ferramenta.
+                </p>
+              </div>
+            </div>
+          </CardContent>
+        </Card>
+
         {/* YouTube Embed Section */}
         <Card className="bg-card/80 backdrop-blur-sm border border-border/50">
           <CardContent className="p-8">
