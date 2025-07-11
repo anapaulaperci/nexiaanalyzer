@@ -251,32 +251,41 @@ const CRM = () => {
         </Card>
 
         {/* Unnichat CTA Section */}
-        <Card className="overflow-hidden bg-gradient-to-br from-nexia-accent-400 to-nexia-accent-600 border-0 shadow-xl">
+        <Card className="overflow-hidden bg-gradient-to-br from-white to-gray-50 border-2 border-nexia-accent-200 shadow-xl">
           <CardContent className="p-8">
             <div className="flex flex-col lg:flex-row items-center justify-between gap-8">
               <div className="flex-1 text-center lg:text-left space-y-4">
-                <div className="flex items-center justify-center lg:justify-start gap-3 mb-4">
-                  <Gift className="w-8 h-8 text-white" />
-                  <h2 className="text-3xl md:text-4xl font-bold text-white">
-                    Teste o Unnichat por 30 dias de
-                  </h2>
+                <div className="flex items-center justify-center lg:justify-start gap-4 mb-4">
+                  <div className="w-16 h-12 bg-white rounded-lg shadow-md flex items-center justify-center p-2">
+                    <img 
+                      src="/lovable-uploads/ef148617-5e1e-485c-9f00-2f49d7d2e8a4.png" 
+                      alt="Unnichat Logo"
+                      className="max-w-full max-h-full object-contain"
+                    />
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <Gift className="w-8 h-8 text-nexia-accent-600" />
+                    <h2 className="text-3xl md:text-4xl font-bold text-gray-800">
+                      Teste o Unnichat por 30 dias de
+                    </h2>
+                  </div>
                 </div>
-                <div className="text-5xl md:text-6xl font-black text-white mb-6">
+                <div className="text-5xl md:text-6xl font-black text-nexia-accent-600 mb-6">
                   GRAÇA
                 </div>
-                <div className="flex items-center justify-center lg:justify-start gap-2 text-white/90 text-lg">
+                <div className="flex items-center justify-center lg:justify-start gap-2 text-gray-600 text-lg">
                   <Clock className="w-5 h-5" />
                   <span>Acesso completo • Sem compromisso • Suporte incluído</span>
                 </div>
                 <Button 
                   size="lg" 
-                  className="bg-white text-nexia-accent-600 hover:bg-white/90 font-bold text-lg px-8 py-4 mt-6"
+                  className="bg-nexia-accent-600 text-white hover:bg-nexia-accent-700 font-bold text-lg px-8 py-4 mt-6 shadow-lg"
                 >
                   Começar Teste Gratuito
                 </Button>
               </div>
               <div className="flex-shrink-0">
-                <div className="w-48 h-24 bg-white/10 rounded-lg flex items-center justify-center p-4">
+                <div className="w-32 h-32 bg-nexia-accent-100 rounded-full flex items-center justify-center p-6 shadow-lg">
                   <img 
                     src="/lovable-uploads/ef148617-5e1e-485c-9f00-2f49d7d2e8a4.png" 
                     alt="Unnichat Logo"
