@@ -1065,7 +1065,7 @@ dados da pesquisa: [INSERIR DADOS AQUI]`,
           onClick={openChatGPT}
         >
           <Bot className="w-8 h-8" />
-          Use o nosso GPP
+          Use o nosso GPT
         </Button>
       </div>
 
