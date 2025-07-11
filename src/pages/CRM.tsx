@@ -3,12 +3,6 @@ import { TrendingUp, Target, Lightbulb, Users, BarChart3, CheckCircle, ArrowRigh
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 
-// Import cartoon images
-import cartoonNonLinearFunnel from "@/assets/cartoon-non-linear-funnel.png";
-import cartoonTrialPower from "@/assets/cartoon-trial-power.png";
-import cartoonLiveConversion from "@/assets/cartoon-live-conversion.png";
-import cartoonConversionRate from "@/assets/cartoon-conversion-rate.png";
-
 const CRM = () => {
   const pipelineSteps = [
     { 
@@ -86,7 +80,6 @@ const CRM = () => {
   const strategicInsights = [
     {
       icon: TrendingUp,
-      image: cartoonNonLinearFunnel,
       title: "Funil Não-Linear",
       description: "O pipeline mostra que nem todos seguem a ordem esperada. Pessoas podem pular etapas e ainda converter.",
       lesson: "Flexibilidade no processo aumenta conversões",
@@ -94,7 +87,6 @@ const CRM = () => {
     },
     {
       icon: Target,
-      image: cartoonTrialPower,
       title: "O Poder do Trial",
       description: "Questione se o trial é necessário. Muitas vezes clientes estão prontos para comprar.",
       lesson: "Testar conversão direta quando valor está claro",
@@ -102,7 +94,6 @@ const CRM = () => {
     },
     {
       icon: Users,
-      image: cartoonLiveConversion,
       title: "Lives como Motor de Conversão",
       description: "Lives geram maior engajamento e presença. Estratégia vencedora como principal ferramenta.",
       lesson: "Investir em qualidade e frequência",
@@ -110,7 +101,6 @@ const CRM = () => {
     },
     {
       icon: BarChart3,
-      image: cartoonConversionRate,
       title: "Taxa de Conversão como Diferencial",
       description: "Pipelines bem estruturados superam médias de mercado. Processo automatizado e personalizado.",
       lesson: "Qualidade sobre quantidade",
@@ -236,14 +226,6 @@ const CRM = () => {
                 >
                   <div className={`absolute inset-0 opacity-5 ${insight.color}`} />
                   <div className="relative p-6 space-y-4">
-                    {/* Cartoon Image */}
-                    <div className="w-full h-48 bg-gradient-to-br from-muted/10 to-muted/30 rounded-lg overflow-hidden mb-4">
-                      <img 
-                        src={insight.image} 
-                        alt={insight.title}
-                        className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
-                      />
-                    </div>
                     <div className="flex items-center gap-3">
                       <div className={`p-3 ${insight.color} rounded-lg shadow-lg`}>
                         <insight.icon className="w-6 h-6 text-white" />
