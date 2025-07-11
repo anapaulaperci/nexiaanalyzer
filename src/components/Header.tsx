@@ -10,17 +10,16 @@ const Header = () => {
     <header className="fixed top-0 left-0 right-0 z-50 bg-card/80 backdrop-blur-sm border-b border-border/50">
       <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
         {/* Logo */}
-        <div className="flex items-center">
-          <img 
-            src="/lovable-uploads/a89c48da-32a5-4421-9595-6267fb89f5d7.png" 
-            alt="NexIA Analyzer" 
-            className="h-8 w-auto"
-            onError={(e) => {
-              console.error('Erro ao carregar logo:', e);
-              e.currentTarget.style.display = 'none';
-            }}
-          />
-        </div>
+        <NavLink to="/" className="flex items-center group">
+          <div className="flex items-center space-x-2">
+            <div className="w-8 h-8 bg-gradient-to-br from-primary to-primary-glow rounded-lg flex items-center justify-center">
+              <Brain className="w-5 h-5 text-white" />
+            </div>
+            <span className="text-xl font-bold bg-gradient-to-r from-foreground to-muted-foreground bg-clip-text text-transparent group-hover:from-primary group-hover:to-primary-glow transition-all duration-300">
+              NexIA Analyzer
+            </span>
+          </div>
+        </NavLink>
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-8">
