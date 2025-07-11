@@ -1135,7 +1135,7 @@ dados da pesquisa: [INSERIR DADOS AQUI]`,
           <Card 
             key={prompt.id}
             id={prompt.id.toString()}
-            className="bg-card/50 border border-border/50 backdrop-blur-sm hover:border-primary/50 transition-all duration-300 hover:shadow-glow group scroll-mt-8"
+            className={`${prompt.id === 16 ? 'bg-amber-50/80 border-amber-200/50' : 'bg-card/50 border-border/50'} backdrop-blur-sm hover:border-primary/50 transition-all duration-300 hover:shadow-glow group scroll-mt-8`}
           >
             <CardHeader className="relative">
               {/* Illustration */}
