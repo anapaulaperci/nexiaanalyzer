@@ -1078,7 +1078,7 @@ dados da pesquisa: [INSERIR DADOS AQUI]`,
 
 dados da pesquisa: [INSERIR DADOS AQUI]`,
       icon: TrendingUp,
-      color: "text-blue-400"
+      color: "text-amber-700"
     }
   ];
 
