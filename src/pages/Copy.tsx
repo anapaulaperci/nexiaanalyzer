@@ -73,6 +73,17 @@ const Copy = () => {
               </div>
             </div>
 
+            {/* Separador */}
+            <div className="border-t border-border/50 my-8"></div>
+
+            {/* Título da seção de frameworks */}
+            <div className="text-center mb-6">
+              <h3 className="text-2xl font-bold text-primary">Estruturas de Copy</h3>
+              <p className="text-muted-foreground mt-2">
+                Frameworks comprovados para criar anúncios persuasivos
+              </p>
+            </div>
+
             <Accordion type="single" collapsible className="w-full">
 
               <AccordionItem value="aida">

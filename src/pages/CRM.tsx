@@ -370,6 +370,7 @@ const CRM = () => {
                 <Button 
                   size="lg" 
                   className="bg-nexia-accent-600 text-white hover:bg-nexia-accent-700 font-bold text-lg px-8 py-4 mt-6 shadow-lg"
+                  onClick={() => window.open('https://links.unnichat.com.br/30-dias-gratis-unnichat', '_blank')}
                 >
                   Começar Teste Gratuito
                 </Button>
