@@ -23,6 +23,7 @@ import ai4usImg from "@/assets/ai-4us-realistic.png";
 import aiQuestImg from "@/assets/ai-quest-realistic.png";
 import aiOathImg from "@/assets/ai-oath-realistic.png";
 import aiStorybrandImg from "@/assets/ai-storybrand-realistic.png";
+import aiDashboardImg from "@/assets/ai-dashboard-realistic.png";
 
 const Prompts = () => {
   const [searchQuery, setSearchQuery] = useState("");
@@ -933,6 +934,151 @@ SUCESSO (a terra prometida):
 dados da pesquisa: [INSERIR DADOS AQUI]`,
       icon: Crown,
       color: "text-pink-600"
+    },
+    {
+      id: 16,
+      title: "16. Dashboard - Versão Otimizada",
+      description: "Cria dashboards modernos e interativos com especificações técnicas detalhadas de design e funcionalidade",
+      category: "dashboard",
+      difficulty: "avançado",
+      rating: 4.9,
+      illustration: aiDashboardImg,
+      prompt: `Crie um dashboard moderno e interativo baseado nos dados de persona fornecidos.
+
+### ESTRUTURA OBRIGATÓRIA:
+
+**Menu superior horizontal com navegação entre seções:**
+- Home/Visão Geral
+- Métricas
+- Relatórios
+- Configurações
+- Navegação breadcrumb
+- Avatar do usuário e notificações
+
+**Cards de métricas principais (4-6 indicadores):**
+- KPIs principais do negócio
+- Comparação com período anterior
+- Indicadores de crescimento
+- Alertas de performance
+- Métricas de conversão
+- ROI e receita
+
+**Gráficos de evolução temporal e distribuição:**
+- Gráfico de linha para tendências
+- Gráfico de barras para comparações
+- Gráfico de pizza para distribuições
+- Heatmap para padrões
+- Gráfico de área para volumes
+- Indicadores de performance em tempo real
+
+**Tabela resumida com dados relevantes:**
+- Top performers
+- Últimas atividades
+- Dados de conversão
+- Segmentação de usuários
+- Paginação e filtros
+- Ações rápidas
+
+### ESPECIFICAÇÕES DE DESIGN:
+
+**Cores Obrigatórias:**
+- Primária: #3B82F6 (Blue 500)
+- Sucesso: #10B981 (Emerald 500)
+- Erro: #EF4444 (Red 500)
+- Warning: #F59E0B (Amber 500)
+- Background: #F8FAFC (Slate 50)
+- Cards: #FFFFFF com sombra suave
+
+**Layout Responsivo:**
+- Grid system flexível (CSS Grid + Flexbox)
+- Breakpoints: mobile (320px), tablet (768px), desktop (1024px+)
+- Cards empilháveis em mobile
+- Sidebar colapsível em tablets
+- Máximo 12 colunas no desktop
+
+**Interações Obrigatórias:**
+- Hover effects em todos os elementos clicáveis
+- Tooltips informativos com dados detalhados
+- Transições suaves (0.3s ease-in-out)
+- Loading states para carregamento
+- Estados de erro e feedback visual
+- Micro-animações para ações
+
+**Tipografia Sistema:**
+- Font-family: system-ui, -apple-system, sans-serif
+- Hierarquia clara: H1 (32px), H2 (24px), H3 (20px), Body (16px), Small (14px)
+- Line-height: 1.5 para legibilidade
+- Font-weight: Regular (400), Medium (500), Bold (700)
+
+**Espaçamento Consistente:**
+- Padding interno dos cards: 20-24px
+- Margin entre elementos: 16px
+- Grid gaps: 20px
+- Padding do container principal: 32px
+- Spacing scale: 4px, 8px, 16px, 20px, 24px, 32px
+
+**Cards com Características Específicas:**
+- Border-radius: 12px
+- Box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1)
+- Border: 1px solid #E2E8F0
+- Background: #FFFFFF
+- Hover: transform: translateY(-2px) + shadow intensificada
+
+### FUNCIONALIDADES ESPECÍFICAS:
+
+**Filtros e Controles:**
+- Seletor de período (7d, 30d, 90d, custom)
+- Filtros por categoria/segmento
+- Busca em tempo real
+- Export de dados (CSV, PDF)
+- Configurações de visualização
+- Modo escuro/claro
+
+**Responsividade Dashboard:**
+- Mobile: Stack vertical, cards full-width
+- Tablet: 2 colunas, navegação colapsível
+- Desktop: 4 colunas, sidebar fixa
+- Menu hambúrguer para mobile
+- Gestos de swipe para navegação móvel
+
+**Estados e Feedback:**
+- Loading skeletons para carregamento
+- Empty states com ilustrações
+- Error states com ações de retry
+- Success notifications
+- Progress indicators
+- Confirmações de ações destrutivas
+
+### DADOS A INCLUIR:
+
+**Métricas Baseadas na Persona:**
+- Utilizar informações analisadas no chat
+- Popular gráficos com dados coerentes
+- Criar segmentações relevantes
+- Incluir benchmarks do mercado
+- Mostrar tendências históricas
+- Adicionar previsões baseadas em IA
+
+**Estrutura de Dados Sugerida:**
+- Performance mensal/trimestral
+- Segmentação demográfica
+- Funil de conversão
+- Análise de cohorts
+- NPS e satisfação
+- Receita e custos
+
+### ENTREGÁVEIS:
+
+1. **Wireframe Detalhado** com todas as seções
+2. **Style Guide** com cores, tipografia e componentes
+3. **Especificações Técnicas** para desenvolvimento
+4. **Dados de Exemplo** populados com base na persona
+5. **Guia de Responsividade** para todos os breakpoints
+6. **Lista de Componentes Reutilizáveis** 
+
+dados da pesquisa: [INSERIR DADOS AQUI]`,
+      icon: TrendingUp,
+      color: "text-blue-400"
     }
   ];
 
