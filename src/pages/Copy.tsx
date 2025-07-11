@@ -110,7 +110,7 @@ const Copy = () => {
 
                   <div className="flex justify-center pt-4">
                     <Button 
-                      onClick={() => navigate('/prompts')}
+                      onClick={() => navigate('/prompts#aida')}
                       className="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-3 rounded-lg flex items-center gap-2 shadow-lg"
                     >
                       Ver Prompt AIDA
@@ -141,7 +141,7 @@ const Copy = () => {
 
                   <div className="flex justify-center pt-4">
                     <Button 
-                      onClick={() => navigate('/prompts')}
+                      onClick={() => navigate('/prompts#pas')}
                       className="bg-red-600 hover:bg-red-700 text-white font-semibold px-6 py-3 rounded-lg flex items-center gap-2 shadow-lg"
                     >
                       Ver Prompt PAS
@@ -172,7 +172,7 @@ const Copy = () => {
 
                   <div className="flex justify-center pt-4">
                     <Button 
-                      onClick={() => navigate('/prompts')}
+                      onClick={() => navigate('/prompts#bab')}
                       className="bg-purple-600 hover:bg-purple-700 text-white font-semibold px-6 py-3 rounded-lg flex items-center gap-2 shadow-lg"
                     >
                       Ver Prompt BAB
@@ -203,7 +203,7 @@ const Copy = () => {
 
                   <div className="flex justify-center pt-4">
                     <Button 
-                      onClick={() => navigate('/prompts')}
+                      onClick={() => navigate('/prompts#fab')}
                       className="bg-orange-600 hover:bg-orange-700 text-white font-semibold px-6 py-3 rounded-lg flex items-center gap-2 shadow-lg"
                     >
                       Ver Prompt FAB
@@ -234,7 +234,7 @@ const Copy = () => {
 
                   <div className="flex justify-center pt-4">
                     <Button 
-                      onClick={() => navigate('/prompts')}
+                      onClick={() => navigate('/prompts#4us')}
                       className="bg-cyan-600 hover:bg-cyan-700 text-white font-semibold px-6 py-3 rounded-lg flex items-center gap-2 shadow-lg"
                     >
                       Ver Prompt 4 U's
@@ -265,7 +265,7 @@ const Copy = () => {
 
                   <div className="flex justify-center pt-4">
                     <Button 
-                      onClick={() => navigate('/prompts')}
+                      onClick={() => navigate('/prompts#quest')}
                       className="bg-indigo-600 hover:bg-indigo-700 text-white font-semibold px-6 py-3 rounded-lg flex items-center gap-2 shadow-lg"
                     >
                       Ver Prompt QUEST
@@ -296,7 +296,7 @@ const Copy = () => {
 
                   <div className="flex justify-center pt-4">
                     <Button 
-                      onClick={() => navigate('/prompts')}
+                      onClick={() => navigate('/prompts#oath')}
                       className="bg-emerald-600 hover:bg-emerald-700 text-white font-semibold px-6 py-3 rounded-lg flex items-center gap-2 shadow-lg"
                     >
                       Ver Prompt OATH
@@ -327,7 +327,7 @@ const Copy = () => {
 
                   <div className="flex justify-center pt-4">
                     <Button 
-                      onClick={() => navigate('/prompts')}
+                      onClick={() => navigate('/prompts#storybrand')}
                       className="bg-pink-600 hover:bg-pink-700 text-white font-semibold px-6 py-3 rounded-lg flex items-center gap-2 shadow-lg"
                     >
                       Ver Prompt StoryBrand

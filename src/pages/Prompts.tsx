@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Badge } from "@/components/ui/badge";
 import { Copy, Search, MessageSquare, Target, Users, TrendingUp, Heart, Star, Rocket, Brain, Crown, Bot } from "lucide-react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 // Import das ilustrações
 import sentimentAnalysisImg from "@/assets/sentiment-analysis.png";
@@ -14,8 +14,31 @@ import competitiveAnalysisImg from "@/assets/competitive-analysis.png";
 import hiddenInsightsImg from "@/assets/hidden-insights.png";
 import brandArchetypeImg from "@/assets/brand-archetype.png";
 
+// Import das ilustrações dos frameworks de copy
+import cartoonAidaImg from "@/assets/cartoon-aida.png";
+import cartoonPasImg from "@/assets/cartoon-pas.png";
+import cartoonBabImg from "@/assets/cartoon-bab.png";
+import cartoonFabImg from "@/assets/cartoon-fab.png";
+import cartoon4usImg from "@/assets/cartoon-4us.png";
+import cartoonQuestImg from "@/assets/cartoon-quest.png";
+import cartoonOathImg from "@/assets/cartoon-oath.png";
+import cartoonStorybrandImg from "@/assets/cartoon-storybrand.png";
+
 const Prompts = () => {
   const [searchQuery, setSearchQuery] = useState("");
+  
+  // Scroll automático para o prompt específico quando vem de um hash
+  useEffect(() => {
+    const hash = window.location.hash.substring(1);
+    if (hash) {
+      setTimeout(() => {
+        const element = document.getElementById(hash);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+      }, 100);
+    }
+  }, []);
 
   const prompts = [
     {
@@ -618,13 +641,13 @@ dados da pesquisa: [INSERIR DADOS AQUI]`,
     },
     // PROMPTS DE ESTRUTURAS DE COPY
     {
-      id: 9,
-      title: "📝 AIDA - Atenção, Interesse, Desejo, Ação",
+      id: "aida",
+      title: "📝 08. AIDA - Atenção, Interesse, Desejo, Ação",
       description: "Framework clássico do copywriting que guia o leitor desde o primeiro contato até a ação final",
       category: "copy",
       difficulty: "iniciante", 
       rating: 4.9,
-      illustration: campaignGenerationImg,
+      illustration: cartoonAidaImg,
       prompt: `Crie um anúncio usando AIDA para [produto/serviço]:
 
 ATENÇÃO (3 segundos para parar o scroll):
@@ -652,13 +675,13 @@ dados da pesquisa: [INSERIR DADOS AQUI]`,
       color: "text-blue-600"
     },
     {
-      id: 10,
-      title: "⚡ PAS - Problema, Agitação, Solução", 
+      id: "pas",
+      title: "⚡ 09. PAS - Problema, Agitação, Solução", 
       description: "Framework altamente efetivo para produtos que resolvem dores específicas",
       category: "copy",
       difficulty: "intermediário",
       rating: 4.8,
-      illustration: competitiveAnalysisImg,
+      illustration: cartoonPasImg,
       prompt: `Crie copy PAS para [produto] focado em [problema específico]:
 
 PROBLEMA (identifique a ferida):
@@ -683,13 +706,13 @@ dados da pesquisa: [INSERIR DADOS AQUI]`,
       color: "text-red-600"
     },
     {
-      id: 11,
-      title: "🌉 BAB - Before-After-Bridge",
+      id: "bab",
+      title: "🌉 10. BAB - Before-After-Bridge",
       description: "Framework que mostra a transformação que seu produto proporciona",
       category: "copy", 
       difficulty: "intermediário",
       rating: 4.7,
-      illustration: customerJourneyImg,
+      illustration: cartoonBabImg,
       prompt: `Crie copy BAB para [produto] com foco em transformação:
 
 BEFORE (pinte o presente doloroso):
@@ -716,13 +739,13 @@ dados da pesquisa: [INSERIR DADOS AQUI]`,
       color: "text-purple-600"
     },
     {
-      id: 12,
-      title: "🔧 FAB - Features, Advantages, Benefits",
+      id: "fab",
+      title: "🔧 11. FAB - Features, Advantages, Benefits",
       description: "Framework que traduz características técnicas em valor real para o cliente",
       category: "copy",
       difficulty: "iniciante",
       rating: 4.6,
-      illustration: audienceSegmentationImg,
+      illustration: cartoonFabImg,
       prompt: `Transforme features em benefits usando FAB para [produto]:
 
 FEATURES (o que é):
@@ -747,13 +770,13 @@ dados da pesquisa: [INSERIR DADOS AQUI]`,
       color: "text-orange-600"
     },
     {
-      id: 13,
-      title: "🎯 4 U's - Urgent, Unique, Useful, Ultra-specific",
+      id: "4us",
+      title: "🎯 12. 4 U's - Urgent, Unique, Useful, Ultra-specific",
       description: "Framework desenvolvido por Michael Masterson, poderoso para headlines e subject lines",
       category: "copy",
       difficulty: "avançado",
       rating: 4.8,
-      illustration: hiddenInsightsImg,
+      illustration: cartoon4usImg,
       prompt: `Crie 5 headlines usando os 4 U's para [produto/serviço]:
 
 URGENT (crie pressão temporal):
@@ -782,13 +805,13 @@ dados da pesquisa: [INSERIR DADOS AQUI]`,
       color: "text-cyan-600"
     },
     {
-      id: 14,
-      title: "🎪 QUEST - Qualify, Understand, Educate, Stimulate, Transition",
+      id: "quest",
+      title: "🎪 13. QUEST - Qualify, Understand, Educate, Stimulate, Transition",
       description: "Framework de 5 passos que guia através de uma jornada psicológica completa",
       category: "copy",
       difficulty: "avançado", 
       rating: 4.7,
-      illustration: sentimentAnalysisImg,
+      illustration: cartoonQuestImg,
       prompt: `Crie copy longo usando QUEST para [produto complexo]:
 
 QUALIFY (filtre os certos):
@@ -825,13 +848,13 @@ dados da pesquisa: [INSERIR DADOS AQUI]`,
       color: "text-indigo-600"
     },
     {
-      id: 15,
-      title: "🧠 OATH - Oblivious, Apathetic, Thinking, Hurting",
+      id: "oath",
+      title: "🧠 14. OATH - Oblivious, Apathetic, Thinking, Hurting",
       description: "Framework que segmenta audiência baseado no nível de consciência do problema",
       category: "copy",
       difficulty: "avançado",
       rating: 4.9,
-      illustration: brandArchetypeImg,
+      illustration: cartoonOathImg,
       prompt: `Crie 4 versões de copy para [produto], uma para cada nível OATH:
 
 OBLIVIOUS (não sabem que têm problema):
@@ -863,13 +886,13 @@ dados da pesquisa: [INSERIR DADOS AQUI]`,
       color: "text-emerald-600"
     },
     {
-      id: 16,
-      title: "📚 StoryBrand - Framework Narrativo Expandido",
+      id: "storybrand",
+      title: "📚 15. StoryBrand - Framework Narrativo Expandido",
       description: "Transforma sua marca em um guia sábio na jornada do herói (seu cliente)",
       category: "copy",
       difficulty: "avançado",
       rating: 4.8,
-      illustration: campaignGenerationImg,
+      illustration: cartoonStorybrandImg,
       prompt: `Crie uma narrativa completa usando StoryBrand para [marca]:
 
 HERÓI (seu cliente):
@@ -965,7 +988,8 @@ dados da pesquisa: [INSERIR DADOS AQUI]`,
         {filteredPrompts.map((prompt) => (
           <Card 
             key={prompt.id}
-            className="bg-card/50 border border-border/50 backdrop-blur-sm hover:border-primary/50 transition-all duration-300 hover:shadow-glow group"
+            id={prompt.id.toString()}
+            className="bg-card/50 border border-border/50 backdrop-blur-sm hover:border-primary/50 transition-all duration-300 hover:shadow-glow group scroll-mt-8"
           >
             <CardHeader className="relative">
               {/* Illustration */}
