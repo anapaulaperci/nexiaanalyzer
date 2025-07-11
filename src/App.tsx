@@ -11,6 +11,7 @@ import Tutorial from "./pages/Tutorial";
 import Prompts from "./pages/Prompts";
 import CampaignPlanning from "./pages/CampaignPlanning";
 import Copy from "./pages/Copy";
+import CRM from "./pages/CRM";
 
 const queryClient = new QueryClient();
 
@@ -26,6 +27,7 @@ const App = () => (
             <Route path="tutorial" element={<Tutorial />} />
             <Route path="prompts" element={<Prompts />} />
             <Route path="copy" element={<Copy />} />
+            <Route path="crm" element={<CRM />} />
             <Route path="campaign" element={<CampaignPlanning />} />
           </Route>
           <Route path="/landing" element={<Index />} />
