@@ -11,7 +11,12 @@ const Header = () => {
           <img 
             src="/lovable-uploads/84cf1afe-0db5-413f-bfe7-26875942dfa8.png" 
             alt="anapaulaperci" 
-            className="h-8"
+            className="h-8 w-auto object-contain"
+            onError={(e) => {
+              console.log('Error loading logo:', e);
+              e.currentTarget.style.display = 'none';
+            }}
+            onLoad={() => console.log('Logo loaded successfully')}
           />
           <span className="font-bold text-xl bg-gradient-hero bg-clip-text text-transparent">
             anapaulaperci
