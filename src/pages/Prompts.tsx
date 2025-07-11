@@ -2,7 +2,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Badge } from "@/components/ui/badge";
-import { Copy, Search, MessageSquare, Target, Users, TrendingUp, Heart, Star, Rocket, Brain, Crown } from "lucide-react";
+import { Copy, Search, MessageSquare, Target, Users, TrendingUp, Heart, Star, Rocket, Brain, Crown, Bot } from "lucide-react";
 import { useState } from "react";
 
 // Import das ilustrações
@@ -738,16 +738,15 @@ dados da pesquisa: [INSERIR DADOS AQUI]`,
         ))}
       </div>
 
-      {/* Botão Usar Agora - Centralizado */}
-      <div className="flex justify-center mt-12 mb-8">
+      {/* Botão Use o nosso GPP - Centralizado e Maior */}
+      <div className="flex justify-center items-center py-8">
         <Button 
           size="lg"
-          className="px-16 py-4 text-lg shadow-glow hover-scale text-white"
-          style={{ backgroundColor: '#2D1B69' }}
+          className="bg-nexia-accent-500 hover:bg-nexia-accent-600 text-black font-bold text-xl px-12 py-6 shadow-lg hover:shadow-xl transition-all duration-300 flex items-center gap-4 rounded-2xl"
           onClick={openChatGPT}
         >
-          <Brain className="w-5 h-5 mr-3" />
-          Usar Agora
+          <Bot className="w-8 h-8" />
+          Use o nosso GPP
         </Button>
       </div>
 
