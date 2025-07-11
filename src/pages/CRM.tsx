@@ -1,9 +1,32 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { TrendingUp, Target, Lightbulb, Users, BarChart3, CheckCircle, ArrowRight, Gift, Clock } from "lucide-react";
+import { TrendingUp, Target, Lightbulb, Users, BarChart3, CheckCircle, ArrowRight, Gift, Clock, ChevronLeft, ChevronRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
+import { useState } from "react";
 
 const CRM = () => {
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  
+  const crmImages = [
+    {
+      src: "/lovable-uploads/fb881f1e-6a6d-491e-aa93-2f6ab7a68767.png",
+      title: "Primeiras Etapas do Pipeline",
+      description: "Entrada de Leads até Interesse Grupo - mostrando como organizar e acompanhar os primeiros contatos"
+    },
+    {
+      src: "/lovable-uploads/aee8e670-f625-445a-9b52-34606ea3c2a1.png", 
+      title: "Etapas Finais de Conversão",
+      description: "Confirmou Presença até Compra Aprovada - as etapas decisivas para fechamento de vendas"
+    }
+  ];
+
+  const nextImage = () => {
+    setCurrentImageIndex((prev) => (prev + 1) % crmImages.length);
+  };
+
+  const prevImage = () => {
+    setCurrentImageIndex((prev) => (prev - 1 + crmImages.length) % crmImages.length);
+  };
   const pipelineSteps = [
     { 
       number: "1️⃣", 
@@ -142,35 +165,80 @@ const CRM = () => {
           </p>
         </div>
 
+        {/* CRM Images Carousel Section */}
+        <Card className="overflow-hidden bg-gradient-to-br from-card to-card/90 border-0 shadow-card">
+          <CardHeader>
+            <CardTitle className="flex items-center gap-3 text-2xl">
+              <div className="p-2 bg-primary/10 rounded-lg">
+                <BarChart3 className="w-6 h-6 text-primary" />
+              </div>
+              {crmImages[currentImageIndex].title}
+            </CardTitle>
+            <CardDescription className="text-lg">
+              {crmImages[currentImageIndex].description}
+            </CardDescription>
+          </CardHeader>
+          <CardContent className="p-6">
+            <div className="relative bg-white rounded-lg shadow-lg overflow-hidden">
+              <img 
+                src={crmImages[currentImageIndex].src}
+                alt={crmImages[currentImageIndex].title}
+                className="w-full h-auto object-contain max-h-[600px] mx-auto block"
+              />
+              
+              {/* Navigation Controls */}
+              <div className="absolute inset-y-0 left-0 flex items-center">
+                <Button
+                  variant="outline"
+                  size="icon"
+                  onClick={prevImage}
+                  className="ml-4 bg-white/90 hover:bg-white shadow-lg"
+                >
+                  <ChevronLeft className="w-4 h-4" />
+                </Button>
+              </div>
+              
+              <div className="absolute inset-y-0 right-0 flex items-center">
+                <Button
+                  variant="outline"
+                  size="icon"
+                  onClick={nextImage}
+                  className="mr-4 bg-white/90 hover:bg-white shadow-lg"
+                >
+                  <ChevronRight className="w-4 h-4" />
+                </Button>
+              </div>
+              
+              {/* Dots Indicator */}
+              <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex gap-2">
+                {crmImages.map((_, index) => (
+                  <button
+                    key={index}
+                    onClick={() => setCurrentImageIndex(index)}
+                    className={`w-3 h-3 rounded-full transition-colors ${
+                      index === currentImageIndex 
+                        ? 'bg-primary' 
+                        : 'bg-white/60 hover:bg-white/80'
+                    }`}
+                  />
+                ))}
+              </div>
+            </div>
+            
+            {/* Image Counter */}
+            <div className="text-center mt-4 text-sm text-muted-foreground">
+              {currentImageIndex + 1} de {crmImages.length}
+            </div>
+          </CardContent>
+        </Card>
+
         {/* Overview Card */}
         <Card className="bg-gradient-to-r from-card to-card/80 border-0 shadow-glow">
           <CardHeader className="pb-4">
             <CardTitle className="flex items-center gap-3 text-2xl">
               <div className="p-2 bg-primary/10 rounded-lg">
                 <BarChart3 className="w-6 h-6 text-primary" />
-        </div>
-
-        {/* CRM Screenshots Section */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-8">
-          <Card className="overflow-hidden bg-gradient-to-br from-card to-card/90 border-0 shadow-card">
-            <CardContent className="p-0">
-              <img 
-                src="/lovable-uploads/fb881f1e-6a6d-491e-aa93-2f6ab7a68767.png" 
-                alt="Pipeline CRM - Primeiras Etapas"
-                className="w-full h-auto object-cover hover:scale-105 transition-transform duration-300"
-              />
-            </CardContent>
-          </Card>
-          <Card className="overflow-hidden bg-gradient-to-br from-card to-card/90 border-0 shadow-card">
-            <CardContent className="p-0">
-              <img 
-                src="/lovable-uploads/aee8e670-f625-445a-9b52-34606ea3c2a1.png" 
-                alt="Pipeline CRM - Etapas Finais"
-                className="w-full h-auto object-cover hover:scale-105 transition-transform duration-300"
-              />
-            </CardContent>
-          </Card>
-        </div>
+              </div>
               Visão Geral do Pipeline
             </CardTitle>
             <CardDescription className="text-lg leading-relaxed">
