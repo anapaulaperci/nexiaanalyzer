@@ -77,6 +77,68 @@ const Copy = () => {
                 </AccordionContent>
               </AccordionItem>
 
+              <AccordionItem value="aida">
+                <AccordionTrigger className="text-lg font-semibold">
+                  1. AIDA (Atenção, Interesse, Desejo, Ação)
+                </AccordionTrigger>
+                <AccordionContent className="space-y-4">
+                  <p className="text-muted-foreground">
+                    O framework mais clássico e amplamente usado do copywriting, que guia o leitor desde o primeiro contato até a ação final.
+                  </p>
+                  
+                  <div className="bg-gradient-to-r from-blue-50 to-indigo-50 border-l-4 border-blue-500 rounded-lg p-6 shadow-sm">
+                    <h4 className="font-bold text-blue-900 mb-3 flex items-center gap-2">
+                      <span className="text-xl">💡</span>
+                      Por que funciona:
+                    </h4>
+                    <p className="text-blue-800 font-medium">
+                      AIDA cria uma jornada psicológica que leva o leitor de "nem sabia que existia" para "preciso disso agora".
+                    </p>
+                  </div>
+
+                  <div className="space-y-4">
+                    <h4 className="font-semibold text-lg">Como usar com IA - Prompt Avançado:</h4>
+                    
+                    <div className="bg-muted/30 rounded-lg p-6 border">
+                      <h5 className="font-bold mb-4 text-primary">Prompt AIDA Completo:</h5>
+                      <div className="bg-black/90 rounded-lg p-4 text-green-400 font-mono text-sm">
+                        <p className="mb-4">"Crie um anúncio usando AIDA para [produto/serviço]:</p>
+                        
+                        <div className="space-y-4">
+                          <div>
+                            <p className="text-yellow-400 font-bold mb-2">ATENÇÃO (3 segundos para parar o scroll):</p>
+                            <p>- Use poder words, números específicos ou perguntas provocativas</p>
+                            <p>- Foque em uma dor urgente ou desejo intenso</p>
+                            <p>- Máximo 40 caracteres para headlines</p>
+                          </div>
+                          
+                          <div>
+                            <p className="text-blue-400 font-bold mb-2">INTERESSE (mantenha-os lendo):</p>
+                            <p>- Conecte com uma história ou estatística surpreendente</p>
+                            <p>- Use o princípio do "open loop" (curiosidade)</p>
+                            <p>- Fale diretamente com o momento de vida deles</p>
+                          </div>
+                          
+                          <div>
+                            <p className="text-purple-400 font-bold mb-2">DESEJO (faça-os querer):</p>
+                            <p>- Pinte o futuro transformado após usar seu produto</p>
+                            <p>- Use benefícios emocionais, não apenas funcionais</p>
+                            <p>- Inclua prova social sutil</p>
+                          </div>
+                          
+                          <div>
+                            <p className="text-red-400 font-bold mb-2">AÇÃO (remova todas as fricções):</p>
+                            <p>- CTA ultra-específica (não apenas 'saiba mais')</p>
+                            <p>- Adicione urgência real (não falsa escassez)</p>
+                            <p>- Ofereça garantia de risco zero"</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </AccordionContent>
+              </AccordionItem>
+
               <AccordionItem value="pas">
                 <AccordionTrigger className="text-lg font-semibold">
                   2. PAS (Problema, Agitação, Solução)
