@@ -7,7 +7,7 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row items-center justify-between gap-4">
           <div className="text-sm text-muted-foreground">
             <span className="text-sm text-muted-foreground">
-              © 2024 NexIA Lab. Todos os direitos reservados a 
+              © 2025 NexIA Lab. Todos os direitos reservados a 
               <a 
                 href="https://www.instagram.com/anapaulaperci/" 
                 target="_blank" 
