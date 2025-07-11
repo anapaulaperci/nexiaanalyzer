@@ -2,7 +2,6 @@ import { Button } from "@/components/ui/button";
 import { Brain, Menu, X } from "lucide-react";
 import { NavLink } from "react-router-dom";
 import { useState } from "react";
-import nexiaLogo from "@/assets/nexia-analyzer-logo.png";
 
 const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -12,11 +11,14 @@ const Header = () => {
       <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
         {/* Logo */}
         <NavLink to="/" className="flex items-center gap-3 hover-scale">
-          <img 
-            src={nexiaLogo} 
-            alt="NexIA Analyzer" 
-            className="h-8"
-          />
+          <div className="flex items-center gap-2">
+            <div className="w-8 h-8 bg-gradient-purple rounded-lg flex items-center justify-center">
+              <Brain className="w-5 h-5 text-white" />
+            </div>
+            <span className="font-bold text-xl text-foreground">
+              NexIA Analyzer
+            </span>
+          </div>
         </NavLink>
 
         {/* Desktop Navigation */}
