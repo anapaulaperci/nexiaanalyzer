@@ -20,76 +20,7 @@ const Prompts = () => {
   const prompts = [
     {
       id: 1,
-      title: "1. Análise competitiva e posicionamento",
-      description: "Identifica vantagens competitivas e oportunidades de posicionamento no mercado",
-      category: "estratégia",
-      difficulty: "avançado",
-      rating: 4.6,
-      illustration: competitiveAnalysisImg,
-      prompt: `Analise o posicionamento competitivo baseado nesta pesquisa:
-
-1. **análise da concorrência**:
-   - principais competidores mencionados
-   - pontos fortes de cada concorrente
-   - gaps identificados no mercado
-
-2. **posicionamento atual**:
-   - como a marca é percebida
-   - atributos associados à marca
-   - diferenciação percebida pelo mercado
-
-3. **oportunidades de reposicionamento**:
-   - espaços de mercado descobertos
-   - atributos subexplorados
-   - nichos de alto potencial
-
-4. **estratégia de diferenciação**:
-   - proposta de valor única
-   - vantagens competitivas sustentáveis
-   - mensagens de posicionamento
-
-5. **plano de ação**:
-   - iniciativas de curto prazo
-   - investimentos necessários
-   - métricas de acompanhamento
-
-dados da pesquisa: [INSERIR DADOS AQUI]`,
-      icon: TrendingUp,
-      color: "text-orange-400"
-    },
-    {
-      id: 2,
-      title: "2. Análise de sentimento completa",
-      description: "Identifica emoções, sentimentos e pontos de dor dos respondentes com alta precisão",
-      category: "análise",
-      difficulty: "iniciante",
-      rating: 4.9,
-      illustration: sentimentAnalysisImg,
-      prompt: `Analise o sentimento desta pesquisa de satisfação do cliente e forneça:
-
-1. **distribuição de sentimentos**:
-   - percentual de respostas positivas, neutras e negativas
-   - principais emoções identificadas
-
-2. **pontos de dor principais**:
-   - top 3 problemas mais mencionados
-   - impacto de cada problema na satisfação geral
-
-3. **pontos fortes**:
-   - aspectos mais elogiados pelos clientes
-   - oportunidades de potencializar pontos positivos
-
-4. **insights acionáveis**:
-   - recomendações específicas para melhorias
-   - priorização baseada no impacto
-
-dados da pesquisa: [INSERIR DADOS AQUI]`,
-      icon: Heart,
-      color: "text-red-400"
-    },
-    {
-      id: 3,
-      title: "3. Como extrair insights não óbvios da sua pesquisa",
+      title: "🔍 01. Descoberta de Insights Não-Óbvios – Análise de 12 dimensões ocultas",
       description: "Descobre padrões ocultos e contradições que revelam oportunidades de negócio inexploradas",
       category: "análise",
       difficulty: "avançado",
@@ -234,8 +165,77 @@ Dados da pesquisa: [INSERIR DADOS AQUI]`,
       color: "text-indigo-400"
     },
     {
+      id: 2,
+      title: "🎯 02. Posicionamento Competitivo – Gaps de mercado e diferenciação",
+      description: "Identifica vantagens competitivas e oportunidades de posicionamento no mercado",
+      category: "estratégia",
+      difficulty: "avançado",
+      rating: 4.6,
+      illustration: competitiveAnalysisImg,
+      prompt: `Analise o posicionamento competitivo baseado nesta pesquisa:
+
+1. **análise da concorrência**:
+   - principais competidores mencionados
+   - pontos fortes de cada concorrente
+   - gaps identificados no mercado
+
+2. **posicionamento atual**:
+   - como a marca é percebida
+   - atributos associados à marca
+   - diferenciação percebida pelo mercado
+
+3. **oportunidades de reposicionamento**:
+   - espaços de mercado descobertos
+   - atributos subexplorados
+   - nichos de alto potencial
+
+4. **estratégia de diferenciação**:
+   - proposta de valor única
+   - vantagens competitivas sustentáveis
+   - mensagens de posicionamento
+
+5. **plano de ação**:
+   - iniciativas de curto prazo
+   - investimentos necessários
+   - métricas de acompanhamento
+
+dados da pesquisa: [INSERIR DADOS AQUI]`,
+      icon: TrendingUp,
+      color: "text-orange-400"
+    },
+    {
+      id: 3,
+      title: "😊 03. Sentimento e Satisfação – Análise de feedback e NPS",
+      description: "Identifica emoções, sentimentos e pontos de dor dos respondentes com alta precisão",
+      category: "análise",
+      difficulty: "iniciante",
+      rating: 4.9,
+      illustration: sentimentAnalysisImg,
+      prompt: `Analise o sentimento desta pesquisa de satisfação do cliente e forneça:
+
+1. **distribuição de sentimentos**:
+   - percentual de respostas positivas, neutras e negativas
+   - principais emoções identificadas
+
+2. **pontos de dor principais**:
+   - top 3 problemas mais mencionados
+   - impacto de cada problema na satisfação geral
+
+3. **pontos fortes**:
+   - aspectos mais elogiados pelos clientes
+   - oportunidades de potencializar pontos positivos
+
+4. **insights acionáveis**:
+   - recomendações específicas para melhorias
+   - priorização baseada no impacto
+
+dados da pesquisa: [INSERIR DADOS AQUI]`,
+      icon: Heart,
+      color: "text-red-400"
+    },
+    {
       id: 4,
-      title: "4. Como identificar o arquétipo a partir da pesquisa da persona",
+      title: "🎭 04. Arquétipo de Marca – Estratégia baseada em Jung",
       description: "Descobre o arquétipo de marca mais ressonante baseado na psicologia arquetípica e branding emocional",
       category: "estratégia",
       difficulty: "avançado",
@@ -407,7 +407,7 @@ dados da pesquisa: [INSERIR DADOS AQUI]`,
     },
     {
       id: 5,
-      title: "5. Geração de campanha de conversão",
+      title: "🚀 05. Campanha 360° – Desenvolvimento completo de campanha",
       description: "Desenvolve campanhas de marketing focadas em resultados e alta performance",
       category: "marketing",
       difficulty: "avançado",
@@ -447,7 +447,7 @@ dados da pesquisa: [INSERIR DADOS AQUI]`,
     },
     {
       id: 6,
-      title: "6. Mapeamento de jornada do cliente",
+      title: "🗺️ 06. Jornada do Cliente – Mapeamento de touchpoints",
       description: "Mapeia toda a experiência do cliente identificando oportunidades de otimização",
       category: "experiência",
       difficulty: "intermediário",
@@ -487,7 +487,7 @@ dados da pesquisa: [INSERIR DADOS AQUI]`,
     },
     {
       id: 7,
-      title: "7. Segmentação avançada de público",
+      title: "👥 07. Segmentação Avançada – Personas e targeting",
       description: "Cria personas detalhadas e segmentos de mercado baseados nos dados coletados",
       category: "segmentação",
       difficulty: "intermediário",
