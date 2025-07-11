@@ -38,44 +38,42 @@ const Copy = () => {
               🤖 Como Usar IA para Criar Anúncios de Alta Conversão com Frameworks de Copy
             </CardTitle>
           </CardHeader>
-          <CardContent>
-            <Accordion type="single" collapsible className="w-full">
-              <AccordionItem value="introducao">
-                <AccordionTrigger className="text-lg font-semibold">
-                  Introdução: Por que Combinar IA com Frameworks de Copy?
-                </AccordionTrigger>
-                <AccordionContent className="space-y-4">
-                  <p className="text-muted-foreground">
-                    A inteligência artificial revolucionou a criação de conteúdo, mas sem estrutura, pode gerar textos genéricos. Ao combinar IA com frameworks comprovados de copywriting, você consegue:
-                  </p>
-                  <div className="grid md:grid-cols-2 gap-4">
-                    <div className="space-y-2">
-                      <div className="flex items-center gap-2">
-                        <span className="w-2 h-2 bg-primary rounded-full"></span>
-                        <span className="font-medium">Velocidade:</span>
-                        <span className="text-muted-foreground">Criar múltiplas versões em minutos</span>
-                      </div>
-                      <div className="flex items-center gap-2">
-                        <span className="w-2 h-2 bg-primary rounded-full"></span>
-                        <span className="font-medium">Consistência:</span>
-                        <span className="text-muted-foreground">Manter a estrutura persuasiva em todos os anúncios</span>
-                      </div>
-                    </div>
-                    <div className="space-y-2">
-                      <div className="flex items-center gap-2">
-                        <span className="w-2 h-2 bg-primary rounded-full"></span>
-                        <span className="font-medium">Personalização:</span>
-                        <span className="text-muted-foreground">Adaptar mensagens para diferentes públicos</span>
-                      </div>
-                      <div className="flex items-center gap-2">
-                        <span className="w-2 h-2 bg-primary rounded-full"></span>
-                        <span className="font-medium">Testes A/B:</span>
-                        <span className="text-muted-foreground">Gerar variações para otimizar resultados</span>
-                      </div>
-                    </div>
+          <CardContent className="space-y-6">
+            {/* Introdução sempre visível */}
+            <div className="space-y-4">
+              <h3 className="text-xl font-semibold">Introdução: Por que Combinar IA com Frameworks de Copy?</h3>
+              <p className="text-muted-foreground">
+                A inteligência artificial revolucionou a criação de conteúdo, mas sem estrutura, pode gerar textos genéricos. Ao combinar IA com frameworks comprovados de copywriting, você consegue:
+              </p>
+              <div className="grid md:grid-cols-2 gap-4">
+                <div className="space-y-2">
+                  <div className="flex items-center gap-2">
+                    <span className="w-2 h-2 bg-primary rounded-full"></span>
+                    <span className="font-medium">Velocidade:</span>
+                    <span className="text-muted-foreground">Criar múltiplas versões em minutos</span>
                   </div>
-                </AccordionContent>
-              </AccordionItem>
+                  <div className="flex items-center gap-2">
+                    <span className="w-2 h-2 bg-primary rounded-full"></span>
+                    <span className="font-medium">Consistência:</span>
+                    <span className="text-muted-foreground">Manter a estrutura persuasiva em todos os anúncios</span>
+                  </div>
+                </div>
+                <div className="space-y-2">
+                  <div className="flex items-center gap-2">
+                    <span className="w-2 h-2 bg-primary rounded-full"></span>
+                    <span className="font-medium">Personalização:</span>
+                    <span className="text-muted-foreground">Adaptar mensagens para diferentes públicos</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <span className="w-2 h-2 bg-primary rounded-full"></span>
+                    <span className="font-medium">Testes A/B:</span>
+                    <span className="text-muted-foreground">Gerar variações para otimizar resultados</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <Accordion type="single" collapsible className="w-full">
 
               <AccordionItem value="aida">
                 <AccordionTrigger className="text-lg font-semibold">
@@ -101,33 +99,33 @@ const Copy = () => {
                     
                     <div className="bg-muted/30 rounded-lg p-6 border">
                       <h5 className="font-bold mb-4 text-primary">Prompt AIDA Completo:</h5>
-                      <div className="bg-black/90 rounded-lg p-4 text-green-400 font-mono text-sm">
+                      <div className="bg-muted/20 border rounded-lg p-4 text-foreground font-mono text-sm">
                         <p className="mb-4">"Crie um anúncio usando AIDA para [produto/serviço]:</p>
                         
                         <div className="space-y-4">
                           <div>
-                            <p className="text-yellow-400 font-bold mb-2">ATENÇÃO (3 segundos para parar o scroll):</p>
+                            <p className="text-amber-700 font-bold mb-2">ATENÇÃO (3 segundos para parar o scroll):</p>
                             <p>- Use poder words, números específicos ou perguntas provocativas</p>
                             <p>- Foque em uma dor urgente ou desejo intenso</p>
                             <p>- Máximo 40 caracteres para headlines</p>
                           </div>
                           
                           <div>
-                            <p className="text-blue-400 font-bold mb-2">INTERESSE (mantenha-os lendo):</p>
+                            <p className="text-blue-700 font-bold mb-2">INTERESSE (mantenha-os lendo):</p>
                             <p>- Conecte com uma história ou estatística surpreendente</p>
                             <p>- Use o princípio do "open loop" (curiosidade)</p>
                             <p>- Fale diretamente com o momento de vida deles</p>
                           </div>
                           
                           <div>
-                            <p className="text-purple-400 font-bold mb-2">DESEJO (faça-os querer):</p>
+                            <p className="text-purple-700 font-bold mb-2">DESEJO (faça-os querer):</p>
                             <p>- Pinte o futuro transformado após usar seu produto</p>
                             <p>- Use benefícios emocionais, não apenas funcionais</p>
                             <p>- Inclua prova social sutil</p>
                           </div>
                           
                           <div>
-                            <p className="text-red-400 font-bold mb-2">AÇÃO (remova todas as fricções):</p>
+                            <p className="text-red-700 font-bold mb-2">AÇÃO (remova todas as fricções):</p>
                             <p>- CTA ultra-específica (não apenas 'saiba mais')</p>
                             <p>- Adicione urgência real (não falsa escassez)</p>
                             <p>- Ofereça garantia de risco zero"</p>
@@ -163,19 +161,19 @@ const Copy = () => {
                     
                     <div className="bg-muted/30 rounded-lg p-6 border">
                       <h5 className="font-bold mb-4 text-primary">Prompt PAS Emocional:</h5>
-                      <div className="bg-black/90 rounded-lg p-4 text-green-400 font-mono text-sm">
+                      <div className="bg-muted/20 border rounded-lg p-4 text-foreground font-mono text-sm">
                         <p className="mb-4">"Crie copy PAS para [produto] focado em [problema específico]:</p>
                         
                         <div className="space-y-4">
                           <div>
-                            <p className="text-red-400 font-bold mb-2">PROBLEMA (identifique a ferida):</p>
+                            <p className="text-red-700 font-bold mb-2">PROBLEMA (identifique a ferida):</p>
                             <p>- Descreva um momento específico de frustração</p>
                             <p>- Use linguagem sensorial (o que veem/sentem/ouvem)</p>
                             <p>- Seja ultra-específico, não genérico</p>
                           </div>
                           
                           <div>
-                            <p className="text-orange-400 font-bold mb-2">AGITAÇÃO (adicione sal na ferida):</p>
+                            <p className="text-orange-700 font-bold mb-2">AGITAÇÃO (adicione sal na ferida):</p>
                             <p>- Mostre as consequências de não resolver</p>
                             <p>- Liste os custos ocultos (tempo, dinheiro, oportunidades)</p>
                             <p>- Use o "efeito dominó" - como piora com o tempo</p>
@@ -183,7 +181,7 @@ const Copy = () => {
                           </div>
                           
                           <div>
-                            <p className="text-green-400 font-bold mb-2">SOLUÇÃO (seja o herói):</p>
+                            <p className="text-green-700 font-bold mb-2">SOLUÇÃO (seja o herói):</p>
                             <p>- Apresente como a única saída lógica</p>
                             <p>- Mostre rapidez e facilidade</p>
                             <p>- Inclua transformação, não apenas resolução</p>
@@ -220,12 +218,12 @@ const Copy = () => {
                     
                     <div className="bg-muted/30 rounded-lg p-6 border">
                       <h5 className="font-bold mb-4 text-primary">Prompt BAB Visual:</h5>
-                      <div className="bg-black/90 rounded-lg p-4 text-green-400 font-mono text-sm">
+                      <div className="bg-muted/20 border rounded-lg p-4 text-foreground font-mono text-sm">
                         <p className="mb-4">"Crie copy BAB para [produto] com foco em transformação:</p>
                         
                         <div className="space-y-4">
                           <div>
-                            <p className="text-red-400 font-bold mb-2">BEFORE (pinte o presente doloroso):</p>
+                            <p className="text-red-700 font-bold mb-2">BEFORE (pinte o presente doloroso):</p>
                             <p>- Dia típico COM o problema</p>
                             <p>- Sentimentos e frustrações específicas</p>
                             <p>- Limitações que enfrentam agora</p>
@@ -233,7 +231,7 @@ const Copy = () => {
                           </div>
                           
                           <div>
-                            <p className="text-green-400 font-bold mb-2">AFTER (pinte o futuro desejado):</p>
+                            <p className="text-green-700 font-bold mb-2">AFTER (pinte o futuro desejado):</p>
                             <p>- Dia típico SEM o problema</p>
                             <p>- Novos sentimentos e capacidades</p>
                             <p>- Portas que se abrem</p>
@@ -241,7 +239,7 @@ const Copy = () => {
                           </div>
                           
                           <div>
-                            <p className="text-blue-400 font-bold mb-2">BRIDGE (seu produto como a ponte):</p>
+                            <p className="text-blue-700 font-bold mb-2">BRIDGE (seu produto como a ponte):</p>
                             <p>- Como especificamente leva do before ao after</p>
                             <p>- Simplicidade do processo</p>
                             <p>- Velocidade da transformação</p>
@@ -279,26 +277,26 @@ const Copy = () => {
                     
                     <div className="bg-muted/30 rounded-lg p-6 border">
                       <h5 className="font-bold mb-4 text-primary">Prompt FAB Estratégico:</h5>
-                      <div className="bg-black/90 rounded-lg p-4 text-green-400 font-mono text-sm">
+                      <div className="bg-muted/20 border rounded-lg p-4 text-foreground font-mono text-sm">
                         <p className="mb-4">"Transforme features em benefits usando FAB para [produto]:</p>
                         
                         <div className="space-y-4">
                           <div>
-                            <p className="text-blue-400 font-bold mb-2">FEATURES (o que é):</p>
+                            <p className="text-blue-700 font-bold mb-2">FEATURES (o que é):</p>
                             <p>- Liste 3 características únicas</p>
                             <p>- Seja técnico e específico</p>
                             <p>- Inclua números/especificações</p>
                           </div>
                           
                           <div>
-                            <p className="text-yellow-400 font-bold mb-2">ADVANTAGES (como funciona melhor):</p>
+                            <p className="text-amber-700 font-bold mb-2">ADVANTAGES (como funciona melhor):</p>
                             <p>- Para cada feature, explique a vantagem competitiva</p>
                             <p>- Compare com alternativas do mercado</p>
                             <p>- Use "isso significa que..."</p>
                           </div>
                           
                           <div>
-                            <p className="text-green-400 font-bold mb-2">BENEFITS (o que EU ganho):</p>
+                            <p className="text-green-700 font-bold mb-2">BENEFITS (o que EU ganho):</p>
                             <p>- Traduza cada advantage em ganho pessoal</p>
                             <p>- Use "para que você possa..."</p>
                             <p>- Foque em economia de tempo/dinheiro</p>
@@ -336,33 +334,33 @@ const Copy = () => {
                     
                     <div className="bg-muted/30 rounded-lg p-6 border">
                       <h5 className="font-bold mb-4 text-primary">Prompt 4 U's Headlines:</h5>
-                      <div className="bg-black/90 rounded-lg p-4 text-green-400 font-mono text-sm">
+                      <div className="bg-muted/20 border rounded-lg p-4 text-foreground font-mono text-sm">
                         <p className="mb-4">"Crie 5 headlines usando os 4 U's para [produto/serviço]:</p>
                         
                         <div className="space-y-4">
                           <div>
-                            <p className="text-red-400 font-bold mb-2">URGENT (crie pressão temporal):</p>
+                            <p className="text-red-700 font-bold mb-2">URGENT (crie pressão temporal):</p>
                             <p>- Use deadlines reais</p>
                             <p>- Mostre o custo de esperar</p>
                             <p>- "Antes que..." / "Últimas X vagas"</p>
                           </div>
                           
                           <div>
-                            <p className="text-purple-400 font-bold mb-2">UNIQUE (destaque o diferencial):</p>
+                            <p className="text-purple-700 font-bold mb-2">UNIQUE (destaque o diferencial):</p>
                             <p>- O que APENAS você oferece</p>
                             <p>- Contradiga expectativas comuns</p>
                             <p>- Use ângulos contraintuitivos</p>
                           </div>
                           
                           <div>
-                            <p className="text-blue-400 font-bold mb-2">USEFUL (prometa valor claro):</p>
+                            <p className="text-blue-700 font-bold mb-2">USEFUL (prometa valor claro):</p>
                             <p>- Benefício principal em 5 palavras</p>
                             <p>- Resultado mensurável</p>
                             <p>- Solução para dor específica</p>
                           </div>
                           
                           <div>
-                            <p className="text-yellow-400 font-bold mb-2">ULTRA-SPECIFIC (seja preciso):</p>
+                            <p className="text-amber-700 font-bold mb-2">ULTRA-SPECIFIC (seja preciso):</p>
                             <p>- Números exatos, não arredondados</p>
                             <p>- Timeframes específicos</p>
                             <p>- Detalhes que geram credibilidade</p>
@@ -399,19 +397,19 @@ const Copy = () => {
                     
                     <div className="bg-muted/30 rounded-lg p-6 border">
                       <h5 className="font-bold mb-4 text-primary">Prompt QUEST Persuasivo:</h5>
-                      <div className="bg-black/90 rounded-lg p-4 text-green-400 font-mono text-sm">
+                      <div className="bg-muted/20 border rounded-lg p-4 text-foreground font-mono text-sm">
                         <p className="mb-4">"Crie copy longo usando QUEST para [produto complexo]:</p>
                         
                         <div className="space-y-4">
                           <div>
-                            <p className="text-blue-400 font-bold mb-2">QUALIFY (filtre os certos):</p>
+                            <p className="text-blue-700 font-bold mb-2">QUALIFY (filtre os certos):</p>
                             <p>- Pergunta ou declaração que identifica o público ideal</p>
                             <p>- "Se você..." / "Para profissionais que..."</p>
                             <p>- Exclua quem NÃO é ideal</p>
                           </div>
                           
                           <div>
-                            <p className="text-green-400 font-bold mb-2">UNDERSTAND (mostre empatia profunda):</p>
+                            <p className="text-green-700 font-bold mb-2">UNDERSTAND (mostre empatia profunda):</p>
                             <p>- Descreva exatamente como se sentem</p>
                             <p>- Use as palavras que eles usariam</p>
                             <p>- "Eu sei como é frustrante quando..."</p>
@@ -419,7 +417,7 @@ const Copy = () => {
                           </div>
                           
                           <div>
-                            <p className="text-yellow-400 font-bold mb-2">EDUCATE (ensine a solução):</p>
+                            <p className="text-amber-700 font-bold mb-2">EDUCATE (ensine a solução):</p>
                             <p>- Explique POR QUE seu método funciona</p>
                             <p>- Use analogias simples</p>
                             <p>- Quebre mitos comuns</p>
@@ -427,7 +425,7 @@ const Copy = () => {
                           </div>
                           
                           <div>
-                            <p className="text-red-400 font-bold mb-2">STIMULATE (crie desejo ardente):</p>
+                            <p className="text-red-700 font-bold mb-2">STIMULATE (crie desejo ardente):</p>
                             <p>- Casos de sucesso vívidos</p>
                             <p>- Visualização do futuro</p>
                             <p>- Escassez/urgência real</p>
@@ -435,7 +433,7 @@ const Copy = () => {
                           </div>
                           
                           <div>
-                            <p className="text-purple-400 font-bold mb-2">TRANSITION (torne a ação inevitável):</p>
+                            <p className="text-purple-700 font-bold mb-2">TRANSITION (torne a ação inevitável):</p>
                             <p>- Resuma a oferta completa</p>
                             <p>- Garantias poderosas</p>
                             <p>- CTA como próximo passo lógico</p>
@@ -472,12 +470,12 @@ const Copy = () => {
                     
                     <div className="bg-muted/30 rounded-lg p-6 border">
                       <h5 className="font-bold mb-4 text-primary">Prompt OATH Segmentado:</h5>
-                      <div className="bg-black/90 rounded-lg p-4 text-green-400 font-mono text-sm">
+                      <div className="bg-muted/20 border rounded-lg p-4 text-foreground font-mono text-sm">
                         <p className="mb-4">"Crie 4 versões de copy para [produto], uma para cada nível OATH:</p>
                         
                         <div className="space-y-4">
                           <div>
-                            <p className="text-gray-400 font-bold mb-2">OBLIVIOUS (não sabem que têm problema):</p>
+                            <p className="text-gray-700 font-bold mb-2">OBLIVIOUS (não sabem que têm problema):</p>
                             <p>- Eduque sobre o problema oculto</p>
                             <p>- Use "Você sabia que..."</p>
                             <p>- Estatísticas reveladoras</p>
@@ -485,7 +483,7 @@ const Copy = () => {
                           </div>
                           
                           <div>
-                            <p className="text-orange-400 font-bold mb-2">APATHETIC (sabem mas não se importam):</p>
+                            <p className="text-orange-700 font-bold mb-2">APATHETIC (sabem mas não se importam):</p>
                             <p>- Mostre o custo de não agir</p>
                             <p>- "Enquanto você ignora isso..."</p>
                             <p>- Casos de quem esperou demais</p>
@@ -493,7 +491,7 @@ const Copy = () => {
                           </div>
                           
                           <div>
-                            <p className="text-blue-400 font-bold mb-2">THINKING (considerando opções):</p>
+                            <p className="text-blue-700 font-bold mb-2">THINKING (considerando opções):</p>
                             <p>- Compare com alternativas</p>
                             <p>- Mostre por que você é superior</p>
                             <p>- Depoimentos de quem escolheu você</p>
@@ -501,7 +499,7 @@ const Copy = () => {
                           </div>
                           
                           <div>
-                            <p className="text-red-400 font-bold mb-2">HURTING (desesperados por solução):</p>
+                            <p className="text-red-700 font-bold mb-2">HURTING (desesperados por solução):</p>
                             <p>- Vá direto ao ponto</p>
                             <p>- Solução rápida e garantida</p>
                             <p>- Comece com a oferta</p>
@@ -538,53 +536,53 @@ const Copy = () => {
                     
                     <div className="bg-muted/30 rounded-lg p-6 border">
                       <h5 className="font-bold mb-4 text-primary">Prompt StoryBrand Épico:</h5>
-                      <div className="bg-black/90 rounded-lg p-4 text-green-400 font-mono text-sm">
+                      <div className="bg-muted/20 border rounded-lg p-4 text-foreground font-mono text-sm">
                         <p className="mb-4">"Crie uma narrativa completa usando StoryBrand para [marca]:</p>
                         
                         <div className="space-y-4">
                           <div>
-                            <p className="text-blue-400 font-bold mb-2">HERÓI (seu cliente):</p>
+                            <p className="text-blue-700 font-bold mb-2">HERÓI (seu cliente):</p>
                             <p>- Nome e situação específica</p>
                             <p>- Desejo profundo (externo e interno)</p>
                             <p>- O que o impede de dormir à noite</p>
                           </div>
                           
                           <div>
-                            <p className="text-red-400 font-bold mb-2">PROBLEMA (3 níveis):</p>
+                            <p className="text-red-700 font-bold mb-2">PROBLEMA (3 níveis):</p>
                             <p>- Externo: Problema prático/visível</p>
                             <p>- Interno: Como se sente sobre isso</p>
                             <p>- Filosófico: Por que é injusto/errado</p>
                           </div>
                           
                           <div>
-                            <p className="text-purple-400 font-bold mb-2">MENTOR (sua marca):</p>
+                            <p className="text-purple-700 font-bold mb-2">MENTOR (sua marca):</p>
                             <p>- Demonstre empatia ("Eu entendo...")</p>
                             <p>- Mostre autoridade (sem arrogância)</p>
                             <p>- Sua experiência relevante</p>
                           </div>
                           
                           <div>
-                            <p className="text-yellow-400 font-bold mb-2">PLANO (simples e claro):</p>
+                            <p className="text-amber-700 font-bold mb-2">PLANO (simples e claro):</p>
                             <p>- 3 passos máximo</p>
                             <p>- Nomeie cada passo</p>
                             <p>- Torne ridiculamente fácil</p>
                           </div>
                           
                           <div>
-                            <p className="text-green-400 font-bold mb-2">CONVITE À AÇÃO:</p>
+                            <p className="text-green-700 font-bold mb-2">CONVITE À AÇÃO:</p>
                             <p>- CTA direta: O que fazer AGORA</p>
                             <p>- CTA transitória: Opção mais suave</p>
                           </div>
                           
                           <div>
-                            <p className="text-orange-400 font-bold mb-2">FRACASSO (o que evitar):</p>
+                            <p className="text-orange-700 font-bold mb-2">FRACASSO (o que evitar):</p>
                             <p>- 3 consequências de não agir</p>
                             <p>- Pinte o cenário sombrio</p>
                             <p>- Use medo de perda</p>
                           </div>
                           
                           <div>
-                            <p className="text-cyan-400 font-bold mb-2">SUCESSO (a terra prometida):</p>
+                            <p className="text-cyan-700 font-bold mb-2">SUCESSO (a terra prometida):</p>
                             <p>- Visão específica do futuro</p>
                             <p>- Como a vida será diferente</p>
                             <p>- Status, realização, transformação</p>
