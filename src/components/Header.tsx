@@ -9,12 +9,12 @@ const Header = () => {
         {/* Logo */}
         <NavLink to="/" className="flex items-center gap-3 hover-scale">
           <img 
-            src="/lovable-uploads/ace31a89-bfd6-4446-8a5b-26bcd635824c.png" 
-            alt="NexIA Lab" 
+            src="/lovable-uploads/84cf1afe-0db5-413f-bfe7-26875942dfa8.png" 
+            alt="anapaulaperci" 
             className="h-8"
           />
           <span className="font-bold text-xl bg-gradient-hero bg-clip-text text-transparent">
-            NexIA Lab
+            anapaulaperci
           </span>
         </NavLink>
 
