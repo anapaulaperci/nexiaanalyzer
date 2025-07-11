@@ -15,6 +15,10 @@ const Header = () => {
             src="/lovable-uploads/a89c48da-32a5-4421-9595-6267fb89f5d7.png" 
             alt="NexIA Analyzer" 
             className="h-8 w-auto"
+            onError={(e) => {
+              console.error('Erro ao carregar logo:', e);
+              e.currentTarget.style.display = 'none';
+            }}
           />
         </div>
 
