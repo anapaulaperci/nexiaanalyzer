@@ -615,6 +615,301 @@ Agora, forneça os dados da pesquisa para eu analisar e criar seus hooks psicol�
 dados da pesquisa: [INSERIR DADOS AQUI]`,
       icon: Brain,
       color: "text-pink-400"
+    },
+    // PROMPTS DE ESTRUTURAS DE COPY
+    {
+      id: 9,
+      title: "📝 AIDA - Atenção, Interesse, Desejo, Ação",
+      description: "Framework clássico do copywriting que guia o leitor desde o primeiro contato até a ação final",
+      category: "copy",
+      difficulty: "iniciante", 
+      rating: 4.9,
+      illustration: campaignGenerationImg,
+      prompt: `Crie um anúncio usando AIDA para [produto/serviço]:
+
+ATENÇÃO (3 segundos para parar o scroll):
+- Use poder words, números específicos ou perguntas provocativas
+- Foque em uma dor urgente ou desejo intenso
+- Máximo 40 caracteres para headlines
+
+INTERESSE (mantenha-os lendo):
+- Conecte com uma história ou estatística surpreendente
+- Use o princípio do "open loop" (curiosidade)
+- Fale diretamente com o momento de vida deles
+
+DESEJO (faça-os querer):
+- Pinte o futuro transformado após usar seu produto
+- Use benefícios emocionais, não apenas funcionais
+- Inclua prova social sutil
+
+AÇÃO (remova todas as fricções):
+- CTA ultra-específica (não apenas 'saiba mais')
+- Adicione urgência real (não falsa escassez)
+- Ofereça garantia de risco zero
+
+dados da pesquisa: [INSERIR DADOS AQUI]`,
+      icon: Target,
+      color: "text-blue-600"
+    },
+    {
+      id: 10,
+      title: "⚡ PAS - Problema, Agitação, Solução", 
+      description: "Framework altamente efetivo para produtos que resolvem dores específicas",
+      category: "copy",
+      difficulty: "intermediário",
+      rating: 4.8,
+      illustration: competitiveAnalysisImg,
+      prompt: `Crie copy PAS para [produto] focado em [problema específico]:
+
+PROBLEMA (identifique a ferida):
+- Descreva um momento específico de frustração
+- Use linguagem sensorial (o que veem/sentem/ouvem)
+- Seja ultra-específico, não genérico
+
+AGITAÇÃO (adicione sal na ferida):
+- Mostre as consequências de não resolver
+- Liste os custos ocultos (tempo, dinheiro, oportunidades)
+- Use o "efeito dominó" - como piora com o tempo
+- Inclua custos emocionais e sociais
+
+SOLUÇÃO (seja o herói):
+- Apresente como a única saída lógica
+- Mostre rapidez e facilidade
+- Inclua transformação, não apenas resolução
+- Feche com CTA de alívio imediato
+
+dados da pesquisa: [INSERIR DADOS AQUI]`,
+      icon: Heart,
+      color: "text-red-600"
+    },
+    {
+      id: 11,
+      title: "🌉 BAB - Before-After-Bridge",
+      description: "Framework que mostra a transformação que seu produto proporciona",
+      category: "copy", 
+      difficulty: "intermediário",
+      rating: 4.7,
+      illustration: customerJourneyImg,
+      prompt: `Crie copy BAB para [produto] com foco em transformação:
+
+BEFORE (pinte o presente doloroso):
+- Dia típico COM o problema
+- Sentimentos e frustrações específicas
+- Limitações que enfrentam agora
+- Use detalhes sensoriais vívidos
+
+AFTER (pinte o futuro desejado):
+- Dia típico SEM o problema
+- Novos sentimentos e capacidades
+- Portas que se abrem
+- Contraste máximo com o 'before'
+
+BRIDGE (seu produto como a ponte):
+- Como especificamente leva do before ao after
+- Simplicidade do processo
+- Velocidade da transformação
+- Garantias e segurança
+- CTA como 'primeiro passo da ponte'
+
+dados da pesquisa: [INSERIR DADOS AQUI]`,
+      icon: TrendingUp,
+      color: "text-purple-600"
+    },
+    {
+      id: 12,
+      title: "🔧 FAB - Features, Advantages, Benefits",
+      description: "Framework que traduz características técnicas em valor real para o cliente",
+      category: "copy",
+      difficulty: "iniciante",
+      rating: 4.6,
+      illustration: audienceSegmentationImg,
+      prompt: `Transforme features em benefits usando FAB para [produto]:
+
+FEATURES (o que é):
+- Liste 3 características únicas
+- Seja técnico e específico
+- Inclua números/especificações
+
+ADVANTAGES (como funciona melhor):
+- Para cada feature, explique a vantagem competitiva
+- Compare com alternativas do mercado
+- Use "isso significa que..."
+
+BENEFITS (o que EU ganho):
+- Traduza cada advantage em ganho pessoal
+- Use "para que você possa..."
+- Foque em economia de tempo/dinheiro
+- Inclua benefícios emocionais e sociais
+- Termine com o benefício mais transformador
+
+dados da pesquisa: [INSERIR DADOS AQUI]`,
+      icon: Users,
+      color: "text-orange-600"
+    },
+    {
+      id: 13,
+      title: "🎯 4 U's - Urgent, Unique, Useful, Ultra-specific",
+      description: "Framework desenvolvido por Michael Masterson, poderoso para headlines e subject lines",
+      category: "copy",
+      difficulty: "avançado",
+      rating: 4.8,
+      illustration: hiddenInsightsImg,
+      prompt: `Crie 5 headlines usando os 4 U's para [produto/serviço]:
+
+URGENT (crie pressão temporal):
+- Use deadlines reais
+- Mostre o custo de esperar
+- "Antes que..." / "Últimas X vagas"
+
+UNIQUE (destaque o diferencial):
+- O que APENAS você oferece
+- Contradiga expectativas comuns
+- Use ângulos contraintuitivos
+
+USEFUL (prometa valor claro):
+- Benefício principal em 5 palavras
+- Resultado mensurável
+- Solução para dor específica
+
+ULTRA-SPECIFIC (seja preciso):
+- Números exatos, não arredondados
+- Timeframes específicos
+- Detalhes que geram credibilidade
+- Evite vagueza a todo custo
+
+dados da pesquisa: [INSERIR DADOS AQUI]`,
+      icon: Rocket,
+      color: "text-cyan-600"
+    },
+    {
+      id: 14,
+      title: "🎪 QUEST - Qualify, Understand, Educate, Stimulate, Transition",
+      description: "Framework de 5 passos que guia através de uma jornada psicológica completa",
+      category: "copy",
+      difficulty: "avançado", 
+      rating: 4.7,
+      illustration: sentimentAnalysisImg,
+      prompt: `Crie copy longo usando QUEST para [produto complexo]:
+
+QUALIFY (filtre os certos):
+- Pergunta ou declaração que identifica o público ideal
+- "Se você..." / "Para profissionais que..."
+- Exclua quem NÃO é ideal
+
+UNDERSTAND (mostre empatia profunda):
+- Descreva exatamente como se sentem
+- Use as palavras que eles usariam
+- "Eu sei como é frustrante quando..."
+- Valide suas preocupações
+
+EDUCATE (ensine a solução):
+- Explique POR QUE seu método funciona
+- Use analogias simples
+- Quebre mitos comuns
+- Apresente como "descoberta", não venda
+
+STIMULATE (crie desejo ardente):
+- Casos de sucesso vívidos
+- Visualização do futuro
+- Escassez/urgência real
+- Bônus irresistíveis
+
+TRANSITION (torne a ação inevitável):
+- Resuma a oferta completa
+- Garantias poderosas
+- CTA como próximo passo lógico
+- P.S. com benefício extra surpresa
+
+dados da pesquisa: [INSERIR DADOS AQUI]`,
+      icon: Brain,
+      color: "text-indigo-600"
+    },
+    {
+      id: 15,
+      title: "🧠 OATH - Oblivious, Apathetic, Thinking, Hurting",
+      description: "Framework que segmenta audiência baseado no nível de consciência do problema",
+      category: "copy",
+      difficulty: "avançado",
+      rating: 4.9,
+      illustration: brandArchetypeImg,
+      prompt: `Crie 4 versões de copy para [produto], uma para cada nível OATH:
+
+OBLIVIOUS (não sabem que têm problema):
+- Eduque sobre o problema oculto
+- Use "Você sabia que..."
+- Estatísticas reveladoras
+- Crie consciência, não venda ainda
+
+APATHETIC (sabem mas não se importam):
+- Mostre o custo de não agir
+- "Enquanto você ignora isso..."
+- Casos de quem esperou demais
+- Crie urgência emocional
+
+THINKING (considerando opções):
+- Compare com alternativas
+- Mostre por que você é superior
+- Depoimentos de quem escolheu você
+- Remova objeções comuns
+
+HURTING (desesperados por solução):
+- Vá direto ao ponto
+- Solução rápida e garantida
+- Comece com a oferta
+- CTA imediata e clara
+
+dados da pesquisa: [INSERIR DADOS AQUI]`,
+      icon: Target,
+      color: "text-emerald-600"
+    },
+    {
+      id: 16,
+      title: "📚 StoryBrand - Framework Narrativo Expandido",
+      description: "Transforma sua marca em um guia sábio na jornada do herói (seu cliente)",
+      category: "copy",
+      difficulty: "avançado",
+      rating: 4.8,
+      illustration: campaignGenerationImg,
+      prompt: `Crie uma narrativa completa usando StoryBrand para [marca]:
+
+HERÓI (seu cliente):
+- Nome e situação específica
+- Desejo profundo (externo e interno)
+- O que o impede de dormir à noite
+
+PROBLEMA (3 níveis):
+- Externo: Problema prático/visível
+- Interno: Como se sente sobre isso
+- Filosófico: Por que é injusto/errado
+
+MENTOR (sua marca):
+- Demonstre empatia ("Eu entendo...")
+- Mostre autoridade (sem arrogância)
+- Sua experiência relevante
+
+PLANO (simples e claro):
+- 3 passos máximo
+- Nomeie cada passo
+- Torne ridiculamente fácil
+
+CONVITE À AÇÃO:
+- CTA direta: O que fazer AGORA
+- CTA transitória: Opção mais suave
+
+FRACASSO (o que evitar):
+- 3 consequências de não agir
+- Pinte o cenário sombrio
+- Use medo de perda
+
+SUCESSO (a terra prometida):
+- Visão específica do futuro
+- Como a vida será diferente
+- Status, realização, transformação
+- Final feliz garantido
+
+dados da pesquisa: [INSERIR DADOS AQUI]`,
+      icon: Crown,
+      color: "text-pink-600"
     }
   ];
 
