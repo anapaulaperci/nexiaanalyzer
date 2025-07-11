@@ -724,9 +724,9 @@ dados da pesquisa: [INSERIR DADOS AQUI]`,
               
               <div className="flex gap-2">
                 <Button 
-                  variant="default" 
+                  variant="outline" 
                   size="sm" 
-                  className="flex-1 shadow-glow"
+                  className="flex-1"
                   onClick={() => copyPrompt(prompt.prompt)}
                 >
                   <Copy className="w-4 h-4 mr-2" />
@@ -742,7 +742,8 @@ dados da pesquisa: [INSERIR DADOS AQUI]`,
       <div className="flex justify-center mt-12 mb-8">
         <Button 
           size="lg"
-          className="px-16 py-4 text-lg shadow-glow hover-scale text-nexia-darker"
+          className="px-16 py-4 text-lg shadow-glow hover-scale text-white"
+          style={{ backgroundColor: '#2D1B69' }}
           onClick={openChatGPT}
         >
           <Brain className="w-5 h-5 mr-3" />
