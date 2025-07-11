@@ -9,8 +9,14 @@ const Header = () => {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-card/80 backdrop-blur-sm border-b border-border/50">
       <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
-        {/* Empty space where logo was */}
-        <div></div>
+        {/* Logo */}
+        <div className="flex items-center">
+          <img 
+            src="/lovable-uploads/a89c48da-32a5-4421-9595-6267fb89f5d7.png" 
+            alt="NexIA Analyzer" 
+            className="h-8 w-auto"
+          />
+        </div>
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-8">
