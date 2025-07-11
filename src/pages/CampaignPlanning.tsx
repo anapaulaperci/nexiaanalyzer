@@ -426,6 +426,7 @@ Apresente o plano de forma executiva, com bullets claros, números específicos 
           <Button 
             size="lg" 
             className="bg-nexia-accent-500 hover:bg-nexia-accent-600 text-black font-bold text-xl px-12 py-6 shadow-lg hover:shadow-xl transition-all duration-300 flex items-center gap-4 rounded-2xl"
+            onClick={() => window.open('https://chatgpt.com/g/g-6871263cd7288191a98ca6e6cd4396eb-nexia-analyxer-campanha', '_blank')}
           >
             <Bot className="w-8 h-8" />
             Use o nosso GPT
