@@ -148,7 +148,29 @@ const CRM = () => {
             <CardTitle className="flex items-center gap-3 text-2xl">
               <div className="p-2 bg-primary/10 rounded-lg">
                 <BarChart3 className="w-6 h-6 text-primary" />
-              </div>
+        </div>
+
+        {/* CRM Screenshots Section */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-8">
+          <Card className="overflow-hidden bg-gradient-to-br from-card to-card/90 border-0 shadow-card">
+            <CardContent className="p-0">
+              <img 
+                src="/lovable-uploads/fb881f1e-6a6d-491e-aa93-2f6ab7a68767.png" 
+                alt="Pipeline CRM - Primeiras Etapas"
+                className="w-full h-auto object-cover hover:scale-105 transition-transform duration-300"
+              />
+            </CardContent>
+          </Card>
+          <Card className="overflow-hidden bg-gradient-to-br from-card to-card/90 border-0 shadow-card">
+            <CardContent className="p-0">
+              <img 
+                src="/lovable-uploads/aee8e670-f625-445a-9b52-34606ea3c2a1.png" 
+                alt="Pipeline CRM - Etapas Finais"
+                className="w-full h-auto object-cover hover:scale-105 transition-transform duration-300"
+              />
+            </CardContent>
+          </Card>
+        </div>
               Visão Geral do Pipeline
             </CardTitle>
             <CardDescription className="text-lg leading-relaxed">
