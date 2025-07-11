@@ -41,20 +41,6 @@ export function AppSidebar() {
     <Sidebar collapsible="icon">
       <SidebarContent className="bg-card/50 backdrop-blur-sm border-r border-border/50">
         <SidebarGroup>
-          <div className="px-4 py-6">
-            <div className="flex items-center gap-2">
-              <img 
-                src="/lovable-uploads/ace31a89-bfd6-4446-8a5b-26bcd635824c.png" 
-                alt="NexIA Lab" 
-                className="h-8"
-              />
-              {!isCollapsed && (
-                <span className="font-bold text-lg bg-gradient-hero bg-clip-text text-transparent">
-                  NexIA Lab
-                </span>
-              )}
-            </div>
-          </div>
 
           <SidebarGroupLabel className={isCollapsed ? "sr-only" : ""}>
             Navegação

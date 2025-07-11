@@ -17,22 +17,8 @@ const HorizontalNav = () => {
     <nav className="border-b border-border/50 bg-card/30 backdrop-blur-sm">
       <div className="max-w-6xl mx-auto px-6">
         <div className="flex items-center justify-between h-16">
-          {/* Logo */}
-          <div className="flex items-center gap-3">
-            <img 
-              src="/lovable-uploads/ace31a89-bfd6-4446-8a5b-26bcd635824c.png" 
-              alt="NexIA Lab" 
-              className="h-8"
-            />
-            <div className="flex flex-col">
-              <span className="font-bold text-xl bg-gradient-hero bg-clip-text text-transparent">
-                NexIA Lab
-              </span>
-              <span className="text-xs text-muted-foreground -mt-1">
-                Ana Paula Perci
-              </span>
-            </div>
-          </div>
+          {/* Empty space where logo was */}
+          <div></div>
 
           {/* Navigation */}
           <div className="flex items-center space-x-1">

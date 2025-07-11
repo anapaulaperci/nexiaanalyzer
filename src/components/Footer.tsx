@@ -5,12 +5,7 @@ const Footer = () => {
     <footer className="border-t border-border/50 bg-card/30 backdrop-blur-sm mt-auto">
       <div className="max-w-6xl mx-auto px-6 py-6">
         <div className="flex flex-col md:flex-row items-center justify-between gap-4">
-          <div className="flex items-center gap-2">
-            <img 
-              src="/lovable-uploads/ace31a89-bfd6-4446-8a5b-26bcd635824c.png" 
-              alt="NexIA Lab" 
-              className="h-6"
-            />
+          <div className="text-sm text-muted-foreground">
             <span className="text-sm text-muted-foreground">
               © 2024 NexIA Lab. Todos os direitos reservados a 
               <a 

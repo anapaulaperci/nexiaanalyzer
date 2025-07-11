@@ -13,14 +13,6 @@ const Hero = () => {
       <div className="absolute bottom-20 right-20 w-96 h-96 bg-primary-glow/10 rounded-full blur-3xl animate-pulse delay-1000"></div>
       
       <div className="relative z-10 text-center max-w-6xl mx-auto px-6">
-        {/* Logo */}
-        <div className="mb-8">
-          <img 
-            src="/lovable-uploads/ace31a89-bfd6-4446-8a5b-26bcd635824c.png" 
-            alt="NexIA Lab" 
-            className="h-16 mx-auto"
-          />
-        </div>
 
         {/* Floating Icons */}
         <div className="absolute -top-16 left-1/4 animate-bounce delay-300">
