@@ -14,15 +14,15 @@ import competitiveAnalysisImg from "@/assets/competitive-analysis.png";
 import hiddenInsightsImg from "@/assets/hidden-insights.png";
 import brandArchetypeImg from "@/assets/brand-archetype.png";
 
-// Import das ilustrações dos frameworks de copy
-import cartoonAidaImg from "@/assets/cartoon-aida.png";
-import cartoonPasImg from "@/assets/cartoon-pas.png";
-import cartoonBabImg from "@/assets/cartoon-bab.png";
-import cartoonFabImg from "@/assets/cartoon-fab.png";
-import cartoon4usImg from "@/assets/cartoon-4us.png";
-import cartoonQuestImg from "@/assets/cartoon-quest.png";
-import cartoonOathImg from "@/assets/cartoon-oath.png";
-import cartoonStorybrandImg from "@/assets/cartoon-storybrand.png";
+// Import das ilustrações realistas dos frameworks de copy
+import aiAidaImg from "@/assets/ai-aida-realistic.png";
+import aiPasImg from "@/assets/ai-pas-realistic.png";
+import aiBabImg from "@/assets/ai-bab-realistic.png";
+import aiFabImg from "@/assets/ai-fab-realistic.png";
+import ai4usImg from "@/assets/ai-4us-realistic.png";
+import aiQuestImg from "@/assets/ai-quest-realistic.png";
+import aiOathImg from "@/assets/ai-oath-realistic.png";
+import aiStorybrandImg from "@/assets/ai-storybrand-realistic.png";
 
 const Prompts = () => {
   const [searchQuery, setSearchQuery] = useState("");
@@ -43,7 +43,7 @@ const Prompts = () => {
   const prompts = [
     {
       id: 1,
-      title: "🔍 01. Análise de Insights Ocultos",
+      title: "01. Análise de Insights Ocultos",
       description: "Descobre padrões ocultos e contradições que revelam oportunidades de negócio inexploradas",
       category: "análise",
       difficulty: "avançado",
@@ -189,7 +189,7 @@ Dados da pesquisa: [INSERIR DADOS AQUI]`,
     },
     {
       id: 2,
-      title: "🎯 02. Análise Competitiva",
+      title: "02. Análise Competitiva",
       description: "Identifica vantagens competitivas e oportunidades de posicionamento no mercado",
       category: "estratégia",
       difficulty: "avançado",
@@ -228,7 +228,7 @@ dados da pesquisa: [INSERIR DADOS AQUI]`,
     },
     {
       id: 3,
-      title: "😊 03. Análise de Sentimento",
+      title: "03. Análise de Sentimento",
       description: "Identifica emoções, sentimentos e pontos de dor dos respondentes com alta precisão",
       category: "análise",
       difficulty: "iniciante",
@@ -258,7 +258,7 @@ dados da pesquisa: [INSERIR DADOS AQUI]`,
     },
     {
       id: 4,
-      title: "🎭 04. Arquétipo de Marca",
+      title: "04. Arquétipo de Marca",
       description: "Descobre o arquétipo de marca mais ressonante baseado na psicologia arquetípica e branding emocional",
       category: "estratégia",
       difficulty: "avançado",
@@ -430,7 +430,7 @@ dados da pesquisa: [INSERIR DADOS AQUI]`,
     },
     {
       id: 5,
-      title: "🚀 05. Geração de Campanhas",
+      title: "05. Geração de Campanhas",
       description: "Desenvolve campanhas de marketing focadas em resultados e alta performance",
       category: "marketing",
       difficulty: "avançado",
@@ -470,7 +470,7 @@ dados da pesquisa: [INSERIR DADOS AQUI]`,
     },
     {
       id: 6,
-      title: "🗺️ 06. Jornada do Cliente",
+      title: "06. Jornada do Cliente",
       description: "Mapeia toda a experiência do cliente identificando oportunidades de otimização",
       category: "experiência",
       difficulty: "intermediário",
@@ -510,7 +510,7 @@ dados da pesquisa: [INSERIR DADOS AQUI]`,
     },
     {
       id: 7,
-      title: "👥 07. Segmentação de Audiência",
+      title: "07. Segmentação de Audiência",
       description: "Cria personas detalhadas e segmentos de mercado baseados nos dados coletados",
       category: "segmentação",
       difficulty: "intermediário",
@@ -642,12 +642,12 @@ dados da pesquisa: [INSERIR DADOS AQUI]`,
     // PROMPTS DE ESTRUTURAS DE COPY
     {
       id: "aida",
-      title: "📝 08. AIDA - Atenção, Interesse, Desejo, Ação",
+      title: "08. AIDA - Atenção, Interesse, Desejo, Ação",
       description: "Framework clássico do copywriting que guia o leitor desde o primeiro contato até a ação final",
       category: "copy",
       difficulty: "iniciante", 
       rating: 4.9,
-      illustration: cartoonAidaImg,
+      illustration: aiAidaImg,
       prompt: `Crie um anúncio usando AIDA para [produto/serviço]:
 
 ATENÇÃO (3 segundos para parar o scroll):
@@ -676,12 +676,12 @@ dados da pesquisa: [INSERIR DADOS AQUI]`,
     },
     {
       id: "pas",
-      title: "⚡ 09. PAS - Problema, Agitação, Solução", 
+      title: "09. PAS - Problema, Agitação, Solução", 
       description: "Framework altamente efetivo para produtos que resolvem dores específicas",
       category: "copy",
       difficulty: "intermediário",
       rating: 4.8,
-      illustration: cartoonPasImg,
+      illustration: aiPasImg,
       prompt: `Crie copy PAS para [produto] focado em [problema específico]:
 
 PROBLEMA (identifique a ferida):
@@ -707,12 +707,12 @@ dados da pesquisa: [INSERIR DADOS AQUI]`,
     },
     {
       id: "bab",
-      title: "🌉 10. BAB - Before-After-Bridge",
+      title: "10. BAB - Before-After-Bridge",
       description: "Framework que mostra a transformação que seu produto proporciona",
       category: "copy", 
       difficulty: "intermediário",
       rating: 4.7,
-      illustration: cartoonBabImg,
+      illustration: aiBabImg,
       prompt: `Crie copy BAB para [produto] com foco em transformação:
 
 BEFORE (pinte o presente doloroso):
@@ -740,12 +740,12 @@ dados da pesquisa: [INSERIR DADOS AQUI]`,
     },
     {
       id: "fab",
-      title: "🔧 11. FAB - Features, Advantages, Benefits",
+      title: "11. FAB - Features, Advantages, Benefits",
       description: "Framework que traduz características técnicas em valor real para o cliente",
       category: "copy",
       difficulty: "iniciante",
       rating: 4.6,
-      illustration: cartoonFabImg,
+      illustration: aiFabImg,
       prompt: `Transforme features em benefits usando FAB para [produto]:
 
 FEATURES (o que é):
@@ -771,12 +771,12 @@ dados da pesquisa: [INSERIR DADOS AQUI]`,
     },
     {
       id: "4us",
-      title: "🎯 12. 4 U's - Urgent, Unique, Useful, Ultra-specific",
+      title: "12. 4 U's - Urgent, Unique, Useful, Ultra-specific",
       description: "Framework desenvolvido por Michael Masterson, poderoso para headlines e subject lines",
       category: "copy",
       difficulty: "avançado",
       rating: 4.8,
-      illustration: cartoon4usImg,
+      illustration: ai4usImg,
       prompt: `Crie 5 headlines usando os 4 U's para [produto/serviço]:
 
 URGENT (crie pressão temporal):
@@ -806,12 +806,12 @@ dados da pesquisa: [INSERIR DADOS AQUI]`,
     },
     {
       id: "quest",
-      title: "🎪 13. QUEST - Qualify, Understand, Educate, Stimulate, Transition",
+      title: "13. QUEST - Qualify, Understand, Educate, Stimulate, Transition",
       description: "Framework de 5 passos que guia através de uma jornada psicológica completa",
       category: "copy",
       difficulty: "avançado", 
       rating: 4.7,
-      illustration: cartoonQuestImg,
+      illustration: aiQuestImg,
       prompt: `Crie copy longo usando QUEST para [produto complexo]:
 
 QUALIFY (filtre os certos):
@@ -849,12 +849,12 @@ dados da pesquisa: [INSERIR DADOS AQUI]`,
     },
     {
       id: "oath",
-      title: "🧠 14. OATH - Oblivious, Apathetic, Thinking, Hurting",
+      title: "14. OATH - Oblivious, Apathetic, Thinking, Hurting",
       description: "Framework que segmenta audiência baseado no nível de consciência do problema",
       category: "copy",
       difficulty: "avançado",
       rating: 4.9,
-      illustration: cartoonOathImg,
+      illustration: aiOathImg,
       prompt: `Crie 4 versões de copy para [produto], uma para cada nível OATH:
 
 OBLIVIOUS (não sabem que têm problema):
@@ -887,12 +887,12 @@ dados da pesquisa: [INSERIR DADOS AQUI]`,
     },
     {
       id: "storybrand",
-      title: "📚 15. StoryBrand - Framework Narrativo Expandido",
+      title: "15. StoryBrand - Framework Narrativo Expandido",
       description: "Transforma sua marca em um guia sábio na jornada do herói (seu cliente)",
       category: "copy",
       difficulty: "avançado",
       rating: 4.8,
-      illustration: cartoonStorybrandImg,
+      illustration: aiStorybrandImg,
       prompt: `Crie uma narrativa completa usando StoryBrand para [marca]:
 
 HERÓI (seu cliente):
