@@ -420,6 +420,16 @@ Apresente o plano de forma executiva, com bullets claros, números específicos 
             </div>
           </CardContent>
         </Card>
+
+        {/* Use our GPT Button */}
+        <div className="text-center">
+          <Button 
+            size="lg" 
+            className="bg-nexia-accent-500 hover:bg-nexia-accent-600 text-black font-bold text-lg px-8 py-4 shadow-lg hover:shadow-xl transition-all duration-300"
+          >
+            Use o nosso GPT
+          </Button>
+        </div>
       </div>
     </div>
   );
