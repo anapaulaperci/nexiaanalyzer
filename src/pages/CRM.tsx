@@ -1,7 +1,13 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { TrendingUp, Target, Lightbulb, Users, BarChart3, CheckCircle, ArrowRight } from "lucide-react";
+import { TrendingUp, Target, Lightbulb, Users, BarChart3, CheckCircle, ArrowRight, Gift, Clock } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
+
+// Import cartoon images
+import cartoonNonLinearFunnel from "@/assets/cartoon-non-linear-funnel.png";
+import cartoonTrialPower from "@/assets/cartoon-trial-power.png";
+import cartoonLiveConversion from "@/assets/cartoon-live-conversion.png";
+import cartoonConversionRate from "@/assets/cartoon-conversion-rate.png";
 
 const CRM = () => {
   const pipelineSteps = [
@@ -80,6 +86,7 @@ const CRM = () => {
   const strategicInsights = [
     {
       icon: TrendingUp,
+      image: cartoonNonLinearFunnel,
       title: "Funil Não-Linear",
       description: "O pipeline mostra que nem todos seguem a ordem esperada. Pessoas podem pular etapas e ainda converter.",
       lesson: "Flexibilidade no processo aumenta conversões",
@@ -87,6 +94,7 @@ const CRM = () => {
     },
     {
       icon: Target,
+      image: cartoonTrialPower,
       title: "O Poder do Trial",
       description: "Questione se o trial é necessário. Muitas vezes clientes estão prontos para comprar.",
       lesson: "Testar conversão direta quando valor está claro",
@@ -94,6 +102,7 @@ const CRM = () => {
     },
     {
       icon: Users,
+      image: cartoonLiveConversion,
       title: "Lives como Motor de Conversão",
       description: "Lives geram maior engajamento e presença. Estratégia vencedora como principal ferramenta.",
       lesson: "Investir em qualidade e frequência",
@@ -101,6 +110,7 @@ const CRM = () => {
     },
     {
       icon: BarChart3,
+      image: cartoonConversionRate,
       title: "Taxa de Conversão como Diferencial",
       description: "Pipelines bem estruturados superam médias de mercado. Processo automatizado e personalizado.",
       lesson: "Qualidade sobre quantidade",
@@ -226,6 +236,14 @@ const CRM = () => {
                 >
                   <div className={`absolute inset-0 opacity-5 ${insight.color}`} />
                   <div className="relative p-6 space-y-4">
+                    {/* Cartoon Image */}
+                    <div className="w-full h-48 bg-gradient-to-br from-muted/10 to-muted/30 rounded-lg overflow-hidden mb-4">
+                      <img 
+                        src={insight.image} 
+                        alt={insight.title}
+                        className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                      />
+                    </div>
                     <div className="flex items-center gap-3">
                       <div className={`p-3 ${insight.color} rounded-lg shadow-lg`}>
                         <insight.icon className="w-6 h-6 text-white" />
@@ -246,6 +264,44 @@ const CRM = () => {
                   </div>
                 </div>
               ))}
+            </div>
+          </CardContent>
+        </Card>
+
+        {/* Unnichat CTA Section */}
+        <Card className="overflow-hidden bg-gradient-to-br from-nexia-accent-400 to-nexia-accent-600 border-0 shadow-xl">
+          <CardContent className="p-8">
+            <div className="flex flex-col lg:flex-row items-center justify-between gap-8">
+              <div className="flex-1 text-center lg:text-left space-y-4">
+                <div className="flex items-center justify-center lg:justify-start gap-3 mb-4">
+                  <Gift className="w-8 h-8 text-white" />
+                  <h2 className="text-3xl md:text-4xl font-bold text-white">
+                    Teste o Unnichat por 30 dias de
+                  </h2>
+                </div>
+                <div className="text-5xl md:text-6xl font-black text-white mb-6">
+                  GRAÇA
+                </div>
+                <div className="flex items-center justify-center lg:justify-start gap-2 text-white/90 text-lg">
+                  <Clock className="w-5 h-5" />
+                  <span>Acesso completo • Sem compromisso • Suporte incluído</span>
+                </div>
+                <Button 
+                  size="lg" 
+                  className="bg-white text-nexia-accent-600 hover:bg-white/90 font-bold text-lg px-8 py-4 mt-6"
+                >
+                  Começar Teste Gratuito
+                </Button>
+              </div>
+              <div className="flex-shrink-0">
+                <div className="w-48 h-24 bg-white/10 rounded-lg flex items-center justify-center p-4">
+                  <img 
+                    src="/lovable-uploads/ef148617-5e1e-485c-9f00-2f49d7d2e8a4.png" 
+                    alt="Unnichat Logo"
+                    className="max-w-full max-h-full object-contain"
+                  />
+                </div>
+              </div>
             </div>
           </CardContent>
         </Card>
