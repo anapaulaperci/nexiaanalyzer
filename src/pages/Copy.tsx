@@ -1,5 +1,6 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Copy as CopyIcon, Sparkles } from "lucide-react";
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+import { Copy as CopyIcon, Sparkles, Bot } from "lucide-react";
 
 const Copy = () => {
   return (
@@ -28,6 +29,108 @@ const Copy = () => {
             </p>
           </div>
         </div>
+
+        {/* IA para Copy Section */}
+        <Card className="bg-card/80 backdrop-blur-sm border-border/50">
+          <CardHeader>
+            <CardTitle className="text-2xl flex items-center gap-3">
+              <Bot className="w-6 h-6 text-primary" />
+              🤖 Como Usar IA para Criar Anúncios de Alta Conversão com Frameworks de Copy
+            </CardTitle>
+          </CardHeader>
+          <CardContent>
+            <Accordion type="single" collapsible className="w-full">
+              <AccordionItem value="introducao">
+                <AccordionTrigger className="text-lg font-semibold">
+                  Introdução: Por que Combinar IA com Frameworks de Copy?
+                </AccordionTrigger>
+                <AccordionContent className="space-y-4">
+                  <p className="text-muted-foreground">
+                    A inteligência artificial revolucionou a criação de conteúdo, mas sem estrutura, pode gerar textos genéricos. Ao combinar IA com frameworks comprovados de copywriting, você consegue:
+                  </p>
+                  <div className="grid md:grid-cols-2 gap-4">
+                    <div className="space-y-2">
+                      <div className="flex items-center gap-2">
+                        <span className="w-2 h-2 bg-primary rounded-full"></span>
+                        <span className="font-medium">Velocidade:</span>
+                        <span className="text-muted-foreground">Criar múltiplas versões em minutos</span>
+                      </div>
+                      <div className="flex items-center gap-2">
+                        <span className="w-2 h-2 bg-primary rounded-full"></span>
+                        <span className="font-medium">Consistência:</span>
+                        <span className="text-muted-foreground">Manter a estrutura persuasiva em todos os anúncios</span>
+                      </div>
+                    </div>
+                    <div className="space-y-2">
+                      <div className="flex items-center gap-2">
+                        <span className="w-2 h-2 bg-primary rounded-full"></span>
+                        <span className="font-medium">Personalização:</span>
+                        <span className="text-muted-foreground">Adaptar mensagens para diferentes públicos</span>
+                      </div>
+                      <div className="flex items-center gap-2">
+                        <span className="w-2 h-2 bg-primary rounded-full"></span>
+                        <span className="font-medium">Testes A/B:</span>
+                        <span className="text-muted-foreground">Gerar variações para otimizar resultados</span>
+                      </div>
+                    </div>
+                  </div>
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem value="frameworks">
+                <AccordionTrigger className="text-lg font-semibold">
+                  Os Principais Frameworks de Copy para IA: Guia Completo e Atualizado
+                </AccordionTrigger>
+                <AccordionContent className="space-y-6">
+                  <div className="space-y-6">
+                    <div className="bg-muted/30 rounded-lg p-6">
+                      <h3 className="text-xl font-bold mb-4 text-primary">1. AIDA (Atenção, Interesse, Desejo, Ação)</h3>
+                      <p className="text-muted-foreground mb-4">
+                        O framework mais clássico e amplamente usado do copywriting, que guia o leitor desde o primeiro contato até a ação final.
+                      </p>
+                      <div className="bg-blue-50/50 rounded-lg p-4 border border-blue-200/50 mb-4">
+                        <p className="font-medium text-blue-900 mb-2">Por que funciona:</p>
+                        <p className="text-blue-800 text-sm">
+                          AIDA cria uma jornada psicológica que leva o leitor de "nem sabia que existia" para "preciso disso agora".
+                        </p>
+                      </div>
+                      
+                      <div className="space-y-4">
+                        <h4 className="font-semibold text-lg">Como usar com IA - Prompt Avançado:</h4>
+                        <div className="bg-card border rounded-lg p-4">
+                          <p className="font-medium text-green-700 mb-2">Prompt AIDA Completo:</p>
+                          <div className="bg-muted/50 rounded p-4 font-mono text-sm space-y-2">
+                            <p>"Crie um anúncio usando AIDA para [produto/serviço]:</p>
+                            <br />
+                            <p className="font-bold">ATENÇÃO (3 segundos para parar o scroll):</p>
+                            <p>- Use poder words, números específicos ou perguntas provocativas</p>
+                            <p>- Foque em uma dor urgente ou desejo intenso</p>
+                            <p>- Máximo 40 caracteres para headlines</p>
+                            <br />
+                            <p className="font-bold">INTERESSE (mantenha-os lendo):</p>
+                            <p>- Conecte com uma história ou estatística surpreendente</p>
+                            <p>- Use o princípio do "open loop" (curiosidade)</p>
+                            <p>- Fale diretamente com o momento de vida deles</p>
+                            <br />
+                            <p className="font-bold">DESEJO (faça-os querer):</p>
+                            <p>- Pinte o futuro transformado após usar seu produto</p>
+                            <p>- Use benefícios emocionais, não apenas funcionais</p>
+                            <p>- Inclua prova social sutil</p>
+                            <br />
+                            <p className="font-bold">AÇÃO (remova todas as fricções):</p>
+                            <p>- CTA ultra-específica (não apenas 'saiba mais')</p>
+                            <p>- Adicione urgência real (não falsa escassez)</p>
+                            <p>- Ofereça garantia de risco zero"</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </AccordionContent>
+              </AccordionItem>
+            </Accordion>
+          </CardContent>
+        </Card>
 
         {/* Copy Bank Section */}
         <Card className="bg-card/80 backdrop-blur-sm border-border/50">
