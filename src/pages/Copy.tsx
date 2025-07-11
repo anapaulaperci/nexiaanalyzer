@@ -73,8 +73,16 @@ const Copy = () => {
                         <span className="text-muted-foreground">Gerar variações para otimizar resultados</span>
                       </div>
                     </div>
+                  </div>
+                </AccordionContent>
+              </AccordionItem>
 
-                    <div className="bg-muted/30 rounded-lg p-6">
+              <AccordionItem value="pas">
+                <AccordionTrigger className="text-lg font-semibold">
+                  2. PAS (Problema, Agitação, Solução)
+                </AccordionTrigger>
+                <AccordionContent className="space-y-4">
+                  <div className="bg-muted/30 rounded-lg p-6">
                       <h3 className="text-xl font-bold mb-4 text-primary">2. PAS (Problema, Agitação, Solução)</h3>
                       <p className="text-muted-foreground mb-4">
                         Framework altamente efetivo para produtos que resolvem dores específicas. Cria uma narrativa emocional poderosa.
@@ -474,9 +482,6 @@ const Copy = () => {
                           </div>
                         </div>
                       </div>
-                    </div>
-                  </div>
-                  </div>
                     </div>
                   </div>
                 </AccordionContent>
