@@ -724,26 +724,30 @@ dados da pesquisa: [INSERIR DADOS AQUI]`,
               
               <div className="flex gap-2">
                 <Button 
-                  variant="outline" 
+                  variant="default" 
                   size="sm" 
-                  className="flex-1"
+                  className="flex-1 shadow-glow"
                   onClick={() => copyPrompt(prompt.prompt)}
                 >
                   <Copy className="w-4 h-4 mr-2" />
                   Copiar Prompt
                 </Button>
-                <Button 
-                  variant="default" 
-                  size="sm" 
-                  className="shadow-glow"
-                  onClick={openChatGPT}
-                >
-                  Usar Agora
-                </Button>
               </div>
             </CardContent>
           </Card>
         ))}
+      </div>
+
+      {/* Botão Usar Agora - Centralizado */}
+      <div className="flex justify-center mt-12 mb-8">
+        <Button 
+          size="lg"
+          className="px-12 py-4 text-lg shadow-glow hover-scale"
+          onClick={openChatGPT}
+        >
+          <Brain className="w-5 h-5 mr-3" />
+          Usar Agora
+        </Button>
       </div>
 
       {filteredPrompts.length === 0 && (
