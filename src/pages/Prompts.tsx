@@ -629,6 +629,10 @@ dados da pesquisa: [INSERIR DADOS AQUI]`,
     // Toast notification would be added here
   };
 
+  const openChatGPT = () => {
+    window.open('https://chatgpt.com/g/g-68710a8784dc8191b5086d574f8309b7-nexia-analyzer', '_blank');
+  };
+
   const getDifficultyColor = (difficulty: string) => {
     switch (difficulty) {
       case "iniciante": return "bg-green-500/20 text-green-400";
@@ -728,7 +732,12 @@ dados da pesquisa: [INSERIR DADOS AQUI]`,
                   <Copy className="w-4 h-4 mr-2" />
                   Copiar Prompt
                 </Button>
-                <Button variant="default" size="sm" className="shadow-glow">
+                <Button 
+                  variant="default" 
+                  size="sm" 
+                  className="shadow-glow"
+                  onClick={openChatGPT}
+                >
                   Usar Agora
                 </Button>
               </div>
