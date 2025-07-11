@@ -1,5 +1,5 @@
 import { NavLink, useLocation } from "react-router-dom";
-import { Home, BookOpen, MessageSquare, Sparkles, Copy } from "lucide-react";
+import { Home, BookOpen, MessageSquare, Sparkles, Copy, Brain } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 const HorizontalNav = () => {
@@ -17,8 +17,17 @@ const HorizontalNav = () => {
     <nav className="border-b border-border/50 bg-card/30 backdrop-blur-sm">
       <div className="max-w-6xl mx-auto px-6">
         <div className="flex items-center justify-between h-16">
-          {/* Empty space where logo was */}
-          <div></div>
+          {/* Logo */}
+          <NavLink to="/" className="flex items-center group">
+            <div className="flex items-center space-x-2">
+              <div className="w-8 h-8 bg-gradient-to-br from-primary to-primary-glow rounded-lg flex items-center justify-center">
+                <Brain className="w-5 h-5 text-white" />
+              </div>
+              <span className="text-xl font-bold bg-gradient-to-r from-foreground to-muted-foreground bg-clip-text text-transparent group-hover:from-primary group-hover:to-primary-glow transition-all duration-300">
+                NexIA Analyzer
+              </span>
+            </div>
+          </NavLink>
 
           {/* Navigation */}
           <div className="flex items-center space-x-1">
