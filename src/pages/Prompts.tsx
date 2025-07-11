@@ -742,7 +742,7 @@ dados da pesquisa: [INSERIR DADOS AQUI]`,
       <div className="flex justify-center mt-12 mb-8">
         <Button 
           size="lg"
-          className="px-12 py-4 text-lg shadow-glow hover-scale"
+          className="px-16 py-4 text-lg shadow-glow hover-scale text-nexia-darker"
           onClick={openChatGPT}
         >
           <Brain className="w-5 h-5 mr-3" />
