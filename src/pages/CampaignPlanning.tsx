@@ -2,7 +2,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
-import { Copy, Sparkles, Target, TrendingUp, Brain } from "lucide-react";
+import { Copy, Sparkles, Target, TrendingUp, Brain, Bot } from "lucide-react";
 import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
 
@@ -425,8 +425,9 @@ Apresente o plano de forma executiva, com bullets claros, números específicos 
         <div className="text-center">
           <Button 
             size="lg" 
-            className="bg-nexia-accent-500 hover:bg-nexia-accent-600 text-black font-bold text-lg px-8 py-4 shadow-lg hover:shadow-xl transition-all duration-300"
+            className="bg-nexia-accent-500 hover:bg-nexia-accent-600 text-black font-bold text-lg px-8 py-4 shadow-lg hover:shadow-xl transition-all duration-300 flex items-center gap-3"
           >
+            <Bot className="w-6 h-6" />
             Use o nosso GPT
           </Button>
         </div>
