@@ -12,7 +12,7 @@ const Footer = () => {
             href="https://chat.whatsapp.com/JEY980forwzLviDjicwDqo"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-4 py-2 rounded-lg hover:bg-primary/90 transition-colors font-medium text-sm"
+            className="inline-flex items-center gap-2 bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700 transition-colors font-medium text-sm"
           >
             Entrar agora
           </a>
