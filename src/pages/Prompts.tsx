@@ -1082,7 +1082,7 @@ dados da pesquisa: [INSERIR DADOS AQUI]`,
     },
     {
       id: 17,
-      title: "17. Criador de Pesquisa de Audiência Estratégica",
+      title: "17. Criador de pesquisas",
       description: "Especialista em criar pesquisas baseadas na metodologia de Martin Lindstrom para revelar insights profundos e motivações ocultas",
       category: "pesquisa",
       difficulty: "avançado",
@@ -1160,7 +1160,7 @@ Crie um texto de 3-4 linhas que:
 • Mostre o benefício para quem responde
 • Mencione o incentivo (se houver)
 
-dados da pesquisa: [INSERIR DADOS AQUI]`,
+`,
       icon: TrendingUp,
       color: "text-amber-700"
     }
