@@ -487,7 +487,7 @@ const Dashboard = () => {
                     <Button 
                       variant="default" 
                       size="lg" 
-                      className="text-lg px-8 py-6 h-auto bg-blue-600 hover:bg-blue-700"
+                      className="text-lg px-8 py-6 h-auto bg-primary hover:bg-primary/90"
                       onClick={() => navigate('/dashboard/prompts#17')}
                     >
                       Usar Prompt 17 - Criador de pesquisas
@@ -503,6 +503,31 @@ const Dashboard = () => {
                   <p className="text-amber-700 dark:text-amber-300 font-medium italic text-lg">
                     "O que tira o sono do meu lead à noite?"
                   </p>
+                </div>
+                
+                {/* Book References */}
+                <div className="mt-6 space-y-4">
+                  <h4 className="text-xl font-semibold text-foreground">📚 Leituras Recomendadas</h4>
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <a 
+                      href="https://www.amazon.com.br/l%C3%B3gica-consumo-Verdades-mentiras-compramos/dp/8595082669" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl p-4 hover:shadow-lg transition-all duration-300 hover:border-blue-300 dark:hover:border-blue-600"
+                    >
+                      <h5 className="font-semibold text-blue-700 dark:text-blue-300">A Lógica do Consumo</h5>
+                      <p className="text-sm text-muted-foreground mt-1">Verdades e mentiras sobre por que compramos</p>
+                    </a>
+                    <a 
+                      href="https://www.amazon.com.br/Small-Data-Indicam-Grandes-Tend%C3%AAncias/dp/8569809719" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl p-4 hover:shadow-lg transition-all duration-300 hover:border-blue-300 dark:hover:border-blue-600"
+                    >
+                      <h5 className="font-semibold text-blue-700 dark:text-blue-300">Small Data</h5>
+                      <p className="text-sm text-muted-foreground mt-1">As pequenas pistas que indicam grandes tendências</p>
+                    </a>
+                  </div>
                 </div>
               </CardContent>
             </Card>
