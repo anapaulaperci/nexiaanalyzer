@@ -472,69 +472,37 @@ const Dashboard = () => {
                   <div className="w-12 h-12 rounded-full bg-gradient-to-br from-blue-500 to-blue-600 flex items-center justify-center shadow-lg">
                     <Building2 className="w-6 h-6 text-white" />
                   </div>
-                  <span className="text-2xl text-blue-800 dark:text-blue-200">Explicação Base do Negócio</span>
+                  <span className="text-2xl text-blue-800 dark:text-blue-200">Como criar uma boa pesquisa de persona</span>
                 </CardTitle>
               </CardHeader>
               <CardContent>
                 <div className="bg-blue-50 dark:bg-blue-950/20 p-6 rounded-lg mb-6 border border-blue-200 dark:border-blue-800">
                   <p className="text-foreground font-medium mb-4">
-                    📋 <strong>Informações Essenciais para Fornecer:</strong>
+                    📋 <strong>Metodologia Martin Lindstrom:</strong>
                   </p>
                   <p className="text-muted-foreground mb-4 leading-relaxed">
-                    Para criar personas sintéticas precisas, detalhe completamente o seu negócio. Quanto mais específico você for, melhor será o resultado da análise de IA.
+                    Use nosso prompt especializado baseado na metodologia de Martin Lindstrom para criar pesquisas que revelam motivações ocultas e dores profundas do seu público-alvo.
                   </p>
+                  <div className="text-center">
+                    <Button 
+                      variant="default" 
+                      size="lg" 
+                      className="text-lg px-8 py-6 h-auto bg-blue-600 hover:bg-blue-700"
+                      onClick={() => navigate('/dashboard/prompts#17')}
+                    >
+                      Usar Prompt 17 - Criador de pesquisas
+                      <ArrowRight className="w-5 h-5 ml-2" />
+                    </Button>
+                  </div>
                 </div>
                 
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                  <div className="space-y-4">
-                    <h4 className="font-semibold text-foreground flex items-center gap-2">
-                      <Target className="w-4 h-4 text-blue-500" />
-                      Sobre o Negócio
-                    </h4>
-                    <ul className="space-y-3 text-sm">
-                      <li className="flex items-start gap-2">
-                        <CheckCircle2 className="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" />
-                        <span><strong>Produtos/Serviços:</strong> O que exatamente você vende, preços, categorias</span>
-                      </li>
-                      <li className="flex items-start gap-2">
-                        <CheckCircle2 className="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" />
-                        <span><strong>Mercado:</strong> Setor, nicho, localização geográfica</span>
-                      </li>
-                      <li className="flex items-start gap-2">
-                        <CheckCircle2 className="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" />
-                        <span><strong>Diferenciais:</strong> O que te destaca da concorrência</span>
-                      </li>
-                      <li className="flex items-start gap-2">
-                        <CheckCircle2 className="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" />
-                        <span><strong>Modelo de negócio:</strong> B2B, B2C, marketplace, SaaS, etc.</span>
-                      </li>
-                    </ul>
-                  </div>
-                  
-                  <div className="space-y-4">
-                    <h4 className="font-semibold text-foreground flex items-center gap-2">
-                      <TrendingUp className="w-4 h-4 text-blue-500" />
-                      Estratégia & Clientes
-                    </h4>
-                    <ul className="space-y-3 text-sm">
-                      <li className="flex items-start gap-2">
-                        <CheckCircle2 className="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" />
-                        <span><strong>Objetivos:</strong> Metas de vendas, crescimento, expansão</span>
-                      </li>
-                      <li className="flex items-start gap-2">
-                        <CheckCircle2 className="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" />
-                        <span><strong>Público atual:</strong> Demografia, comportamento, necessidades</span>
-                      </li>
-                      <li className="flex items-start gap-2">
-                        <CheckCircle2 className="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" />
-                        <span><strong>Desafios:</strong> Dificuldades em vendas, marketing, retenção</span>
-                      </li>
-                      <li className="flex items-start gap-2">
-                        <CheckCircle2 className="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" />
-                        <span><strong>Canais:</strong> Como você vende e se comunica com clientes</span>
-                      </li>
-                    </ul>
-                  </div>
+                <div className="bg-amber-50 dark:bg-amber-950/20 p-6 rounded-lg border border-amber-200 dark:border-amber-800">
+                  <h4 className="font-semibold text-foreground mb-3 flex items-center gap-2">
+                    💡 Pergunta fundamental:
+                  </h4>
+                  <p className="text-amber-700 dark:text-amber-300 font-medium italic text-lg">
+                    "O que tira o sono do meu lead à noite?"
+                  </p>
                 </div>
               </CardContent>
             </Card>
