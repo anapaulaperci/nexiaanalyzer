@@ -1078,6 +1078,90 @@ dados da pesquisa: [INSERIR DADOS AQUI]`,
 
 dados da pesquisa: [INSERIR DADOS AQUI]`,
       icon: TrendingUp,
+      color: "text-purple-600"
+    },
+    {
+      id: 17,
+      title: "17. Criador de Pesquisa de Audiência Estratégica",
+      description: "Especialista em criar pesquisas baseadas na metodologia de Martin Lindstrom para revelar insights profundos e motivações ocultas",
+      category: "pesquisa",
+      difficulty: "avançado",
+      rating: 4.9,
+      illustration: audienceSegmentationImg,
+      prompt: `Você é um especialista em pesquisa de mercado e psicologia do consumidor, treinado nas metodologias de Martin Lindstrom (autor de "A Lógica do Consumo" e especialista em Small Data). Você aprendeu que as melhores insights vêm não de big data, mas de observações íntimas e perguntas que revelam as emoções não-ditas dos consumidores. Sua missão é criar uma pesquisa de audiência estratégica que revele as dores profundas, desejos ocultos e motivações inconscientes do público-alvo, permitindo criar produtos e mensagens de venda irresistíveis.
+
+CONTEXTO
+Vou te fornecer informações sobre meu negócio/produto e você criará uma pesquisa completa e personalizada seguindo a estrutura abaixo.
+
+INFORMAÇÕES QUE PRECISO DE VOCÊ:
+
+Nicho/área de atuação: [INSERIR]
+Produto/serviço que pretende vender: [INSERIR]
+Público-alvo principal: [INSERIR]
+Problema principal que resolve: [INSERIR]
+Resultado/transformação que promete: [INSERIR]
+
+ESTRUTURA DA PESQUISA QUE VOCÊ DEVE CRIAR:
+
+1. DADOS DEMOGRÁFICOS (2-3 perguntas)
+• Nome (cria conexão pessoal)
+• Idade (em faixas: 18-25, 25-30, 31-44, 45-54, 55-64, +64)
+• Profissão (pergunta aberta)
+
+2. QUALIFICAÇÃO FINANCEIRA INDIRETA (3-4 perguntas)
+Você pode perguntar diretamente da renda ou pergunte usando abordagens como: 
+• "Você já investiu em [tipo de solução] antes?"
+• Se sim: "Qual foi o valor do investimento?" (em faixas)
+• Se não: "O que te impediu?" (revelar objeções)
+• "Quanto estaria disposto a investir para [resultado específico]?"
+• "Nos próximos 3 meses, você planeja investir em [área]?"
+• "O que já tentou?" (com opções de gratuito até premium)
+
+3. SONHOS E ASPIRAÇÕES (2-3 perguntas abertas)
+• Maior sonho relacionado ao tema
+• Como seria a vida após resolver o problema
+• O que deseja alcançar em 12 meses
+
+4. MEDOS E FRUSTRAÇÕES (3 perguntas)
+• Maior medo sobre [área]
+• Área da vida que mais frustra (múltipla escolha)
+• Principal dificuldade atual
+
+5. HISTÓRICO DE TENTATIVAS (2-3 perguntas)
+• Como tem lidado com o problema
+• Por que soluções anteriores falharam
+• O que impede de alcançar o objetivo
+
+6. TRANSFORMAÇÃO DESEJADA (2 perguntas)
+• O que precisaria mudar para se sentir [estado positivo]
+• Como gostaria de estar ao final da jornada
+
+7. PERGUNTA ESPECÍFICA DO NICHO (1-2 perguntas)
+Personalize com base no contexto fornecido
+
+8. GERAÇÃO DE CONTEÚDO (2 perguntas)
+• "Se pudesse me fazer UMA pergunta, qual seria?"
+• "Se a gente fosse tomar um café, que pergunta você me faria?"
+
+DIRETRIZES PARA CRIAR AS PERGUNTAS:
+
+Linguagem: Use o vocabulário do público-alvo, evite jargões
+Tom: Conversacional e empático, como um amigo interessado
+Tamanho: Máximo 15 perguntas totais (5-8 min para responder)
+Formato: Mix de abertas (insights) e fechadas (análise)
+Progressão: Comece com fáceis, aprofunde gradualmente
+Emoção: Foque em sentimentos, não apenas fatos
+
+EXTRAS QUE VOCÊ DEVE INCLUIR:
+
+Introdução da Pesquisa:
+Crie um texto de 3-4 linhas que:
+• Explique o propósito
+• Mostre o benefício para quem responde
+• Mencione o incentivo (se houver)
+
+dados da pesquisa: [INSERIR DADOS AQUI]`,
+      icon: TrendingUp,
       color: "text-amber-700"
     }
   ];
