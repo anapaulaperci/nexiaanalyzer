@@ -5,6 +5,9 @@ const Footer = () => {
     <footer className="border-t border-border/50 bg-card/30 backdrop-blur-sm mt-auto">
       <div className="max-w-6xl mx-auto px-6 py-6">
         <div className="text-center mb-6">
+          <p className="text-muted-foreground text-sm mb-2">
+            Receba informações sobre as atualizações feitas no APP.
+          </p>
           <p className="text-muted-foreground text-sm mb-3">
             Grupo para receber atualizações da plataforma
           </p>
