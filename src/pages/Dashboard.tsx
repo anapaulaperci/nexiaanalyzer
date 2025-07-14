@@ -2,6 +2,8 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { FileText, Upload, Brain, ArrowRight, Users, Target, TrendingUp, Building2, CheckCircle2, Globe, CreditCard, MessageSquare, Smartphone, UserCheck, BarChart, Clock, DollarSign, Zap, X } from "lucide-react";
 import { useNavigate } from "react-router-dom";
+import smallDataCover from '@/assets/small-data-book-cover.jpg';
+import logicaConsumoCover from '@/assets/logica-consumo-book-cover.jpg';
 
 const Dashboard = () => {
   const navigate = useNavigate();
@@ -490,7 +492,7 @@ const Dashboard = () => {
                       className="text-lg px-8 py-6 h-auto bg-primary hover:bg-primary/90"
                       onClick={() => navigate('/dashboard/prompts#17')}
                     >
-                      Usar Prompt 17 - Criador de pesquisas
+                      Prompt - Criador de pesquisas
                       <ArrowRight className="w-5 h-5 ml-2" />
                     </Button>
                   </div>
@@ -513,19 +515,33 @@ const Dashboard = () => {
                       href="https://www.amazon.com.br/l%C3%B3gica-consumo-Verdades-mentiras-compramos/dp/8595082669" 
                       target="_blank" 
                       rel="noopener noreferrer"
-                      className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl p-4 hover:shadow-lg transition-all duration-300 hover:border-blue-300 dark:hover:border-blue-600"
+                      className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl p-4 hover:shadow-lg transition-all duration-300 hover:border-blue-300 dark:hover:border-blue-600 flex items-center gap-4"
                     >
-                      <h5 className="font-semibold text-blue-700 dark:text-blue-300">A Lógica do Consumo</h5>
-                      <p className="text-sm text-muted-foreground mt-1">Verdades e mentiras sobre por que compramos</p>
+                      <img 
+                        src={logicaConsumoCover} 
+                        alt="A Lógica do Consumo - Martin Lindstrom" 
+                        className="w-16 h-24 object-cover rounded-lg shadow-md"
+                      />
+                      <div>
+                        <h5 className="font-semibold text-blue-700 dark:text-blue-300">A Lógica do Consumo</h5>
+                        <p className="text-sm text-muted-foreground mt-1">Verdades e mentiras sobre por que compramos</p>
+                      </div>
                     </a>
                     <a 
                       href="https://www.amazon.com.br/Small-Data-Indicam-Grandes-Tend%C3%AAncias/dp/8569809719" 
                       target="_blank" 
                       rel="noopener noreferrer"
-                      className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl p-4 hover:shadow-lg transition-all duration-300 hover:border-blue-300 dark:hover:border-blue-600"
+                      className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl p-4 hover:shadow-lg transition-all duration-300 hover:border-blue-300 dark:hover:border-blue-600 flex items-center gap-4"
                     >
-                      <h5 className="font-semibold text-blue-700 dark:text-blue-300">Small Data</h5>
-                      <p className="text-sm text-muted-foreground mt-1">As pequenas pistas que indicam grandes tendências</p>
+                      <img 
+                        src={smallDataCover} 
+                        alt="Small Data - Martin Lindstrom" 
+                        className="w-16 h-24 object-cover rounded-lg shadow-md"
+                      />
+                      <div>
+                        <h5 className="font-semibold text-blue-700 dark:text-blue-300">Small Data</h5>
+                        <p className="text-sm text-muted-foreground mt-1">As pequenas pistas que indicam grandes tendências</p>
+                      </div>
                     </a>
                   </div>
                 </div>
