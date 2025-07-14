@@ -4,6 +4,20 @@ const Footer = () => {
   return (
     <footer className="border-t border-border/50 bg-card/30 backdrop-blur-sm mt-auto">
       <div className="max-w-6xl mx-auto px-6 py-6">
+        <div className="text-center mb-6">
+          <p className="text-muted-foreground text-sm mb-3">
+            Grupo para receber atualizações da plataforma
+          </p>
+          <a 
+            href="https://chat.whatsapp.com/JEY980forwzLviDjicwDqo"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-4 py-2 rounded-lg hover:bg-primary/90 transition-colors font-medium text-sm"
+          >
+            Entrar agora
+          </a>
+        </div>
+
         <div className="flex flex-col md:flex-row items-center justify-between gap-4">
           <div className="text-sm text-muted-foreground">
             <span className="text-sm text-muted-foreground">
