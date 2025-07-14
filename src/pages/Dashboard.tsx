@@ -479,12 +479,6 @@ const Dashboard = () => {
               </CardHeader>
               <CardContent>
                 <div className="bg-blue-50 dark:bg-blue-950/20 p-6 rounded-lg mb-6 border border-blue-200 dark:border-blue-800">
-                  <p className="text-foreground font-medium mb-4">
-                    📋 <strong>Metodologia Martin Lindstrom:</strong>
-                  </p>
-                  <p className="text-muted-foreground mb-4 leading-relaxed">
-                    Use nosso prompt especializado baseado na metodologia de Martin Lindstrom para criar pesquisas que revelam motivações ocultas e dores profundas do seu público-alvo.
-                  </p>
                   <div className="text-center">
                     <Button 
                       variant="default" 
@@ -503,7 +497,7 @@ const Dashboard = () => {
                     💡 Pergunta fundamental:
                   </h4>
                   <p className="text-amber-700 dark:text-amber-300 font-medium italic text-lg">
-                    "O que tira o sono do meu lead à noite?"
+                    Segundo Frank Kern: "O que tira o sono do meu lead à noite?"
                   </p>
                 </div>
                 
