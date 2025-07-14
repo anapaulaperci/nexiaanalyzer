@@ -6,8 +6,8 @@ import { useNavigate } from "react-router-dom";
 const steps = [
   {
     icon: FileText,
-    title: "1. Monte uma Explicação Base",
-    description: "Descreva detalhadamente o que é o seu negócio, seus produtos/serviços, público-alvo e objetivos",
+    title: "1. Como criar uma boa pesquisa de persona",
+    description: "Use nosso prompt especializado baseado na metodologia de Martin Lindstrom para criar pesquisas que revelam motivações ocultas",
     color: "text-blue-500"
   },
   {
@@ -62,9 +62,93 @@ const HowItWorks = () => {
                 <p className="text-muted-foreground leading-relaxed">
                   {step.description}
                 </p>
+
+                {index === 0 && (
+                  <div className="mt-6">
+                    <Button 
+                      variant="outline" 
+                      size="sm" 
+                      className="text-sm"
+                      onClick={() => navigate('/dashboard/prompts#17')}
+                    >
+                      Usar Prompt 17
+                      <ArrowRight className="w-4 h-4 ml-2" />
+                    </Button>
+                  </div>
+                )}
               </CardContent>
             </Card>
           ))}
+        </div>
+
+        {/* Frase de destaque */}
+        <div className="text-center mb-12">
+          <Card className="bg-gradient-to-r from-amber-50 to-orange-50 border border-amber-200/50 p-8 max-w-4xl mx-auto">
+            <h3 className="text-2xl font-bold text-foreground mb-4">
+              💡 A pergunta que toda pesquisa precisa responder é:
+            </h3>
+            <p className="text-xl text-amber-700 font-semibold italic">
+              "O que tira o sono do meu lead à noite?"
+            </p>
+          </Card>
+        </div>
+
+        {/* Recomendações de livros */}
+        <div className="mb-12">
+          <h3 className="text-2xl font-semibold text-center mb-8 text-foreground">
+            📚 Livros Recomendados
+          </h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+            <Card className="bg-card/70 backdrop-blur-sm border border-border/50 hover:border-primary/30 transition-all duration-300">
+              <CardContent className="p-6">
+                <h4 className="text-lg font-semibold mb-3 text-foreground">
+                  A Lógica do Consumo
+                </h4>
+                <p className="text-sm text-muted-foreground mb-4">
+                  Martin Lindstrom revela as verdades e mentiras sobre por que compramos
+                </p>
+                <Button 
+                  asChild 
+                  variant="outline" 
+                  size="sm"
+                  className="w-full"
+                >
+                  <a 
+                    href="https://www.amazon.com.br/l%C3%B3gica-consumo-Verdades-mentiras-compramos/dp/8595082669/ref=sr_1_1?crid=2O4K17G1B8V56&dib=eyJ2IjoiMSJ9.rUO6oBxAOZX6RLqAO4PWtUK4DfZ2Z-Co2yHFxS2vLLjh6Rx_8LQm2Bq-o2kuN0dUBWGPczL-JTvGJaT0QznBJsIIphFg0jtoxKt_PB0dhv4BwT089MDSR_S06_oQLJ32355I3IttKyT32lZlhdXuWrejsidmWWniboIaHffS_TDabEKPWiA-Ue1PaTMl-d1v697mm-AVuyC8eFKyojmDfoUnPaxVViTGLD0bTemIj8-bOzJ27ZvJeKevz5pXysVt7FgmkYUhmNjpXRM1NLbWu1LULKOVbvYFhm1-6ua4i3M.9UXrN1i3yUXljltz4Um91uure5P3ooIvE_Xq9xqaG3s&dib_tag=se&keywords=a+logica+do+consumo&qid=1752526348&sprefix=a+logica+do+consu%2Caps%2C231&sr=8-1"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Ver na Amazon
+                  </a>
+                </Button>
+              </CardContent>
+            </Card>
+
+            <Card className="bg-card/70 backdrop-blur-sm border border-border/50 hover:border-primary/30 transition-all duration-300">
+              <CardContent className="p-6">
+                <h4 className="text-lg font-semibold mb-3 text-foreground">
+                  Small Data
+                </h4>
+                <p className="text-sm text-muted-foreground mb-4">
+                  Pequenos Indicam que Grandes Tendências por Martin Lindstrom
+                </p>
+                <Button 
+                  asChild 
+                  variant="outline" 
+                  size="sm"
+                  className="w-full"
+                >
+                  <a 
+                    href="https://www.amazon.com.br/Small-Data-Indicam-Grandes-Tend%C3%AAncias/dp/8569809719/ref=sr_1_1?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=138NU3ZAN0GE2&dib=eyJ2IjoiMSJ9.hwwE-7SZBQbtYkdWdJVWRDtSn1s-dDdj3CQqH9rdt1Twz0IMixLLdAkHEDPaczR0_8v7BjAokyYoyWC-ffAYD-dw6UC6Ip2Bx6l8X6YXjpLX48yHwNE5OpymP0l1C0ixbC2YW9joFcpzEM-bP3lx6_irW0ydEvpVJPqFfy2v0NsjYslEkyOqFrCCOCEwLFm3lGB9DVoNTLk3flc40uvVVc10TBEtFSRHfaIGnPalQOCCn2JS6s0qGEQqjQ0tqAy6qBn1CDEyn6hfdlV07FhVv2JxzgA8knk96oiI0-W6bSY.tojrSfFyjlV5ZK8Z43hU0CVyO6lKA0uMzV46ZawWV_I&dib_tag=se&keywords=small+data&qid=1752526378&sprefix=small+data%2Caps%2C230&sr=8-1&ufe=app_do%3Aamzn1.fos.6d798eae-cadf-45de-946a-f477d47705b9"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Ver na Amazon
+                  </a>
+                </Button>
+              </CardContent>
+            </Card>
+          </div>
         </div>
 
         {/* CTA para prompts */}
