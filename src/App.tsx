@@ -7,11 +7,9 @@ import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import HorizontalDashboardLayout from "./components/HorizontalDashboardLayout";
 import Dashboard from "./pages/Dashboard";
-import Tutorial from "./pages/Tutorial";
 import Prompts from "./pages/Prompts";
 import CampaignPlanning from "./pages/CampaignPlanning";
 import Copy from "./pages/Copy";
-import CRM from "./pages/CRM";
 
 const queryClient = new QueryClient();
 
@@ -24,10 +22,8 @@ const App = () => (
         <Routes>
           <Route path="/" element={<HorizontalDashboardLayout />}>
             <Route index element={<Dashboard />} />
-            <Route path="tutorial" element={<Tutorial />} />
             <Route path="prompts" element={<Prompts />} />
             <Route path="copy" element={<Copy />} />
-            <Route path="crm" element={<CRM />} />
             <Route path="campaign" element={<CampaignPlanning />} />
           </Route>
           <Route path="/landing" element={<Index />} />
