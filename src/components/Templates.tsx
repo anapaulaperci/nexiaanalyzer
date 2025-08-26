@@ -44,18 +44,18 @@ const Templates = () => {
   };
 
   return (
-    <section className="py-24 px-6 bg-background">
+    <section className="py-12 sm:py-24 px-4 sm:px-6 bg-background">
       <div className="max-w-6xl mx-auto">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-hero bg-clip-text text-transparent">
+        <div className="text-center mb-12 sm:mb-16">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6 bg-gradient-hero bg-clip-text text-transparent">
             Templates de Prompts para Personas Sintéticas
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+          <p className="text-lg sm:text-xl text-muted-foreground max-w-3xl mx-auto px-4">
             Prompts especializados para gerar personas sintéticas precisas baseadas em dados reais
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8">
           {templates.map((template, index) => (
             <Card 
               key={index} 

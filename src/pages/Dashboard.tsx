@@ -30,45 +30,45 @@ const Dashboard = () => {
   ];
 
   return (
-    <div className="space-y-8 max-w-6xl mx-auto">
+    <div className="space-y-6 sm:space-y-8 max-w-6xl mx-auto">
       {/* Welcome Section */}
-      <div className="text-center mb-12">
-        <div className="mb-8">
-          <div className="w-24 h-24 mx-auto mb-6 rounded-full bg-gradient-primary flex items-center justify-center shadow-glow animate-pulse">
-            <Users className="w-12 h-12 text-white" />
+      <div className="text-center mb-8 sm:mb-12">
+        <div className="mb-6 sm:mb-8">
+          <div className="w-20 h-20 sm:w-24 sm:h-24 mx-auto mb-4 sm:mb-6 rounded-full bg-gradient-primary flex items-center justify-center shadow-glow animate-pulse">
+            <Users className="w-10 h-10 sm:w-12 sm:h-12 text-white" />
           </div>
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-hero bg-clip-text text-transparent">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6 bg-gradient-hero bg-clip-text text-transparent">
             Personas Sintéticas
           </h2>
         </div>
-        <div className="max-w-4xl mx-auto">
-          <p className="text-xl md:text-2xl text-muted-foreground leading-relaxed mb-8">
+        <div className="max-w-4xl mx-auto px-4">
+          <p className="text-lg sm:text-xl md:text-2xl text-muted-foreground leading-relaxed mb-6 sm:mb-8">
             <strong className="text-foreground">Personas sintéticas</strong> são perfis de usuários/clientes gerados automaticamente por Inteligência Artificial através da análise massiva de dados reais do seu negócio, em vez de serem criadas manualmente através de pesquisas tradicionais.
           </p>
         </div>
       </div>
 
       {/* Enhanced Concept Explanation */}
-      <div className="relative py-16">
+      <div className="relative py-8 sm:py-16">
         {/* Background Effects */}
         <div className="absolute inset-0 bg-gradient-to-br from-red-500/5 via-orange-500/5 to-amber-500/5 rounded-3xl"></div>
-        <div className="absolute top-0 right-1/4 w-48 h-48 bg-red-500/10 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-0 left-1/4 w-48 h-48 bg-amber-500/10 rounded-full blur-3xl"></div>
+        <div className="hidden sm:block absolute top-0 right-1/4 w-48 h-48 bg-red-500/10 rounded-full blur-3xl"></div>
+        <div className="hidden sm:block absolute bottom-0 left-1/4 w-48 h-48 bg-amber-500/10 rounded-full blur-3xl"></div>
         
-        <div className="relative z-10 max-w-7xl mx-auto">
-          <div className="text-center mb-12">
-            <div className="w-20 h-20 mx-auto mb-6 bg-gradient-to-br from-orange-500 to-red-600 rounded-full flex items-center justify-center shadow-xl">
-              <Users className="w-10 h-10 text-white" />
+        <div className="relative z-10 max-w-7xl mx-auto px-4">
+          <div className="text-center mb-8 sm:mb-12">
+            <div className="w-16 h-16 sm:w-20 sm:h-20 mx-auto mb-4 sm:mb-6 bg-gradient-to-br from-orange-500 to-red-600 rounded-full flex items-center justify-center shadow-xl">
+              <Users className="w-8 h-8 sm:w-10 sm:h-10 text-white" />
             </div>
-            <h3 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-orange-600 via-red-600 to-amber-600 bg-clip-text text-transparent">
+            <h3 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-3 sm:mb-4 bg-gradient-to-r from-orange-600 via-red-600 to-amber-600 bg-clip-text text-transparent">
               Por que Personas Sintéticas?
             </h3>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+            <p className="text-lg sm:text-xl text-muted-foreground max-w-3xl mx-auto px-4">
               Compare os métodos tradicionais com a revolução da Inteligência Artificial
             </p>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-stretch">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 items-stretch">
             
             {/* Método Tradicional */}
             <div className="relative group">
@@ -188,32 +188,32 @@ const Dashboard = () => {
           </div>
 
           {/* Comparison Arrow */}
-          <div className="flex justify-center mt-8">
-            <div className="bg-gradient-to-r from-red-500 to-green-500 p-4 rounded-full shadow-xl">
-              <ArrowRight className="w-8 h-8 text-white" />
+          <div className="flex justify-center mt-6 sm:mt-8">
+            <div className="bg-gradient-to-r from-red-500 to-green-500 p-3 sm:p-4 rounded-full shadow-xl">
+              <ArrowRight className="w-6 h-6 sm:w-8 sm:h-8 text-white" />
             </div>
           </div>
         </div>
       </div>
 
       {/* Big Data to Insights Flow - Enhanced Visual */}
-      <div className="relative space-y-12 py-16">
+      <div className="relative space-y-8 sm:space-y-12 py-8 sm:py-16">
         {/* Background Effects */}
         <div className="absolute inset-0 bg-gradient-to-br from-blue-500/5 via-purple-500/5 to-green-500/5 rounded-3xl"></div>
-        <div className="absolute top-0 left-1/4 w-64 h-64 bg-blue-500/10 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-0 right-1/4 w-64 h-64 bg-purple-500/10 rounded-full blur-3xl"></div>
+        <div className="hidden sm:block absolute top-0 left-1/4 w-64 h-64 bg-blue-500/10 rounded-full blur-3xl"></div>
+        <div className="hidden sm:block absolute bottom-0 right-1/4 w-64 h-64 bg-purple-500/10 rounded-full blur-3xl"></div>
         
-        <div className="relative z-10">
-          <div className="text-center mb-16">
-            <h3 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-blue-600 via-purple-600 to-green-600 bg-clip-text text-transparent">
-              Transformando Big Data em Insights Acionáveis
+        <div className="relative z-10 px-4">
+          <div className="text-center mb-12 sm:mb-16">
+            <h3 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6 bg-gradient-to-r from-blue-600 via-purple-600 to-green-600 bg-clip-text text-transparent">
+              Transformando Big Data em Insights
             </h3>
-            <p className="text-xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
-              Veja como nossa Inteligência Artificial processa milhões de dados para criar personas sintéticas ultra-precisas que revolucionam sua estratégia de negócio
+            <p className="text-lg sm:text-xl text-muted-foreground max-w-4xl mx-auto leading-relaxed px-4">
+              Veja como nossa IA processa milhões de dados para criar personas sintéticas ultra-precisas
             </p>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 max-w-7xl mx-auto relative">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 sm:gap-12 max-w-7xl mx-auto relative">
             
             {/* Connection Lines */}
             <div className="hidden lg:block absolute top-24 left-1/3 w-1/3 h-0.5 bg-gradient-to-r from-blue-400 to-purple-400 animate-pulse"></div>
@@ -388,27 +388,27 @@ const Dashboard = () => {
         </div>
       </div>
 
-      {/* How to Create Section - Enhanced */}
-      <div className="relative py-16">
+      {/* Enhanced Steps Section */}
+      <div className="relative py-8 sm:py-16">
         {/* Background Effects */}
-        <div className="absolute inset-0 bg-gradient-to-br from-indigo-500/5 via-purple-500/5 to-pink-500/5 rounded-3xl"></div>
-        <div className="absolute top-0 left-1/4 w-48 h-48 bg-indigo-500/10 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-0 right-1/4 w-48 h-48 bg-pink-500/10 rounded-full blur-3xl"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-primary-glow/5 to-secondary/5 rounded-3xl"></div>
+        <div className="hidden sm:block absolute top-1/4 left-1/4 w-32 h-32 bg-primary/10 rounded-full blur-2xl"></div>
+        <div className="hidden sm:block absolute bottom-1/4 right-1/4 w-48 h-48 bg-primary-glow/10 rounded-full blur-3xl"></div>
         
-        <div className="relative z-10 max-w-7xl mx-auto">
-          <div className="text-center mb-16">
-            <div className="w-20 h-20 mx-auto mb-6 bg-gradient-to-br from-indigo-500 to-purple-600 rounded-full flex items-center justify-center shadow-xl">
-              <FileText className="w-10 h-10 text-white" />
+        <div className="relative z-10 max-w-6xl mx-auto px-4">
+          <div className="text-center mb-8 sm:mb-16">
+            <div className="w-16 h-16 sm:w-20 sm:h-20 mx-auto mb-4 sm:mb-6 bg-gradient-primary rounded-full flex items-center justify-center shadow-xl animate-pulse">
+              <Brain className="w-8 h-8 sm:w-10 sm:h-10 text-white" />
             </div>
-            <h3 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 bg-clip-text text-transparent">
-              Como Montar a Sua
+            <h3 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-3 sm:mb-4 bg-gradient-hero bg-clip-text text-transparent">
+              Como Funciona na Prática?
             </h3>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Transforme dados brutos em personas sintéticas precisas em 3 passos simples
+            <p className="text-lg sm:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed px-4">
+              Siga estes 3 passos simples para gerar personas sintéticas precisas usando inteligência artificial
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8 relative">
             {steps.map((step, index) => (
               <div key={index} className="relative group">
                 <div className={`absolute -inset-1 rounded-2xl blur opacity-25 group-hover:opacity-40 transition duration-300 ${
