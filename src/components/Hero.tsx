@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight, Brain, BarChart3, Sparkles, Users } from "lucide-react";
 import { useNavigate, NavLink } from "react-router-dom";
 import anaPaulaPresentationImage from "@/assets/ana-paula-perci-presentation.png";
+import anaPaulaPresentationNew from "@/assets/ana-paula-presentation-new.png";
 
 const Hero = () => {
   const navigate = useNavigate();
@@ -28,10 +29,10 @@ const Hero = () => {
 
         {/* Main Content */}
         <div className="space-y-6 sm:space-y-8">
-          {/* Ana Paula Presentation Image */}
+          {/* New Ana Paula Presentation Image */}
           <div className="mb-8 sm:mb-12">
             <img 
-              src={anaPaulaPresentationImage} 
+              src={anaPaulaPresentationNew} 
               alt="Ana Paula Perci apresentando sobre Como vender mais com IA" 
               className="w-full max-w-4xl mx-auto rounded-2xl shadow-card"
             />
