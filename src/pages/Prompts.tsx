@@ -1178,7 +1178,11 @@ Crie um texto de 3-4 linhas que:
   };
 
   const openChatGPT = () => {
-    window.open('https://chatgpt.com/g/g-68710a8784dc8191b5086d574f8309b7-nexia-analyzer', '_blank');
+    const link = document.createElement('a');
+    link.href = 'https://chatgpt.com/g/g-68710a8784dc8191b5086d574f8309b7-nexia-analyzer';
+    link.target = '_blank';
+    link.rel = 'noopener noreferrer';
+    link.click();
   };
 
   const getDifficultyColor = (difficulty: string) => {
