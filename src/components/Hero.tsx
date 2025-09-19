@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Brain, BarChart3, Sparkles, Users } from "lucide-react";
 import { useNavigate, NavLink } from "react-router-dom";
+import anaPaulaPresentationImage from "@/assets/ana-paula-perci-presentation.png";
 
 const Hero = () => {
   const navigate = useNavigate();
@@ -27,6 +28,15 @@ const Hero = () => {
 
         {/* Main Content */}
         <div className="space-y-6 sm:space-y-8">
+          {/* Ana Paula Presentation Image */}
+          <div className="mb-8 sm:mb-12">
+            <img 
+              src={anaPaulaPresentationImage} 
+              alt="Ana Paula Perci apresentando sobre Como vender mais com IA" 
+              className="w-full max-w-4xl mx-auto rounded-2xl shadow-card"
+            />
+          </div>
+          
           <h1 className="text-3xl sm:text-5xl md:text-7xl font-bold bg-gradient-hero bg-clip-text text-transparent leading-tight">
             Crie Personas Sintéticas
             <br />
