@@ -484,7 +484,7 @@ const Dashboard = () => {
                       variant="default" 
                       size="lg" 
                       className="text-lg px-8 py-6 h-auto bg-primary hover:bg-primary/90"
-                      onClick={() => navigate('/dashboard/prompts#17')}
+                      onClick={() => window.open('https://chatgpt.com/g/g-688cb262c8d0819190f12b8a9bc1218c-matriz-de-icp', '_blank', 'noopener,noreferrer')}
                     >
                       Prompt - Criador de pesquisas
                       <ArrowRight className="w-5 h-5 ml-2" />
