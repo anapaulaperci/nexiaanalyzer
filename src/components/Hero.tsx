@@ -67,7 +67,7 @@ const Hero = () => {
               className="text-lg px-8 py-6 h-auto"
               asChild
             >
-              <NavLink to="/dashboard/prompts">
+              <NavLink to="/prompts">
                 Ver Prompts
               </NavLink>
             </Button>
